@@ -2,7 +2,7 @@ import React from 'react'
 
 const Partner = () => {
     return (
-        <div className='w-full h-[777px] flex items-center justify-center flex-col space-y-8 '>
+        <div className='w-full h-[777px] flex items-center justify-center flex-col space-y-16 '>
             <p className='text-white text-[56px] font-semibold w-[783px] text-center'>Your Partner for Innovative Web Solutions</p>
 
             <div className='w-full flex items-center justify-center space-x-2'>
