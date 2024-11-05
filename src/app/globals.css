@@ -41,3 +41,10 @@ html::-webkit-scrollbar {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.startBuilfingBG {
+  background-image: url('https://res.cloudinary.com/debiu7z1b/image/upload/v1730817250/Group_6004_g8jwsp.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

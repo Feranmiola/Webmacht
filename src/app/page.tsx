@@ -7,6 +7,7 @@ import { GeistSans } from "geist/font/sans";
 import Approach from "@/Components/Approach";
 import Solutions from "@/Components/Solutions";
 import Technologies from "@/Components/Technologies";
+import StartBuilding from "@/Components/StartBuilding";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <Approach />
       <Solutions />
       <Technologies />
+      <StartBuilding />
     </div>
   );
 }
