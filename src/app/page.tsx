@@ -8,6 +8,7 @@ import Approach from "@/Components/Approach";
 import Solutions from "@/Components/Solutions";
 import Technologies from "@/Components/Technologies";
 import StartBuilding from "@/Components/StartBuilding";
+import Contact from "@/Components/Contact";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <Solutions />
       <Technologies />
       <StartBuilding />
+      <Contact />
     </div>
   );
 }
