@@ -24,7 +24,7 @@ const Partner = () => {
                 <div className='border-l-[1px] w-[302px] h-[181px] pt-3 flex flex-col space-y-3 border-l-[#1B1B1B] px-5'>
                     <p className='text-white opacity-70 text-[28px] font-thin'>04</p>
                     <p className='text-white tex-base font-bold'>Innovation</p>
-                    <p className='text-base w-full text-white'>Always pushing the boundaries of what's possible in web design and development.</p>
+                    <p className='text-base w-full text-white'>Always pushing the boundaries of what&apos;s possible in web design and development.</p>
                 </div>
 
             </div>
