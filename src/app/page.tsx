@@ -4,6 +4,7 @@ import Partner from "@/Components/Partner";
 import Starter from "@/Components/Starter";
 import Image from "next/image";
 import { GeistSans } from "geist/font/sans";
+import Approach from "@/Components/Approach";
 
 export default function Home() {
   return (
@@ -11,7 +12,7 @@ export default function Home() {
       <Navbar />
       <Starter />
       <Partner />
-
+      <Approach />
     </div>
   );
 }
