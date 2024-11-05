@@ -61,8 +61,12 @@ const Technologies = () => {
                     )}
                     <p className={`${activeTabs === 3 ? 'text-white font-medium' : 'text-[#080808B2] font-normal'} text-base`}>Cross platforms</p>
                 </div>
-
             </div>
+
+            <img
+                src='https://res.cloudinary.com/debiu7z1b/image/upload/v1730816529/Group_6021_e10y86.webp'
+                alt='Technologies Icons'
+            />
 
         </div>
     )
