@@ -5,6 +5,7 @@ import Starter from "@/Components/Starter";
 import Image from "next/image";
 import { GeistSans } from "geist/font/sans";
 import Approach from "@/Components/Approach";
+import Solutions from "@/Components/Solutions";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <Starter />
       <Partner />
       <Approach />
+      <Solutions />
     </div>
   );
 }
