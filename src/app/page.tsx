@@ -8,6 +8,7 @@ import Technologies from "@/Components/Technologies";
 import StartBuilding from "@/Components/StartBuilding";
 import Contact from "@/Components/Contact";
 import Footer from "@/Components/Footer";
+import CustomWebDev from "@/Components/CustomWebDev";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Starter />
       <Partner />
       <Approach />
+      <CustomWebDev />
       <Solutions />
       <Technologies />
       <StartBuilding />
