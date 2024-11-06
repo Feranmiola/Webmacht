@@ -8,6 +8,7 @@ import EcommerceIcon from './Icons/EcommerceIcon'
 import MobileIcon from './Icons/MobileIcon'
 import ApiIcon from './Icons/ApiIcont'
 import MaintainanceIcon from './Icons/MaintainanceIcon'
+import ForwardIcon from './Icons/ForwardIcon'
 
 const CustomWebDev = () => {
     return (
@@ -45,6 +46,9 @@ const CustomWebDev = () => {
                             <p className='text-white text-base'>CMS Development</p>
                         </div>
                     </div>
+                </div>
+                <div className='absolute top-[20.3rem] left-[30.2rem] z-50'>
+                    <ForwardIcon />
                 </div>
 
                 <div className='w-[560px] h-[168px] absolute flex flex-row items-center pl-10 space-x-10 transition ease-in-out top-[-2px] left-[675px] origin-top-left rotate-90 rounded-[24px] border-l-[1.5px] border-l-[#1B1B1B] border-b-[1.5px] border-b-[#1B1B1B] bg-[#080808]'>
