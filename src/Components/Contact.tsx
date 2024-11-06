@@ -45,66 +45,18 @@ const Contact = () => {
                 <div className='h-[452px] w-full'>
                     <Form {...ContactForm}>
                         <form onSubmit={ContactForm.handleSubmit(onSubmit)} className=' w-full h-full flex flex-col justify-between'>
-                            <FormField
-                                control={ContactForm.control}
-                                name='name'
-                                render={({ field }) => (
-                                    <FormItem>
-                                        <FormControl>
-                                            <Input
-                                                icon="EnvelopeClosedIcon"
-                                                type='text'
-                                                className={`${errors.name ? 'shad-input-width-error-auth' : ''} w-full `}
-                                                placeholder='Name' {...field} />
-                                        </FormControl>
-                                    </FormItem>
-                                )}
-                            />
-
-                            <FormField
-                                control={ContactForm.control}
-                                name='email'
-                                render={({ field }) => (
-                                    <FormItem>
-                                        <FormControl>
-                                            <Input
-                                                icon="EnvelopeClosedIcon"
-                                                type='text'
-                                                className={`${errors.email ? 'shad-input-width-error-auth' : ''} w-full `}
-                                                placeholder='Email' {...field} />
-                                        </FormControl>
-                                    </FormItem>
-                                )}
-                            />
-
-                            <FormField
-                                control={ContactForm.control}
-                                name='company'
-                                render={({ field }) => (
-                                    <FormItem>
-                                        <FormControl>
-                                            <Input
-                                                icon="EnvelopeClosedIcon"
-                                                type='text'
-                                                className={`${errors.company ? 'shad-input-width-error-auth' : ''} w-full `}
-                                                placeholder='Company' {...field} />
-                                        </FormControl>
-                                    </FormItem>
-                                )}
-                            />
-
-                            <div className='w-full flex flex-row items-center justify-between'>
+                            <div className='flex flex-col w-full h-[360px] justify-between'>
                                 <FormField
                                     control={ContactForm.control}
-                                    name='country'
+                                    name='name'
                                     render={({ field }) => (
                                         <FormItem>
                                             <FormControl>
                                                 <Input
                                                     icon="EnvelopeClosedIcon"
                                                     type='text'
-                                                    className={`${errors.country ? 'shad-input-width-error-auth' : ''} w-[395.5px] `}
-                                                    placeholder='Country' {...field} />
+                                                    className={`${errors.name ? 'shad-input-width-error-auth' : ''} w-full `}
+                                                    placeholder='Name' {...field} />
                                             </FormControl>
                                         </FormItem>
                                     )}
@@ -112,39 +64,88 @@ const Contact = () => {
 
                                 <FormField
                                     control={ContactForm.control}
-                                    name='phone'
+                                    name='email'
                                     render={({ field }) => (
                                         <FormItem>
                                             <FormControl>
                                                 <Input
                                                     icon="EnvelopeClosedIcon"
                                                     type='text'
-                                                    className={`${errors.phone ? 'shad-input-width-error-auth' : ''} w-[395.5px] `}
-                                                    placeholder='Phone Number' {...field} />
+                                                    className={`${errors.email ? 'shad-input-width-error-auth' : ''} w-full `}
+                                                    placeholder='Email' {...field} />
                                             </FormControl>
                                         </FormItem>
                                     )}
                                 />
 
+                                <FormField
+                                    control={ContactForm.control}
+                                    name='company'
+                                    render={({ field }) => (
+                                        <FormItem>
+                                            <FormControl>
+                                                <Input
+                                                    icon="EnvelopeClosedIcon"
+                                                    type='text'
+                                                    className={`${errors.company ? 'shad-input-width-error-auth' : ''} w-full `}
+                                                    placeholder='Company' {...field} />
+                                            </FormControl>
+                                        </FormItem>
+                                    )}
+                                />
+
+                                <div className='w-full flex flex-row items-center justify-between'>
+                                    <FormField
+                                        control={ContactForm.control}
+                                        name='country'
+                                        render={({ field }) => (
+                                            <FormItem>
+                                                <FormControl>
+                                                    <Input
+                                                        icon="EnvelopeClosedIcon"
+                                                        type='text'
+                                                        className={`${errors.country ? 'shad-input-width-error-auth' : ''} w-[395.5px] `}
+                                                        placeholder='Country' {...field} />
+                                                </FormControl>
+                                            </FormItem>
+                                        )}
+                                    />
+
+                                    <FormField
+                                        control={ContactForm.control}
+                                        name='phone'
+                                        render={({ field }) => (
+                                            <FormItem>
+                                                <FormControl>
+                                                    <Input
+                                                        icon="EnvelopeClosedIcon"
+                                                        type='text'
+                                                        className={`${errors.phone ? 'shad-input-width-error-auth' : ''} w-[395.5px] `}
+                                                        placeholder='Phone Number' {...field} />
+                                                </FormControl>
+                                            </FormItem>
+                                        )}
+                                    />
+
+                                </div>
+
+
+                                <FormField
+                                    control={ContactForm.control}
+                                    name='message'
+                                    render={({ field }) => (
+                                        <FormItem>
+                                            <FormControl>
+                                                <Input
+                                                    icon="EnvelopeClosedIcon"
+                                                    type='text'
+                                                    className={`${errors.message ? 'shad-input-width-error-auth' : ''} w-full `}
+                                                    placeholder='Message/Project Details' {...field} />
+                                            </FormControl>
+                                        </FormItem>
+                                    )}
+                                />
                             </div>
-
-
-                            <FormField
-                                control={ContactForm.control}
-                                name='message'
-                                render={({ field }) => (
-                                    <FormItem>
-                                        <FormControl>
-                                            <Input
-                                                icon="EnvelopeClosedIcon"
-                                                type='text'
-                                                className={`${errors.message ? 'shad-input-width-error-auth' : ''} w-full `}
-                                                placeholder='Message/Project Details' {...field} />
-                                        </FormControl>
-                                    </FormItem>
-                                )}
-                            />
-
                             <Button
                                 type='submit'
                                 className='w-[187px] h-[48px] text-white text-opacity-50 hover:text-opacity-100 transition ease-in-out font-bold text-base rounded-none bg-[#181818]'>
