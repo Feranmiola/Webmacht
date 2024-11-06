@@ -7,6 +7,7 @@ import Solutions from "@/Components/Solutions";
 import Technologies from "@/Components/Technologies";
 import StartBuilding from "@/Components/StartBuilding";
 import Contact from "@/Components/Contact";
+import Footer from "@/Components/Footer";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <Technologies />
       <StartBuilding />
       <Contact />
+      <Footer />
     </div>
   );
 }
