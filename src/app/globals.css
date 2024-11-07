@@ -37,6 +37,43 @@ html::-webkit-scrollbar {
   background-size: cover;
 }
 
+.customGradient {
+  background:
+    linear-gradient(338.42deg, rgba(255, 255, 255, 0.2) -81.46%, rgba(255, 255, 255, 0) 30.85%);
+
+}
+
+.bg-custom-gradient {
+  background:
+    linear-gradient(152.84deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.05) 36.72%,
+      rgba(255, 255, 255, 0.05) 60.46%,
+      rgba(255, 255, 255, 0) 100%);
+}
+
+/* Initial gradient style */
+.gradient-container {
+  background:
+    linear-gradient(338.42deg, rgba(255, 255, 255, 0.2) -81.46%, rgba(255, 255, 255, 0) 30.85%);
+
+  background-size: 200% 100%;
+  /* Allows room for movement */
+  background-position: 100% 0;
+  /* Starts gradient on the right */
+  transition: background-position 0.5s ease-in-out;
+}
+
+/* Hover effect to move the gradient to the middle */
+.gradient-container:hover {
+  background-position: 0% 100%;
+  /* Centers gradient on hover */
+}
+
+
+
+
+
 @layer base {
   :root {
     --background: 0 0% 100%;

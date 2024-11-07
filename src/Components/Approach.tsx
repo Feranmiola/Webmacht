@@ -6,7 +6,7 @@ import LaunchIcon from './Icons/LaunchIcon'
 const Approach = () => {
     return (
         <div className='flex flex-col space-y-10 items-center justify-center bg-black'>
-            <div className='flex h-[792px] bg-[#090909] w-[1272px] items-center'>
+            <div id='page1' className='flex h-[792px] bg-[#090909] w-[1272px] items-center'>
                 <div className='flex-row flex space-x-[6rem]'>
                     <img
                         src={'https://res.cloudinary.com/debiu7z1b/image/upload/v1730806886/Frame_44_fvvdqm.webp'}
@@ -28,7 +28,7 @@ const Approach = () => {
                 </div>
             </div>
 
-            <div className='flex flex-row h-[792px] bg-[#090909] w-[1272px]  space-x-[6rem] items-center'>
+            <div id='page2' className='flex flex-row h-[792px] bg-[#090909] w-[1272px]  space-x-[6rem] items-center'>
                 <img
                     src={'https://res.cloudinary.com/debiu7z1b/image/upload/v1730806886/Frame_45_cysssl.webp'}
                     alt='Consultation & Discovery'
@@ -46,7 +46,7 @@ const Approach = () => {
 
             </div>
 
-            <div className='flex flex-row h-[792px] bg-[#090909] w-[1272px]  space-x-[6rem] items-center'>
+            <div id='page3' className='flex flex-row h-[792px] bg-[#090909] w-[1272px]  space-x-[6rem] items-center'>
                 <img
                     src={'https://res.cloudinary.com/debiu7z1b/image/upload/v1730806887/Frame_46_llwwl9.webp'}
                     alt='Consultation & Discovery'
