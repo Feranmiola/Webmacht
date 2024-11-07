@@ -9,7 +9,6 @@ import { ContactFormSchema } from '@/Schema/ContactFormSchema';
 import { Button } from './ui/button';
 import Quote from './Icons/Quote';
 import { Avatar, AvatarImage } from './ui/avatar';
-import PhoneIcon from './Icons/PhoneIcon';
 import AvatarIcon from './Icons/AvatarIcon';
 import MailIcon from './Icons/MailIcon';
 import CompanyIcon from './Icons/CompanyIcon';
