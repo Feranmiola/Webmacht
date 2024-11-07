@@ -13,6 +13,9 @@ import ForwardIcon from './Icons/ForwardIcon'
 import CustomDevIconSmall from './Icons/CustomDevIconSmall'
 import DesignIconBig from './Icons/DesignIconBig'
 import EcommerceIconBig from './Icons/EcommerceIconBig'
+import MobileIconBig from './Icons/MobileIconBig'
+import APIIconBig from './Icons/APIIconBig'
+import MaintainanceIconBig from './Icons/MaintainanceIconBig'
 
 const CustomWebDev = () => {
     // const [hoverIndec, setHoverIndex] = useState(0)
@@ -178,7 +181,7 @@ const CustomWebDev = () => {
                     <div className={`w-full h-full flex flex-col py-10 border-l-[1.5px] border-l-[#1B1B1B] border-t-[1.5px] border-t-[#1B1B1B]  rounded-[24px] ${selectedTab === 4 ? 'bg-custom-gradient justify-between px-10 ' : 'gradient-container space-y-10 items-center'}`}>
 
                         {selectedTab === 4 ? (
-                            <EcommerceIconBig />
+                            <MobileIconBig />
                         ) : (
                             <MobileIcon />
                         )}
@@ -226,7 +229,7 @@ const CustomWebDev = () => {
                     <div className={`w-full h-full flex flex-col py-10 border-l-[1.5px] border-l-[#1B1B1B] border-t-[1.5px] border-t-[#1B1B1B]  rounded-[24px] ${selectedTab === 5 ? 'bg-custom-gradient justify-between px-10 ' : 'gradient-container space-y-10 items-center'}`}>
 
                         {selectedTab === 5 ? (
-                            <EcommerceIconBig />
+                            <APIIconBig />
                         ) : (
                             <ApiIcon />
                         )}
@@ -271,7 +274,7 @@ const CustomWebDev = () => {
                     <div className={`w-full h-full flex flex-col py-10 border-l-[1.5px] border-l-[#1B1B1B] border-t-[1.5px] border-t-[#1B1B1B]  rounded-[24px] ${selectedTab === 6 ? 'bg-custom-gradient justify-between px-10 ' : 'gradient-container space-y-10 items-center'}`}>
 
                         {selectedTab === 6 ? (
-                            <EcommerceIconBig />
+                            <MaintainanceIconBig />
                         ) : (
                             <MaintainanceIcon />
                         )}
