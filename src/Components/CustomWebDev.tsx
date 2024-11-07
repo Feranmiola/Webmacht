@@ -61,7 +61,6 @@ const CustomWebDev = () => {
                     className='w-[168px] h-[560px]  gradient-container flex flex-col items-center pt-10 space-y-[8.5rem] transition ease-in-out rounded-[24px] border-l-[1.5px] border-l-[#1B1B1B] border-b-[1.5px] border-b-[#1B1B1B] bg-[#080808]'>
                     <UiDesignIcon />
                     <p className='text-white text-[32px] opacity-70 rotate-90 whitespace-nowrap  '>UI/UX Design</p>
-
                 </div>
 
                 <div className='w-[168px] h-[560px]  gradient-container flex flex-col items-center pt-10 space-y-10 transition ease-in-out rounded-[24px] border-l-[1.5px] border-l-[#1B1B1B] border-b-[1.5px] border-b-[#1B1B1B] bg-[#080808]'>
