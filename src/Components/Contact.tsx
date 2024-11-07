@@ -9,6 +9,13 @@ import { ContactFormSchema } from '@/Schema/ContactFormSchema';
 import { Button } from './ui/button';
 import Quote from './Icons/Quote';
 import { Avatar, AvatarImage } from './ui/avatar';
+import PhoneIcon from './Icons/PhoneIcon';
+import AvatarIcon from './Icons/AvatarIcon';
+import MailIcon from './Icons/MailIcon';
+import CompanyIcon from './Icons/CompanyIcon';
+import CountryIcon from './Icons/CountryIcon';
+import PhoneWhite from './Icons/PhoneWhite';
+import MessageIcon from './Icons/MessageIcon';
 
 
 const Contact = () => {
@@ -42,6 +49,7 @@ const Contact = () => {
                     <p className='text-white w-[510px] text-base font-normal'>Have a question or want to discuss your project, we&apos;re here to help. Get in touch with us today!</p>
                 </div>
 
+
                 <div className='h-[452px] w-full'>
                     <Form {...ContactForm}>
                         <form onSubmit={ContactForm.handleSubmit(onSubmit)} className=' w-full h-full flex flex-col justify-between'>
@@ -53,7 +61,7 @@ const Contact = () => {
                                         <FormItem>
                                             <FormControl>
                                                 <Input
-                                                    icon="EnvelopeClosedIcon"
+                                                    icon={AvatarIcon}
                                                     type='text'
                                                     className={`${errors.name ? 'shad-input-width-error-auth' : ''} w-full `}
                                                     placeholder='Name' {...field} />
@@ -69,7 +77,7 @@ const Contact = () => {
                                         <FormItem>
                                             <FormControl>
                                                 <Input
-                                                    icon="EnvelopeClosedIcon"
+                                                    icon={MailIcon}
                                                     type='text'
                                                     className={`${errors.email ? 'shad-input-width-error-auth' : ''} w-full `}
                                                     placeholder='Email' {...field} />
@@ -85,7 +93,7 @@ const Contact = () => {
                                         <FormItem>
                                             <FormControl>
                                                 <Input
-                                                    icon="EnvelopeClosedIcon"
+                                                    icon={CompanyIcon}
                                                     type='text'
                                                     className={`${errors.company ? 'shad-input-width-error-auth' : ''} w-full `}
                                                     placeholder='Company' {...field} />
@@ -93,6 +101,7 @@ const Contact = () => {
                                         </FormItem>
                                     )}
                                 />
+
 
                                 <div className='w-full flex flex-row items-center justify-between'>
                                     <FormField
@@ -102,7 +111,7 @@ const Contact = () => {
                                             <FormItem>
                                                 <FormControl>
                                                     <Input
-                                                        icon="EnvelopeClosedIcon"
+                                                        icon={CountryIcon}
                                                         type='text'
                                                         className={`${errors.country ? 'shad-input-width-error-auth' : ''} w-[395.5px] `}
                                                         placeholder='Country' {...field} />
@@ -111,6 +120,7 @@ const Contact = () => {
                                         )}
                                     />
 
+
                                     <FormField
                                         control={ContactForm.control}
                                         name='phone'
@@ -118,7 +128,7 @@ const Contact = () => {
                                             <FormItem>
                                                 <FormControl>
                                                     <Input
-                                                        icon="EnvelopeClosedIcon"
+                                                        icon={PhoneWhite}
                                                         type='text'
                                                         className={`${errors.phone ? 'shad-input-width-error-auth' : ''} w-[395.5px] `}
                                                         placeholder='Phone Number' {...field} />
@@ -137,7 +147,7 @@ const Contact = () => {
                                         <FormItem>
                                             <FormControl>
                                                 <Input
-                                                    icon="EnvelopeClosedIcon"
+                                                    icon={MessageIcon}
                                                     type='text'
                                                     className={`${errors.message ? 'shad-input-width-error-auth' : ''} w-full `}
                                                     placeholder='Message/Project Details' {...field} />
