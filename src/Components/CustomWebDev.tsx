@@ -45,7 +45,7 @@ const CustomWebDev = () => {
                             <>
                                 <div className='w-[443px] flex flex-col justify-between space-y-3'>
                                     <p className='text-white font-light leading-[4rem] text-[48px] w-full'>Custom Web Development</p>
-                                    <p className='text-sm text-white w-full'>Tailor-made websites, custom web apps, and platforms that meet the specific needs of your business, whether you're a startup or a large enterprise.</p>
+                                    <p className='text-sm text-white w-full'>Tailor-made websites, custom web apps, and platforms that meet the specific needs of your business, whether you&apos;re a startup or a large enterprise.</p>
                                 </div>
                                 <div className='flex flex-col space-y-10'>
                                     <BlueLine />
@@ -92,7 +92,7 @@ const CustomWebDev = () => {
                             <>
                                 <div className='w-[443px] flex flex-col justify-between space-y-3'>
                                     <p className='text-white font-light leading-[4rem] text-[48px] w-full'>UI/UX Design</p>
-                                    <p className='text-sm text-white w-full'>Tailor-made websites, custom web apps, and platforms that meet the specific needs of your business, whether you're a startup or a large enterprise.</p>
+                                    <p className='text-sm text-white w-full'>Tailor-made websites, custom web apps, and platforms that meet the specific needs of your business, whether you&apos;re a startup or a large enterprise.</p>
                                 </div>
                                 <div className='flex flex-col space-y-10'>
                                     <BlueLine />
@@ -140,7 +140,7 @@ const CustomWebDev = () => {
                             <>
                                 <div className='w-[443px] flex flex-col justify-between space-y-3'>
                                     <p className='text-white font-light leading-[4rem] text-[48px] w-full'>E-Commerce Solutions</p>
-                                    <p className='text-sm text-white w-full'>Tailor-made websites, custom web apps, and platforms that meet the specific needs of your business, whether you're a startup or a large enterprise.</p>
+                                    <p className='text-sm text-white w-full'>Tailor-made websites, custom web apps, and platforms that meet the specific needs of your business, whether you&apos;re a startup or a large enterprise.</p>
                                 </div>
                                 <div className='flex flex-col space-y-10'>
                                     <BlueLine />
@@ -186,7 +186,7 @@ const CustomWebDev = () => {
                             <>
                                 <div className='w-[443px] flex flex-col justify-between space-y-3'>
                                     <p className='text-white font-light leading-[4rem] text-[48px] w-full'>Mobile App Development</p>
-                                    <p className='text-sm text-white w-full'>Tailor-made websites, custom web apps, and platforms that meet the specific needs of your business, whether you're a startup or a large enterprise.</p>
+                                    <p className='text-sm text-white w-full'>Tailor-made websites, custom web apps, and platforms that meet the specific needs of your business, whether you&apos;re a startup or a large enterprise.</p>
                                 </div>
                                 <div className='flex flex-col space-y-10'>
                                     <BlueLine />
@@ -234,7 +234,7 @@ const CustomWebDev = () => {
                             <>
                                 <div className='w-[443px] flex flex-col justify-between space-y-3'>
                                     <p className='text-white font-light leading-[4rem] text-[48px] w-full'>API Integrations</p>
-                                    <p className='text-sm text-white w-full'>Tailor-made websites, custom web apps, and platforms that meet the specific needs of your business, whether you're a startup or a large enterprise.</p>
+                                    <p className='text-sm text-white w-full'>Tailor-made websites, custom web apps, and platforms that meet the specific needs of your business, whether you&apos;re a startup or a large enterprise.</p>
                                 </div>
                                 <div className='flex flex-col space-y-10'>
                                     <BlueLine />
@@ -279,7 +279,7 @@ const CustomWebDev = () => {
                             <>
                                 <div className='w-[443px] flex flex-col justify-between space-y-3'>
                                     <p className='text-white font-light leading-[4rem] text-[48px] w-full'>Maintenance & Support</p>
-                                    <p className='text-sm text-white w-full'>Tailor-made websites, custom web apps, and platforms that meet the specific needs of your business, whether you're a startup or a large enterprise.</p>
+                                    <p className='text-sm text-white w-full'>Tailor-made websites, custom web apps, and platforms that meet the specific needs of your business, whether you&apos;re a startup or a large enterprise.</p>
                                 </div>
                                 <div className='flex flex-col space-y-10'>
                                     <BlueLine />
