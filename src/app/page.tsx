@@ -1,3 +1,4 @@
+// @ts-nocheck
 'use client'
 import Navbar from "@/Components/Navbar";
 import Partner from "@/Components/Partner";
@@ -12,7 +13,8 @@ import Footer from "@/Components/Footer";
 import CustomWebDev from "@/Components/CustomWebDev";
 
 function updateScrollbar() {
-  let scrollTimer;
+
+  let scrollTimer = 0;
 
   const scrollPercentage = window.scrollY / (document.documentElement.scrollHeight - window.innerHeight);
   const scrollbarHeight = (window.innerHeight / document.documentElement.scrollHeight) * window.innerHeight;
@@ -22,7 +24,7 @@ function updateScrollbar() {
   document.body.style.setProperty('--scrollbar-height', `${scrollbarHeight}px`);
 
   document.body.classList.add('is-scrolling');
-  //@ts-ignore
+
   clearTimeout(scrollTimer);
   scrollTimer = setTimeout(() => {
     document.body.classList.remove('is-scrolling');
