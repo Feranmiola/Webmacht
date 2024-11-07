@@ -36,6 +36,12 @@ const CustomWebDev = () => {
         setSelectedTab(tabId === 6 && selectedTab === 6 ? 1 : tabId)
     }
 
+    const handleNext = () => {
+        if (selectedTab === 6) {
+            setSelectedTab(1)
+        } else { setSelectedTab(selectedTab + 1) }
+    }
+
     return (
         <div className='bg-black w-full h-[1006px] flex items-center flex-col space-y-10 justify-center'>
             <div className='flex flex-row w-[1290px] h-[134px] items-center justify-between'>
@@ -384,11 +390,17 @@ const CustomWebDev = () => {
                 </motion.div>
 
                 <motion.div
-                    className='absolute top-[20.3rem] z-50'
+                    className={`absolute cursor-pointer top-[20.3rem] z-50 transition ease-in-out ${selectedTab === 6 ? 'rotate-180' : 'rotate-0'}`}
                     animate={{
-                        left: `${28.2 + (selectedTab - 1) * 11}rem`,
+                        left: selectedTab === 1 ? '28.2rem' :
+                            selectedTab === 2 ? '39.2rem' :
+                                selectedTab === 3 ? '49.8rem' :
+                                    selectedTab === 4 ? '60.2rem' :
+                                        selectedTab === 5 ? '70.9rem' :
+                                            '48.8rem'
                     }}
                     transition={{ type: 'spring', stiffness: 300, damping: 30 }}
+                    onClick={handleNext}
                 >
                     <ForwardIcon />
                 </motion.div>
