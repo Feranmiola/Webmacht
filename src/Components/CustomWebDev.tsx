@@ -32,7 +32,7 @@ import PurpleDot from './Icons/PurpleDot'
 const CustomWebDev = () => {
     const [selectedTab, setSelectedTab] = useState(2)
 
-    const handleTabClick = (tabId: any) => {
+    const handleTabClick = (tabId: number) => {
         setSelectedTab(tabId === 6 && selectedTab === 6 ? 1 : tabId)
     }
 
@@ -386,7 +386,7 @@ const CustomWebDev = () => {
                 <motion.div
                     className='absolute top-[20.3rem] z-50'
                     animate={{
-                        left: `${28.2 + (selectedTab - 1) * 7.3}rem`,
+                        left: `${28.2 + (selectedTab - 1) * 11}rem`,
                     }}
                     transition={{ type: 'spring', stiffness: 300, damping: 30 }}
                 >
