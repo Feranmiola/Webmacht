@@ -31,6 +31,7 @@ import PurpleDot from './Icons/PurpleDot'
 
 const CustomWebDev = () => {
     const [selectedTab, setSelectedTab] = useState(1)
+    const [hoverIndex, setHoverIndex] = useState(0)
 
     const handleTabClick = (tabId: number) => {
         setSelectedTab(tabId === 6 && selectedTab === 6 ? 1 : tabId)
@@ -52,8 +53,11 @@ const CustomWebDev = () => {
                 </div>
             </div>
 
-            <div id='tabs' className='w-[1289px] h-[560px] flex relative items-center justify-center'>
+            <div id='tabs'
+                className='w-[1289px] h-[560px] flex relative items-center justify-center'>
                 <motion.div
+                    onMouseEnter={() => setHoverIndex(1)}
+                    onMouseLeave={() => setHoverIndex(0)}
                     onClick={() => handleTabClick(1)}
                     layout
                     transition={{ layout: { duration: 0.3, type: 'spring' } }}
@@ -104,12 +108,14 @@ const CustomWebDev = () => {
                                 </motion.div>
                             </AnimatePresence>
                         ) : (
-                            <p className='text-white text-[32px] opacity-70 whitespace-nowrap pl-20 rotate-90 w-full'>Custom Web Development</p>
+                            <p className={`text-white text-[32px] opacity-70 whitespace-nowrap pl-20 rotate-90 w-full transition-all ease-in-out ${hoverIndex === 1 ? 'opacity-100 text-[34px]' : ''}`}>Custom Web Development</p>
                         )}
                     </div>
                 </motion.div>
 
                 <motion.div
+                    onMouseEnter={() => setHoverIndex(2)}
+                    onMouseLeave={() => setHoverIndex(0)}
                     onClick={() => handleTabClick(2)}
                     layout
                     transition={{ layout: { duration: 0.3, type: 'spring' } }}
@@ -160,12 +166,14 @@ const CustomWebDev = () => {
                                 </motion.div>
                             </AnimatePresence>
                         ) : (
-                            <p className='text-white text-[32px] opacity-70 whitespace-nowrap pl-20 rotate-90 w-full'>UI/UX Design</p>
+                            <p className={`text-white text-[32px] opacity-70 whitespace-nowrap pl-20 rotate-90 w-full transition-all ease-in-out ${hoverIndex === 2 ? 'opacity-100 text-[34px]' : ''}`}>UI/UX Design</p>
                         )}
                     </div>
                 </motion.div>
 
                 <motion.div
+                    onMouseEnter={() => setHoverIndex(3)}
+                    onMouseLeave={() => setHoverIndex(0)}
                     onClick={() => handleTabClick(3)}
                     layout
                     transition={{ layout: { duration: 0.3, type: 'spring' } }}
@@ -216,12 +224,14 @@ const CustomWebDev = () => {
                                 </motion.div>
                             </AnimatePresence>
                         ) : (
-                            <p className='text-white text-[32px] opacity-70 whitespace-nowrap pl-20 rotate-90 w-full'>E-Commerce Solutions</p>
+                            <p className={`text-white text-[32px] opacity-70 whitespace-nowrap pl-20 rotate-90 w-full transition-all ease-in-out ${hoverIndex === 3 ? 'opacity-100 text-[34px]' : ''}`}>E-Commerce Solutions</p>
                         )}
                     </div>
                 </motion.div>
 
                 <motion.div
+                    onMouseEnter={() => setHoverIndex(4)}
+                    onMouseLeave={() => setHoverIndex(0)}
                     onClick={() => handleTabClick(4)}
                     layout
                     transition={{ layout: { duration: 0.3, type: 'spring' } }}
@@ -272,12 +282,14 @@ const CustomWebDev = () => {
                                 </motion.div>
                             </AnimatePresence>
                         ) : (
-                            <p className='text-white text-[32px] opacity-70 whitespace-nowrap pl-20 rotate-90 w-full'>Mobile App Development</p>
+                            <p className={`text-white text-[32px] opacity-70 whitespace-nowrap pl-20 rotate-90 w-full transition-all ease-in-out ${hoverIndex === 4 ? 'opacity-100 text-[34px]' : ''}`}>Mobile App Development</p>
                         )}
                     </div>
                 </motion.div>
 
                 <motion.div
+                    onMouseEnter={() => setHoverIndex(5)}
+                    onMouseLeave={() => setHoverIndex(0)}
                     onClick={() => handleTabClick(5)}
                     layout
                     transition={{ layout: { duration: 0.3, type: 'spring' } }}
@@ -328,12 +340,14 @@ const CustomWebDev = () => {
                                 </motion.div>
                             </AnimatePresence>
                         ) : (
-                            <p className='text-white text-[32px] opacity-70 whitespace-nowrap pl-20 rotate-90 w-full'>API Integrations</p>
+                            <p className={`text-white text-[32px] opacity-70 whitespace-nowrap pl-20 rotate-90 w-full transition-all ease-in-out ${hoverIndex === 5 ? 'opacity-100 text-[34px]' : ''}`}>API Integrations</p>
                         )}
                     </div>
                 </motion.div>
 
                 <motion.div
+                    onMouseEnter={() => setHoverIndex(6)}
+                    onMouseLeave={() => setHoverIndex(0)}
                     onClick={() => handleTabClick(6)}
                     layout
                     transition={{ layout: { duration: 0.3, type: 'spring' } }}
@@ -384,7 +398,7 @@ const CustomWebDev = () => {
                                 </motion.div>
                             </AnimatePresence>
                         ) : (
-                            <p className='text-white text-[32px] opacity-70 whitespace-nowrap pl-20 rotate-90 w-full'>Maintenance & Support</p>
+                            <p className={`text-white text-[32px] opacity-70 whitespace-nowrap pl-20 rotate-90 w-full transition-all ease-in-out ${hoverIndex === 6 ? 'opacity-100 text-[34px]' : ''}`}>Maintenance & Support</p>
                         )}
                     </div>
                 </motion.div>
