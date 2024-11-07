@@ -95,7 +95,7 @@ const CustomWebDev = () => {
                             <>
                                 <div className='w-[443px] flex flex-col justify-between space-y-3'>
                                     <p className='text-white font-light leading-[4rem] text-[48px] w-full'>UI/UX Design</p>
-                                    <p className='text-sm text-white w-full'>Tailor-made websites, custom web apps, and platforms that meet the specific needs of your business, whether you&apos;re a startup or a large enterprise.</p>
+                                    <p className='text-sm text-white w-full'>Our design-first approach ensures that your customers enjoy intuitive, engaging, and visually stunning digital experiences.</p>
                                 </div>
                                 <div className='flex flex-col space-y-10'>
                                     <BlueLine />
@@ -103,17 +103,17 @@ const CustomWebDev = () => {
                                     <div className='h-[130px] w-[443px] flex flex-col justify-between'>
                                         <div className='flex flex-row space-x-2 items-center'>
                                             <BlueDot />
-                                            <p className='text-white text-base'>Frontend Development</p>
+                                            <p className='text-white text-base'>UX Research & Wireframing</p>
                                         </div>
 
                                         <div className='flex flex-row space-x-2 items-center'>
                                             <BlueDot />
-                                            <p className='text-white text-base'>Backend Development</p>
+                                            <p className='text-white text-base'>User Interface Design</p>
                                         </div>
 
                                         <div className='flex flex-row space-x-2 items-center'>
                                             <BlueDot />
-                                            <p className='text-white text-base'>CMS Development</p>
+                                            <p className='text-white text-base'>Prototyping and Testing</p>
                                         </div>
                                     </div>
                                 </div>
