@@ -11,7 +11,7 @@ import CrossPlatformIconWhite from './Icons/CrossPlatformIconWhite'
 const Technologies = () => {
     const [activeTabs, setActiveTabs] = useState(1)
     return (
-        <div className='h-[911px] w-full bg-[#1A99DD0A] flex flex-col space-y-5 items-center justify-center'>
+        <div className='h-[911px] w-full bg-[#F6FBFE] flex flex-col space-y-5 items-center justify-center'>
             <div className='h-[137px] flex flex-col w-[654px] items-center justify-between'>
                 <p className='text-datkGrey text-[56px] font-semibold'>Technologies we use</p>
                 <p className='text-datkGrey text-base text-center w-[530px]'>From custom website design to full-stack development, we help businesses thrive in the digital world.</p>
