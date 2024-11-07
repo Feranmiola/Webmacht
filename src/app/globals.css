@@ -54,24 +54,46 @@ html::-webkit-scrollbar {
 
 /* Initial gradient style */
 .gradient-container {
-  background:
-    linear-gradient(338.42deg, rgba(255, 255, 255, 0.2) -81.46%, rgba(255, 255, 255, 0) 30.85%);
-
-  background-size: 200% 100%;
-  /* Allows room for movement */
-  background-position: 100% 0;
-  /* Starts gradient on the right */
-  transition: background-position 0.5s ease-in-out;
+  position: relative;
+  overflow: hidden;
+  background: #080808;
 }
 
-/* Hover effect to move the gradient to the middle */
-.gradient-container:hover {
-  background-position: 100% 0%;
-  /* Centers gradient on hover */
+.gradient-container::before,
+.gradient-container::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
 }
 
+.gradient-container::before {
+  background: linear-gradient(338.42deg,
+      rgba(255, 255, 255, 0.2) -81.46%,
+      rgba(255, 255, 255, 0) 30.85%);
+  /* transform: translateX(0); */
+  opacity: 1;
+}
 
+.gradient-container::after {
+  background: linear-gradient(342.98deg,
+      rgba(255, 255, 255, 0) 18.32%,
+      rgba(255, 255, 255, 0.05) 55.33%,
+      rgba(255, 255, 255, 0) 78.36%);
+  /* transform: translateX(100%); */
+  opacity: 0;
+}
 
+/* Hover effect to animate between gradients */
+.gradient-container:hover::before {
+  /* transform: translateX(-100%); */
+  opacity: 0;
+}
+
+.gradient-container:hover::after {
+  /* transform: translateX(0); */
+  opacity: 1;
+}
 
 
 @layer base {
