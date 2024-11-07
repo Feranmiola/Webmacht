@@ -16,6 +16,16 @@ import EcommerceIconBig from './Icons/EcommerceIconBig'
 import MobileIconBig from './Icons/MobileIconBig'
 import APIIconBig from './Icons/APIIconBig'
 import MaintainanceIconBig from './Icons/MaintainanceIconBig'
+import GreenLine from './Icons/GreenLine'
+import GreenDot from './Icons/GreenDot'
+import OrangeLine from './Icons/OrangeLine'
+import OrangeDot from './Icons/OrangeDot'
+import RedLine from './Icons/RedLine'
+import RedDot from './Icons/RedDot'
+import PinkLine from './Icons/PinkLine'
+import PinkDot from './Icons/PinkDot'
+import PurlpleLine from './Icons/PurlpleLine'
+import PurpleDot from './Icons/PurpleDot'
 
 const CustomWebDev = () => {
     // const [hoverIndec, setHoverIndex] = useState(0)
@@ -98,21 +108,21 @@ const CustomWebDev = () => {
                                     <p className='text-sm text-white w-full'>Our design-first approach ensures that your customers enjoy intuitive, engaging, and visually stunning digital experiences.</p>
                                 </div>
                                 <div className='flex flex-col space-y-10'>
-                                    <BlueLine />
+                                    <GreenLine />
 
                                     <div className='h-[130px] w-[443px] flex flex-col justify-between'>
                                         <div className='flex flex-row space-x-2 items-center'>
-                                            <BlueDot />
+                                            <GreenDot />
                                             <p className='text-white text-base'>UX Research & Wireframing</p>
                                         </div>
 
                                         <div className='flex flex-row space-x-2 items-center'>
-                                            <BlueDot />
+                                            <GreenDot />
                                             <p className='text-white text-base'>User Interface Design</p>
                                         </div>
 
                                         <div className='flex flex-row space-x-2 items-center'>
-                                            <BlueDot />
+                                            <GreenDot />
                                             <p className='text-white text-base'>Prototyping and Testing</p>
                                         </div>
                                     </div>
@@ -143,25 +153,25 @@ const CustomWebDev = () => {
                             <>
                                 <div className='w-[443px] flex flex-col justify-between space-y-3'>
                                     <p className='text-white font-light leading-[4rem] text-[48px] w-full'>E-Commerce Solutions</p>
-                                    <p className='text-sm text-white w-full'>Tailor-made websites, custom web apps, and platforms that meet the specific needs of your business, whether you&apos;re a startup or a large enterprise.</p>
+                                    <p className='text-sm text-white w-full'>Launch your online store with confidence. We create custom eCommerce platforms or enhance existing ones with powerful features to drive sales.</p>
                                 </div>
                                 <div className='flex flex-col space-y-10'>
-                                    <BlueLine />
+                                    <OrangeLine />
 
                                     <div className='h-[130px] w-[443px] flex flex-col justify-between'>
                                         <div className='flex flex-row space-x-2 items-center'>
-                                            <BlueDot />
-                                            <p className='text-white text-base'>Frontend Development</p>
+                                            <OrangeDot />
+                                            <p className='text-white text-base'>WooCommerce, Shopify, Magento</p>
                                         </div>
 
                                         <div className='flex flex-row space-x-2 items-center'>
-                                            <BlueDot />
-                                            <p className='text-white text-base'>Backend Development</p>
+                                            <OrangeDot />
+                                            <p className='text-white text-base'>Payment Gateway Integration</p>
                                         </div>
 
                                         <div className='flex flex-row space-x-2 items-center'>
-                                            <BlueDot />
-                                            <p className='text-white text-base'>CMS Development</p>
+                                            <OrangeDot />
+                                            <p className='text-white text-base'>Custom Shopping Cart Solutions</p>
                                         </div>
                                     </div>
                                 </div>
@@ -189,25 +199,25 @@ const CustomWebDev = () => {
                             <>
                                 <div className='w-[443px] flex flex-col justify-between space-y-3'>
                                     <p className='text-white font-light leading-[4rem] text-[48px] w-full'>Mobile App Development</p>
-                                    <p className='text-sm text-white w-full'>Tailor-made websites, custom web apps, and platforms that meet the specific needs of your business, whether you&apos;re a startup or a large enterprise.</p>
+                                    <p className='text-sm text-white w-full'>We build responsive, scalable mobile applications that seamlessly integrate with your business and engage users.</p>
                                 </div>
                                 <div className='flex flex-col space-y-10'>
-                                    <BlueLine />
+                                    <RedLine />
 
                                     <div className='h-[130px] w-[443px] flex flex-col justify-between'>
                                         <div className='flex flex-row space-x-2 items-center'>
-                                            <BlueDot />
-                                            <p className='text-white text-base'>Frontend Development</p>
+                                            <RedDot />
+                                            <p className='text-white text-base'>iOS & Android App Development</p>
                                         </div>
 
                                         <div className='flex flex-row space-x-2 items-center'>
-                                            <BlueDot />
-                                            <p className='text-white text-base'>Backend Development</p>
+                                            <RedDot />
+                                            <p className='text-white text-base'>Cross-platform Development</p>
                                         </div>
 
                                         <div className='flex flex-row space-x-2 items-center'>
-                                            <BlueDot />
-                                            <p className='text-white text-base'>CMS Development</p>
+                                            <RedDot />
+                                            <p className='text-white text-base'>App Maintenance & Optimization</p>
                                         </div>
                                     </div>
                                 </div>
@@ -237,24 +247,24 @@ const CustomWebDev = () => {
                             <>
                                 <div className='w-[443px] flex flex-col justify-between space-y-3'>
                                     <p className='text-white font-light leading-[4rem] text-[48px] w-full'>API Integrations</p>
-                                    <p className='text-sm text-white w-full'>Tailor-made websites, custom web apps, and platforms that meet the specific needs of your business, whether you&apos;re a startup or a large enterprise.</p>
+                                    <p className='text-sm text-white w-full'>We enable seamless connections between different systems and apps through powerful API integrations.</p>
                                 </div>
                                 <div className='flex flex-col space-y-10'>
-                                    <BlueLine />
+                                    <PinkLine />
 
                                     <div className='h-[130px] w-[443px] flex flex-col justify-between'>
                                         <div className='flex flex-row space-x-2 items-center'>
-                                            <BlueDot />
-                                            <p className='text-white text-base'>Frontend Development</p>
+                                            <PinkDot />
+                                            <p className='text-white text-base'>Third-party API integrations</p>
                                         </div>
 
                                         <div className='flex flex-row space-x-2 items-center'>
-                                            <BlueDot />
-                                            <p className='text-white text-base'>Backend Development</p>
+                                            <PinkDot />
+                                            <p className='text-white text-base'>Custom API development</p>
                                         </div>
 
-                                        <div className='flex flex-row space-x-2 items-center'>
-                                            <BlueDot />
+                                        <div className='flex flex-row space-x-2 items-center opacity-0 cursor-default'>
+                                            <PinkDot />
                                             <p className='text-white text-base'>CMS Development</p>
                                         </div>
                                     </div>
@@ -282,25 +292,25 @@ const CustomWebDev = () => {
                             <>
                                 <div className='w-[443px] flex flex-col justify-between space-y-3'>
                                     <p className='text-white font-light leading-[4rem] text-[48px] w-full'>Maintenance & Support</p>
-                                    <p className='text-sm text-white w-full'>Tailor-made websites, custom web apps, and platforms that meet the specific needs of your business, whether you&apos;re a startup or a large enterprise.</p>
+                                    <p className='text-sm text-white w-full'>We provide ongoing maintenance and support to ensure your platform operates flawlessly.</p>
                                 </div>
                                 <div className='flex flex-col space-y-10'>
-                                    <BlueLine />
+                                    <PurlpleLine />
 
                                     <div className='h-[130px] w-[443px] flex flex-col justify-between'>
                                         <div className='flex flex-row space-x-2 items-center'>
-                                            <BlueDot />
-                                            <p className='text-white text-base'>Frontend Development</p>
+                                            <PurpleDot />
+                                            <p className='text-white text-base'>Website Security Updates</p>
                                         </div>
 
                                         <div className='flex flex-row space-x-2 items-center'>
-                                            <BlueDot />
-                                            <p className='text-white text-base'>Backend Development</p>
+                                            <PurpleDot />
+                                            <p className='text-white text-base'>Regular Backups and Monitoring</p>
                                         </div>
 
                                         <div className='flex flex-row space-x-2 items-center'>
-                                            <BlueDot />
-                                            <p className='text-white text-base'>CMS Development</p>
+                                            <PurpleDot />
+                                            <p className='text-white text-base'>Troubleshooting and Bug Fixes</p>
                                         </div>
                                     </div>
                                 </div>
