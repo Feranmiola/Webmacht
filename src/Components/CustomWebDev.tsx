@@ -30,7 +30,7 @@ import PurlpleLine from './Icons/PurlpleLine'
 import PurpleDot from './Icons/PurpleDot'
 
 const CustomWebDev = () => {
-    const [selectedTab, setSelectedTab] = useState(2)
+    const [selectedTab, setSelectedTab] = useState(1)
 
     const handleTabClick = (tabId: number) => {
         setSelectedTab(tabId === 6 && selectedTab === 6 ? 1 : tabId)

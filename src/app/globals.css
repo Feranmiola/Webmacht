@@ -66,7 +66,7 @@ html::-webkit-scrollbar {
 
 /* Hover effect to move the gradient to the middle */
 .gradient-container:hover {
-  background-position: 0% 100%;
+  background-position: 100% 0%;
   /* Centers gradient on hover */
 }
 
