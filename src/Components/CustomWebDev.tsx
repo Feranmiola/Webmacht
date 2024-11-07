@@ -76,7 +76,7 @@ const CustomWebDev = () => {
                     {selectedTab === 2 ? (
                         <div className='h-full w-[519px] rounded-[24px] bg-custom-gradient border-l-[1.5px] border-l-[#1B1B1B] border-t-[1.5px] border-t-[#1B1B1B]  flex flex-col justify-evenly px-10 items-center'>
                             <div className='h-[275px] w-[443px] flex flex-col justify-between'>
-                                <CustomDevIcon />
+                                <UiDesignIcon />
                                 <p className='text-white font-light leading-[4rem] text-[48px] w-full'>UI/UX Design</p>
                                 <p className='text-sm text-white w-full'>Tailor-made websites, custom web apps, and platforms that meet the specific needs of your business, whether you're a startup or a large enterprise.</p>
                             </div>
@@ -117,7 +117,7 @@ const CustomWebDev = () => {
                     {selectedTab === 3 ? (
                         <div className='h-full w-[519px] rounded-[24px] bg-custom-gradient border-l-[1.5px] border-l-[#1B1B1B] border-t-[1.5px] border-t-[#1B1B1B]  flex flex-col justify-evenly px-10 items-center'>
                             <div className='h-[275px] w-[443px] flex flex-col justify-between'>
-                                <CustomDevIcon />
+                                <EcommerceIcon />
                                 <p className='text-white font-light leading-[4rem] text-[48px] w-full'>E-Commerce Solutions</p>
                                 <p className='text-sm text-white w-full'>Tailor-made websites, custom web apps, and platforms that meet the specific needs of your business, whether you're a startup or a large enterprise.</p>
                             </div>
@@ -160,7 +160,7 @@ const CustomWebDev = () => {
                     {selectedTab === 4 ? (
                         <div className='h-full w-[519px] rounded-[24px] bg-custom-gradient border-l-[1.5px] border-l-[#1B1B1B] border-t-[1.5px] border-t-[#1B1B1B]  flex flex-col justify-evenly px-10 items-center'>
                             <div className='h-[275px] w-[443px] flex flex-col justify-between'>
-                                <CustomDevIcon />
+                                <MobileIcon />
                                 <p className='text-white font-light leading-[4rem] text-[48px] w-full'>Mobile App Development</p>
                                 <p className='text-sm text-white w-full'>Tailor-made websites, custom web apps, and platforms that meet the specific needs of your business, whether you're a startup or a large enterprise.</p>
                             </div>
@@ -202,7 +202,7 @@ const CustomWebDev = () => {
                     {selectedTab === 5 ? (
                         <div className='h-full w-[519px] rounded-[24px] bg-custom-gradient border-l-[1.5px] border-l-[#1B1B1B] border-t-[1.5px] border-t-[#1B1B1B]  flex flex-col justify-evenly px-10 items-center'>
                             <div className='h-[275px] w-[443px] flex flex-col justify-between'>
-                                <CustomDevIcon />
+                                <ApiIcon />
                                 <p className='text-white font-light leading-[4rem] text-[48px] w-full'>API Integrations</p>
                                 <p className='text-sm text-white w-full'>Tailor-made websites, custom web apps, and platforms that meet the specific needs of your business, whether you're a startup or a large enterprise.</p>
                             </div>
@@ -245,7 +245,7 @@ const CustomWebDev = () => {
                     {selectedTab === 6 ? (
                         <div className='h-full w-[519px] rounded-[24px] bg-custom-gradient border-l-[1.5px] border-l-[#1B1B1B] border-t-[1.5px] border-t-[#1B1B1B]  flex flex-col justify-evenly px-10 items-center'>
                             <div className='h-[275px] w-[443px] flex flex-col justify-between'>
-                                <CustomDevIcon />
+                                <MaintainanceIcon />
                                 <p className='text-white font-light leading-[4rem] text-[48px] w-full'>Maintenance & Support</p>
                                 <p className='text-sm text-white w-full'>Tailor-made websites, custom web apps, and platforms that meet the specific needs of your business, whether you're a startup or a large enterprise.</p>
                             </div>
