@@ -7,7 +7,7 @@ import LinkIcon from './Icons/LinkIcon'
 
 const Footer = () => {
     return (
-        <div className='bg-datkGrey flex w-full h-[431px] flex-col space-y-3'>
+        <div className='bg-datkGrey flex w-full h-[331px] flex-col space-y-3'>
             <div className='border-t-[1px] border-b-[1px] border-t-[#1B1B1B] flex items-center justify-center border-b-[#1B1B1B] w-full h-[294px]'>
                 <div className='w-[1280px] h-full flex flex-row border-l-[1px] border-r-[#1B1B1B] border-r-[1px] border-l-[#1B1B1B]'>
                     <div className='h-full border-r-[1px] border-r-[#1B1B1B] w-[411px] items-center flex justify-center'>
