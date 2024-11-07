@@ -1,5 +1,7 @@
 'use client'
+
 import React, { useState } from 'react'
+import { motion, AnimatePresence } from 'framer-motion'
 import WebmachtLogoSquare from './Icons/WebmachtLogoSquare'
 import CustomDevIcon from './Icons/CustomDevIcon'
 import BlueLine from './Icons/BlueLine'
@@ -28,9 +30,11 @@ import PurlpleLine from './Icons/PurlpleLine'
 import PurpleDot from './Icons/PurpleDot'
 
 const CustomWebDev = () => {
-    // const [hoverIndec, setHoverIndex] = useState(0)
     const [selectedTab, setSelectedTab] = useState(2)
 
+    const handleTabClick = (tabId: any) => {
+        setSelectedTab(tabId === 6 && selectedTab === 6 ? 1 : tabId)
+    }
 
     return (
         <div className='bg-black w-full h-[1006px] flex items-center flex-col space-y-10 justify-center'>
@@ -42,292 +46,352 @@ const CustomWebDev = () => {
                 </div>
             </div>
 
-            <div className='w-[1289px] h-[560px] flex relative items-center justify-center'>
-
-
-                <div
-                    onClick={() => setSelectedTab(1)}
-                    className={`${selectedTab === 1 ? 'h-full w-[519px]' : 'w-[168px] h-[560px]'}`}>
+            <div id='tabs' className='w-[1289px] h-[560px] flex relative items-center justify-center'>
+                <motion.div
+                    onClick={() => handleTabClick(1)}
+                    layout
+                    transition={{ layout: { duration: 0.3, type: 'spring' } }}
+                    className={`${selectedTab === 1 ? 'h-full w-[519px]' : 'w-[168px] h-[560px]'}`}
+                >
                     <div className={`w-full h-full flex flex-col py-10 border-l-[1.5px] border-l-[#1B1B1B] border-t-[1.5px] border-t-[#1B1B1B]  rounded-[24px] ${selectedTab === 1 ? 'bg-custom-gradient space-y-8 px-10 ' : 'gradient-container space-y-10 items-center'}`}>
+                        <AnimatePresence mode="wait">
+                            <motion.div
+                                key={selectedTab === 1 ? 'big' : 'small'}
+                                initial={{ opacity: 0 }}
+                                animate={{ opacity: 1 }}
+                                exit={{ opacity: 0 }}
+                                transition={{ duration: 0.2 }}
+                            >
+                                {selectedTab === 1 ? <CustomDevIcon /> : <CustomDevIconSmall />}
+                            </motion.div>
+                        </AnimatePresence>
                         {selectedTab === 1 ? (
-                            <CustomDevIcon />
-                        ) : (
-                            <CustomDevIconSmall />
-                        )}
-                        {selectedTab === 1 ? (
-                            <>
-                                <div className='w-[443px] flex flex-col justify-between space-y-3'>
-                                    <p className='text-white font-light leading-[4rem] text-[48px] w-full'>Custom Web Development</p>
-                                    <p className='text-sm text-white w-full'>Tailor-made websites, custom web apps, and platforms that meet the specific needs of your business, whether you&apos;re a startup or a large enterprise.</p>
-                                </div>
-                                <div className='flex flex-col space-y-10'>
-                                    <BlueLine />
-
-                                    <div className='h-[130px] w-[443px] flex flex-col justify-between'>
-                                        <div className='flex flex-row space-x-2 items-center'>
-                                            <BlueDot />
-                                            <p className='text-white text-base'>Frontend Development</p>
-                                        </div>
-
-                                        <div className='flex flex-row space-x-2 items-center'>
-                                            <BlueDot />
-                                            <p className='text-white text-base'>Backend Development</p>
-                                        </div>
-
-                                        <div className='flex flex-row space-x-2 items-center'>
-                                            <BlueDot />
-                                            <p className='text-white text-base'>CMS Development</p>
+                            <AnimatePresence>
+                                <motion.div
+                                    initial={{ opacity: 0 }}
+                                    animate={{ opacity: 1 }}
+                                    exit={{ opacity: 0 }}
+                                    transition={{ delay: 0.3 }}
+                                    className='flex flex-col space-y-8'
+                                >
+                                    <div className='w-[443px] flex flex-col justify-between space-y-3'>
+                                        <p className='text-white font-light leading-[4rem] text-[48px] w-full'>Custom Web Development</p>
+                                        <p className='text-sm text-white w-full'>Tailor-made websites, custom web apps, and platforms that meet the specific needs of your business, whether you&apos;re a startup or a large enterprise.</p>
+                                    </div>
+                                    <div className='flex flex-col space-y-10'>
+                                        <BlueLine />
+                                        <div className='h-[130px] w-[443px] flex flex-col justify-between'>
+                                            <div className='flex flex-row space-x-2 items-center'>
+                                                <BlueDot />
+                                                <p className='text-white text-base'>Frontend Development</p>
+                                            </div>
+                                            <div className='flex flex-row space-x-2 items-center'>
+                                                <BlueDot />
+                                                <p className='text-white text-base'>Backend Development</p>
+                                            </div>
+                                            <div className='flex flex-row space-x-2 items-center'>
+                                                <BlueDot />
+                                                <p className='text-white text-base'>CMS Development</p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </>
+                                </motion.div>
+                            </AnimatePresence>
                         ) : (
-                            <>
-                                <p className='text-white text-[32px] opacity-70 whitespace-nowrap pl-20 rotate-90 w-full'>Custom Web Development</p>
-                            </>
+                            <p className='text-white text-[32px] opacity-70 whitespace-nowrap pl-20 rotate-90 w-full'>Custom Web Development</p>
                         )}
                     </div>
-                </div>
+                </motion.div>
 
-
-
-                <div
-                    onClick={() => setSelectedTab(2)}
-                    className={`${selectedTab === 2 ? 'h-full w-[519px]' : 'w-[168px] h-[560px]'}`}>
+                <motion.div
+                    onClick={() => handleTabClick(2)}
+                    layout
+                    transition={{ layout: { duration: 0.3, type: 'spring' } }}
+                    className={`${selectedTab === 2 ? 'h-full w-[519px]' : 'w-[168px] h-[560px]'}`}
+                >
                     <div className={`w-full h-full flex flex-col py-10 border-l-[1.5px] border-l-[#1B1B1B] border-t-[1.5px] border-t-[#1B1B1B]  rounded-[24px] ${selectedTab === 2 ? 'bg-custom-gradient justify-between px-10 ' : 'gradient-container space-y-10 items-center'}`}>
-
+                        <AnimatePresence mode="wait">
+                            <motion.div
+                                key={selectedTab === 2 ? 'big' : 'small'}
+                                initial={{ opacity: 0 }}
+                                animate={{ opacity: 1 }}
+                                exit={{ opacity: 0 }}
+                                transition={{ duration: 0.2 }}
+                            >
+                                {selectedTab === 2 ? <DesignIconBig /> : <UiDesignIcon />}
+                            </motion.div>
+                        </AnimatePresence>
                         {selectedTab === 2 ? (
-                            <DesignIconBig />
-                        ) : (
-                            <UiDesignIcon />
-                        )}
-                        {selectedTab === 2 ? (
-                            <>
-                                <div className='w-[443px] flex flex-col justify-between space-y-3'>
-                                    <p className='text-white font-light leading-[4rem] text-[48px] w-full'>UI/UX Design</p>
-                                    <p className='text-sm text-white w-full'>Our design-first approach ensures that your customers enjoy intuitive, engaging, and visually stunning digital experiences.</p>
-                                </div>
-                                <div className='flex flex-col space-y-10'>
-                                    <GreenLine />
-
-                                    <div className='h-[130px] w-[443px] flex flex-col justify-between'>
-                                        <div className='flex flex-row space-x-2 items-center'>
-                                            <GreenDot />
-                                            <p className='text-white text-base'>UX Research & Wireframing</p>
-                                        </div>
-
-                                        <div className='flex flex-row space-x-2 items-center'>
-                                            <GreenDot />
-                                            <p className='text-white text-base'>User Interface Design</p>
-                                        </div>
-
-                                        <div className='flex flex-row space-x-2 items-center'>
-                                            <GreenDot />
-                                            <p className='text-white text-base'>Prototyping and Testing</p>
+                            <AnimatePresence>
+                                <motion.div
+                                    initial={{ opacity: 0 }}
+                                    animate={{ opacity: 1 }}
+                                    exit={{ opacity: 0 }}
+                                    transition={{ delay: 0.3 }}
+                                    className='flex flex-col flex-1 justify-between'
+                                >
+                                    <div className='w-[443px] flex flex-col pt-10 justify-between space-y-3'>
+                                        <p className='text-white font-light leading-[4rem] text-[48px] w-full'>UI/UX Design</p>
+                                        <p className='text-sm text-white w-full'>Our design-first approach ensures that your customers enjoy intuitive, engaging, and visually stunning digital experiences.</p>
+                                    </div>
+                                    <div className='flex flex-col space-y-10'>
+                                        <GreenLine />
+                                        <div className='h-[130px] w-[443px] flex flex-col justify-between'>
+                                            <div className='flex flex-row space-x-2 items-center'>
+                                                <GreenDot />
+                                                <p className='text-white text-base'>UX Research & Wireframing</p>
+                                            </div>
+                                            <div className='flex flex-row space-x-2 items-center'>
+                                                <GreenDot />
+                                                <p className='text-white text-base'>User Interface Design</p>
+                                            </div>
+                                            <div className='flex flex-row space-x-2 items-center'>
+                                                <GreenDot />
+                                                <p className='text-white text-base'>Prototyping and Testing</p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </>
+                                </motion.div>
+                            </AnimatePresence>
                         ) : (
-                            <>
-                                <p className='text-white text-[32px] opacity-70 whitespace-nowrap pl-20 rotate-90 w-full'>UI/UX Design</p>
-                            </>
+                            <p className='text-white text-[32px] opacity-70 whitespace-nowrap pl-20 rotate-90 w-full'>UI/UX Design</p>
                         )}
                     </div>
-                </div>
+                </motion.div>
 
-
-
-
-                <div
-                    onClick={() => setSelectedTab(3)}
-                    className={`${selectedTab === 3 ? 'h-full w-[519px]' : 'w-[168px] h-[560px]'}`}>
+                <motion.div
+                    onClick={() => handleTabClick(3)}
+                    layout
+                    transition={{ layout: { duration: 0.3, type: 'spring' } }}
+                    className={`${selectedTab === 3 ? 'h-full w-[519px]' : 'w-[168px] h-[560px]'}`}
+                >
                     <div className={`w-full h-full flex flex-col py-10 border-l-[1.5px] border-l-[#1B1B1B] border-t-[1.5px] border-t-[#1B1B1B]  rounded-[24px] ${selectedTab === 3 ? 'bg-custom-gradient justify-between px-10 ' : 'gradient-container space-y-10 items-center'}`}>
-
+                        <AnimatePresence mode="wait">
+                            <motion.div
+                                key={selectedTab === 3 ? 'big' : 'small'}
+                                initial={{ opacity: 0 }}
+                                animate={{ opacity: 1 }}
+                                exit={{ opacity: 0 }}
+                                transition={{ duration: 0.2 }}
+                            >
+                                {selectedTab === 3 ? <EcommerceIconBig /> : <EcommerceIcon />}
+                            </motion.div>
+                        </AnimatePresence>
                         {selectedTab === 3 ? (
-                            <EcommerceIconBig />
-                        ) : (
-                            <EcommerceIcon />
-                        )}
-                        {selectedTab === 3 ? (
-                            <>
-                                <div className='w-[443px] flex flex-col justify-between space-y-3'>
-                                    <p className='text-white font-light leading-[4rem] text-[48px] w-full'>E-Commerce Solutions</p>
-                                    <p className='text-sm text-white w-full'>Launch your online store with confidence. We create custom eCommerce platforms or enhance existing ones with powerful features to drive sales.</p>
-                                </div>
-                                <div className='flex flex-col space-y-10'>
-                                    <OrangeLine />
-
-                                    <div className='h-[130px] w-[443px] flex flex-col justify-between'>
-                                        <div className='flex flex-row space-x-2 items-center'>
-                                            <OrangeDot />
-                                            <p className='text-white text-base'>WooCommerce, Shopify, Magento</p>
-                                        </div>
-
-                                        <div className='flex flex-row space-x-2 items-center'>
-                                            <OrangeDot />
-                                            <p className='text-white text-base'>Payment Gateway Integration</p>
-                                        </div>
-
-                                        <div className='flex flex-row space-x-2 items-center'>
-                                            <OrangeDot />
-                                            <p className='text-white text-base'>Custom Shopping Cart Solutions</p>
+                            <AnimatePresence>
+                                <motion.div
+                                    initial={{ opacity: 0 }}
+                                    animate={{ opacity: 1 }}
+                                    exit={{ opacity: 0 }}
+                                    transition={{ delay: 0.3 }}
+                                    className='flex flex-col space-y-8'
+                                >
+                                    <div className='w-[443px] flex flex-col justify-between space-y-3'>
+                                        <p className='text-white font-light leading-[4rem] text-[48px] w-full'>E-Commerce Solutions</p>
+                                        <p className='text-sm text-white w-full'>Launch your online store with confidence. We create custom eCommerce platforms or enhance existing ones with powerful features to drive sales.</p>
+                                    </div>
+                                    <div className='flex flex-col space-y-10'>
+                                        <OrangeLine />
+                                        <div className='h-[130px] w-[443px] flex flex-col justify-between'>
+                                            <div className='flex flex-row space-x-2 items-center'>
+                                                <OrangeDot />
+                                                <p className='text-white text-base'>WooCommerce, Shopify, Magento</p>
+                                            </div>
+                                            <div className='flex flex-row space-x-2 items-center'>
+                                                <OrangeDot />
+                                                <p className='text-white text-base'>Payment Gateway Integration</p>
+                                            </div>
+                                            <div className='flex flex-row space-x-2 items-center'>
+                                                <OrangeDot />
+                                                <p className='text-white text-base'>Custom Shopping Cart Solutions</p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </>
+                                </motion.div>
+                            </AnimatePresence>
                         ) : (
-                            <>
-                                <p className='text-white text-[32px] opacity-70 whitespace-nowrap pl-20 rotate-90 w-full'>E-Commerce Solutions</p>
-                            </>
+                            <p className='text-white text-[32px] opacity-70 whitespace-nowrap pl-20 rotate-90 w-full'>E-Commerce Solutions</p>
                         )}
                     </div>
-                </div>
+                </motion.div>
 
-
-                <div
-                    onClick={() => setSelectedTab(4)}
-                    className={`${selectedTab === 4 ? 'h-full w-[519px]' : 'w-[168px] h-[560px]'}`}>
+                <motion.div
+                    onClick={() => handleTabClick(4)}
+                    layout
+                    transition={{ layout: { duration: 0.3, type: 'spring' } }}
+                    className={`${selectedTab === 4 ? 'h-full w-[519px]' : 'w-[168px] h-[560px]'}`}
+                >
                     <div className={`w-full h-full flex flex-col py-10 border-l-[1.5px] border-l-[#1B1B1B] border-t-[1.5px] border-t-[#1B1B1B]  rounded-[24px] ${selectedTab === 4 ? 'bg-custom-gradient justify-between px-10 ' : 'gradient-container space-y-10 items-center'}`}>
-
+                        <AnimatePresence mode="wait">
+                            <motion.div
+                                key={selectedTab === 4 ? 'big' : 'small'}
+                                initial={{ opacity: 0 }}
+                                animate={{ opacity: 1 }}
+                                exit={{ opacity: 0 }}
+                                transition={{ duration: 0.2 }}
+                            >
+                                {selectedTab === 4 ? <MobileIconBig /> : <MobileIcon />}
+                            </motion.div>
+                        </AnimatePresence>
                         {selectedTab === 4 ? (
-                            <MobileIconBig />
-                        ) : (
-                            <MobileIcon />
-                        )}
-                        {selectedTab === 4 ? (
-                            <>
-                                <div className='w-[443px] flex flex-col justify-between space-y-3'>
-                                    <p className='text-white font-light leading-[4rem] text-[48px] w-full'>Mobile App Development</p>
-                                    <p className='text-sm text-white w-full'>We build responsive, scalable mobile applications that seamlessly integrate with your business and engage users.</p>
-                                </div>
-                                <div className='flex flex-col space-y-10'>
-                                    <RedLine />
-
-                                    <div className='h-[130px] w-[443px] flex flex-col justify-between'>
-                                        <div className='flex flex-row space-x-2 items-center'>
-                                            <RedDot />
-                                            <p className='text-white text-base'>iOS & Android App Development</p>
-                                        </div>
-
-                                        <div className='flex flex-row space-x-2 items-center'>
-                                            <RedDot />
-                                            <p className='text-white text-base'>Cross-platform Development</p>
-                                        </div>
-
-                                        <div className='flex flex-row space-x-2 items-center'>
-                                            <RedDot />
-                                            <p className='text-white text-base'>App Maintenance & Optimization</p>
+                            <AnimatePresence>
+                                <motion.div
+                                    initial={{ opacity: 0 }}
+                                    animate={{ opacity: 1 }}
+                                    exit={{ opacity: 0 }}
+                                    transition={{ delay: 0.3 }}
+                                    className='flex flex-col space-y-8'
+                                >
+                                    <div className='w-[443px] flex flex-col justify-between space-y-3'>
+                                        <p className='text-white font-light leading-[4rem] text-[48px] w-full'>Mobile App Development</p>
+                                        <p className='text-sm text-white w-full'>We build responsive, scalable mobile applications that seamlessly integrate with your business and engage users.</p>
+                                    </div>
+                                    <div className='flex flex-col space-y-10'>
+                                        <RedLine />
+                                        <div className='h-[130px] w-[443px] flex flex-col justify-between'>
+                                            <div className='flex flex-row space-x-2 items-center'>
+                                                <RedDot />
+                                                <p className='text-white text-base'>iOS & Android App Development</p>
+                                            </div>
+                                            <div className='flex flex-row space-x-2 items-center'>
+                                                <RedDot />
+                                                <p className='text-white text-base'>Cross-platform Development</p>
+                                            </div>
+                                            <div className='flex flex-row space-x-2 items-center'>
+                                                <RedDot />
+                                                <p className='text-white text-base'>App Maintenance & Optimization</p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </>
+                                </motion.div>
+                            </AnimatePresence>
                         ) : (
-                            <>
-                                <p className='text-white text-[32px] opacity-70 whitespace-nowrap pl-20 rotate-90 w-full'>Mobile App Development</p>
-                            </>
+                            <p className='text-white text-[32px] opacity-70 whitespace-nowrap pl-20 rotate-90 w-full'>Mobile App Development</p>
                         )}
                     </div>
-                </div>
+                </motion.div>
 
-
-
-
-                <div
-                    onClick={() => setSelectedTab(5)}
-                    className={`${selectedTab === 5 ? 'h-full w-[519px]' : 'w-[168px] h-[560px]'}`}>
+                <motion.div
+                    onClick={() => handleTabClick(5)}
+                    layout
+                    transition={{ layout: { duration: 0.3, type: 'spring' } }}
+                    className={`${selectedTab === 5 ? 'h-full w-[519px]' : 'w-[168px] h-[560px]'}`}
+                >
                     <div className={`w-full h-full flex flex-col py-10 border-l-[1.5px] border-l-[#1B1B1B] border-t-[1.5px] border-t-[#1B1B1B]  rounded-[24px] ${selectedTab === 5 ? 'bg-custom-gradient justify-between px-10 ' : 'gradient-container space-y-10 items-center'}`}>
-
+                        <AnimatePresence mode="wait">
+                            <motion.div
+                                key={selectedTab === 5 ? 'big' : 'small'}
+                                initial={{ opacity: 0 }}
+                                animate={{ opacity: 1 }}
+                                exit={{ opacity: 0 }}
+                                transition={{ duration: 0.2 }}
+                            >
+                                {selectedTab === 5 ? <APIIconBig /> : <ApiIcon />}
+                            </motion.div>
+                        </AnimatePresence>
                         {selectedTab === 5 ? (
-                            <APIIconBig />
-                        ) : (
-                            <ApiIcon />
-                        )}
-                        {selectedTab === 5 ? (
-                            <>
-                                <div className='w-[443px] flex flex-col justify-between space-y-3'>
-                                    <p className='text-white font-light leading-[4rem] text-[48px] w-full'>API Integrations</p>
-                                    <p className='text-sm text-white w-full'>We enable seamless connections between different systems and apps through powerful API integrations.</p>
-                                </div>
-                                <div className='flex flex-col space-y-10'>
-                                    <PinkLine />
-
-                                    <div className='h-[130px] w-[443px] flex flex-col justify-between'>
-                                        <div className='flex flex-row space-x-2 items-center'>
-                                            <PinkDot />
-                                            <p className='text-white text-base'>Third-party API integrations</p>
-                                        </div>
-
-                                        <div className='flex flex-row space-x-2 items-center'>
-                                            <PinkDot />
-                                            <p className='text-white text-base'>Custom API development</p>
-                                        </div>
-
-                                        <div className='flex flex-row space-x-2 items-center opacity-0 cursor-default'>
-                                            <PinkDot />
-                                            <p className='text-white text-base'>CMS Development</p>
+                            <AnimatePresence>
+                                <motion.div
+                                    initial={{ opacity: 0 }}
+                                    animate={{ opacity: 1 }}
+                                    exit={{ opacity: 0 }}
+                                    transition={{ delay: 0.3 }}
+                                    className='flex flex-col flex-1 justify-between'
+                                >
+                                    <div className='w-[443px] flex flex-col justify-between space-y-3 pt-10'>
+                                        <p className='text-white font-light leading-[4rem] text-[48px] w-full'>API Integrations</p>
+                                        <p className='text-sm text-white w-full'>We enable seamless connections between different systems and apps through powerful API integrations.</p>
+                                    </div>
+                                    <div className='flex flex-col space-y-10'>
+                                        <PinkLine />
+                                        <div className='h-[130px] w-[443px] flex flex-col justify-between'>
+                                            <div className='flex flex-row space-x-2 items-center'>
+                                                <PinkDot />
+                                                <p className='text-white text-base'>Third-party API integrations</p>
+                                            </div>
+                                            <div className='flex flex-row space-x-2 items-center'>
+                                                <PinkDot />
+                                                <p className='text-white text-base'>Custom API development</p>
+                                            </div>
+                                            <div className='flex flex-row space-x-2 items-center opacity-0 cursor-default'>
+                                                <PinkDot />
+                                                <p className='text-white text-base'>CMS Development</p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </>
+                                </motion.div>
+                            </AnimatePresence>
                         ) : (
-                            <>
-                                <p className='text-white text-[32px] opacity-70 whitespace-nowrap pl-20 rotate-90 w-full'>API Integrations</p>
-                            </>
+                            <p className='text-white text-[32px] opacity-70 whitespace-nowrap pl-20 rotate-90 w-full'>API Integrations</p>
                         )}
                     </div>
-                </div>
+                </motion.div>
 
-                <div
-                    onClick={() => setSelectedTab(6)}
-                    className={`${selectedTab === 6 ? 'h-full w-[519px]' : 'w-[168px] h-[560px]'}`}>
+                <motion.div
+                    onClick={() => handleTabClick(6)}
+                    layout
+                    transition={{ layout: { duration: 0.3, type: 'spring' } }}
+                    className={`${selectedTab === 6 ? 'h-full w-[519px]' : 'w-[168px] h-[560px]'}`}
+                >
                     <div className={`w-full h-full flex flex-col py-10 border-l-[1.5px] border-l-[#1B1B1B] border-t-[1.5px] border-t-[#1B1B1B]  rounded-[24px] ${selectedTab === 6 ? 'bg-custom-gradient justify-between px-10 ' : 'gradient-container space-y-10 items-center'}`}>
-
+                        <AnimatePresence mode="wait">
+                            <motion.div
+                                key={selectedTab === 6 ? 'big' : 'small'}
+                                initial={{ opacity: 0 }}
+                                animate={{ opacity: 1 }}
+                                exit={{ opacity: 0 }}
+                                transition={{ duration: 0.2 }}
+                            >
+                                {selectedTab === 6 ? <MaintainanceIconBig /> : <MaintainanceIcon />}
+                            </motion.div>
+                        </AnimatePresence>
                         {selectedTab === 6 ? (
-                            <MaintainanceIconBig />
-                        ) : (
-                            <MaintainanceIcon />
-                        )}
-                        {selectedTab === 6 ? (
-                            <>
-                                <div className='w-[443px] flex flex-col justify-between space-y-3'>
-                                    <p className='text-white font-light leading-[4rem] text-[48px] w-full'>Maintenance & Support</p>
-                                    <p className='text-sm text-white w-full'>We provide ongoing maintenance and support to ensure your platform operates flawlessly.</p>
-                                </div>
-                                <div className='flex flex-col space-y-10'>
-                                    <PurlpleLine />
-
-                                    <div className='h-[130px] w-[443px] flex flex-col justify-between'>
-                                        <div className='flex flex-row space-x-2 items-center'>
-                                            <PurpleDot />
-                                            <p className='text-white text-base'>Website Security Updates</p>
-                                        </div>
-
-                                        <div className='flex flex-row space-x-2 items-center'>
-                                            <PurpleDot />
-                                            <p className='text-white text-base'>Regular Backups and Monitoring</p>
-                                        </div>
-
-                                        <div className='flex flex-row space-x-2 items-center'>
-                                            <PurpleDot />
-                                            <p className='text-white text-base'>Troubleshooting and Bug Fixes</p>
+                            <AnimatePresence>
+                                <motion.div
+                                    initial={{ opacity: 0 }}
+                                    animate={{ opacity: 1 }}
+                                    exit={{ opacity: 0 }}
+                                    transition={{ delay: 0.3 }}
+                                    className='flex flex-col space-y-8'
+                                >
+                                    <div className='w-[443px] flex flex-col justify-between space-y-3'>
+                                        <p className='text-white font-light leading-[4rem] text-[48px] w-full'>Maintenance & Support</p>
+                                        <p className='text-sm text-white w-full'>We provide ongoing maintenance and support to ensure your platform operates flawlessly.</p>
+                                    </div>
+                                    <div className='flex flex-col space-y-10'>
+                                        <PurlpleLine />
+                                        <div className='h-[130px] w-[443px] flex flex-col justify-between'>
+                                            <div className='flex flex-row space-x-2 items-center'>
+                                                <PurpleDot />
+                                                <p className='text-white text-base'>Website Security Updates</p>
+                                            </div>
+                                            <div className='flex flex-row space-x-2 items-center'>
+                                                <PurpleDot />
+                                                <p className='text-white text-base'>Regular Backups and Monitoring</p>
+                                            </div>
+                                            <div className='flex flex-row space-x-2 items-center'>
+                                                <PurpleDot />
+                                                <p className='text-white text-base'>Troubleshooting and Bug Fixes</p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </>
+                                </motion.div>
+                            </AnimatePresence>
                         ) : (
-                            <>
-                                <p className='text-white text-[32px] opacity-70 whitespace-nowrap pl-20 rotate-90 w-full'>Maintenance & Support</p>
-                            </>
+                            <p className='text-white text-[32px] opacity-70 whitespace-nowrap pl-20 rotate-90 w-full'>Maintenance & Support</p>
                         )}
                     </div>
-                </div>
+                </motion.div>
 
-
-                <div className='absolute top-[20.3rem] left-[28.2rem] z-50'>
+                <motion.div
+                    className='absolute top-[20.3rem] z-50'
+                    animate={{
+                        left: `${28.2 + (selectedTab - 1) * 7.3}rem`,
+                    }}
+                    transition={{ type: 'spring', stiffness: 300, damping: 30 }}
+                >
                     <ForwardIcon />
-                </div>
-
+                </motion.div>
             </div>
         </div>
     )
