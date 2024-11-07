@@ -32,6 +32,8 @@ import PurpleDot from './Icons/PurpleDot'
 const CustomWebDev = () => {
     const [selectedTab, setSelectedTab] = useState(1)
     const [hoverIndex, setHoverIndex] = useState(0)
+    const [rotation, setRotation] = useState(0);
+
 
     const handleTabClick = (tabId: number) => {
         setSelectedTab(tabId === 6 && selectedTab === 6 ? 1 : tabId)
@@ -48,7 +50,15 @@ const CustomWebDev = () => {
             <div className='flex flex-row w-[1290px] h-[134px] items-center justify-between'>
                 <p className='w-[654px] text-white text-[56px] font-semibold'>Comprehensive Web Development Solutions</p>
                 <div className='flex flex-col w-[530px] h-full justify-between'>
-                    <WebmachtLogoSquare />
+                    <motion.div
+                        className='w-max h-max'
+                        onHoverStart={() => setRotation(rotation + 90)} // Increment rotation by 90 degrees on hover
+                        animate={{ rotate: rotation }} // Animate to the current rotation state
+                        transition={{ type: "spring", stiffness: 300, damping: 20 }} // Smooth spring animation
+                        style={{ display: "inline-block" }} // Ensures it behaves like an inline block
+                    >
+                        <WebmachtLogoSquare />
+                    </motion.div>
                     <p className='text-white text-base w-full'>From custom website design to full-stack development, we help businesses thrive in the digital world.</p>
                 </div>
             </div>
