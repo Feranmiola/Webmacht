@@ -66,7 +66,7 @@ const CustomWebDev = () => {
                                 initial={{ opacity: 0 }}
                                 animate={{ opacity: 1 }}
                                 exit={{ opacity: 0 }}
-                                transition={{ duration: 0.2 }}
+                                transition={{ duration: 0.01 }}
                             >
                                 {selectedTab === 1 ? <CustomDevIcon /> : <CustomDevIconSmall />}
                             </motion.div>
@@ -122,7 +122,7 @@ const CustomWebDev = () => {
                                 initial={{ opacity: 0 }}
                                 animate={{ opacity: 1 }}
                                 exit={{ opacity: 0 }}
-                                transition={{ duration: 0.2 }}
+                                transition={{ duration: 0.01 }}
                             >
                                 {selectedTab === 2 ? <DesignIconBig /> : <UiDesignIcon />}
                             </motion.div>
@@ -178,7 +178,7 @@ const CustomWebDev = () => {
                                 initial={{ opacity: 0 }}
                                 animate={{ opacity: 1 }}
                                 exit={{ opacity: 0 }}
-                                transition={{ duration: 0.2 }}
+                                transition={{ duration: 0.01 }}
                             >
                                 {selectedTab === 3 ? <EcommerceIconBig /> : <EcommerceIcon />}
                             </motion.div>
@@ -234,7 +234,7 @@ const CustomWebDev = () => {
                                 initial={{ opacity: 0 }}
                                 animate={{ opacity: 1 }}
                                 exit={{ opacity: 0 }}
-                                transition={{ duration: 0.2 }}
+                                transition={{ duration: 0.01 }}
                             >
                                 {selectedTab === 4 ? <MobileIconBig /> : <MobileIcon />}
                             </motion.div>
@@ -290,7 +290,7 @@ const CustomWebDev = () => {
                                 initial={{ opacity: 0 }}
                                 animate={{ opacity: 1 }}
                                 exit={{ opacity: 0 }}
-                                transition={{ duration: 0.2 }}
+                                transition={{ duration: 0.01 }}
                             >
                                 {selectedTab === 5 ? <APIIconBig /> : <ApiIcon />}
                             </motion.div>
@@ -346,7 +346,7 @@ const CustomWebDev = () => {
                                 initial={{ opacity: 0 }}
                                 animate={{ opacity: 1 }}
                                 exit={{ opacity: 0 }}
-                                transition={{ duration: 0.2 }}
+                                transition={{ duration: 0.01 }}
                             >
                                 {selectedTab === 6 ? <MaintainanceIconBig /> : <MaintainanceIcon />}
                             </motion.div>
