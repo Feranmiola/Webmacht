@@ -82,7 +82,16 @@ const CustomWebDev = () => {
                                 exit={{ opacity: 0 }}
                                 transition={{ duration: 0.01 }}
                             >
-                                {selectedTab === 1 ? <CustomDevIcon /> : <CustomDevIconSmall />}
+                                {selectedTab === 1 ? <CustomDevIcon /> :
+
+                                    <motion.div
+                                        animate={{ rotate: hoverIndex === 1 ? 45 : 0 }} // Apply rotation only when hoverIndex is 2
+                                        transition={{ type: "spring", stiffness: 300, damping: 20 }} // Smooth spring animation
+                                        style={{ display: "inline-block" }} // Ensures it behaves like an inline block
+                                    >
+                                        <CustomDevIconSmall />
+                                    </motion.div>
+                                }
                             </motion.div>
                         </AnimatePresence>
                         {selectedTab === 1 ? (
@@ -140,7 +149,16 @@ const CustomWebDev = () => {
                                 exit={{ opacity: 0 }}
                                 transition={{ duration: 0.01 }}
                             >
-                                {selectedTab === 2 ? <DesignIconBig /> : <UiDesignIcon />}
+                                {selectedTab === 2 ? <DesignIconBig /> :
+                                    <motion.div
+                                        animate={{ rotate: hoverIndex === 2 ? 45 : 0 }} // Apply rotation only when hoverIndex is 2
+                                        transition={{ type: "spring", stiffness: 300, damping: 20 }} // Smooth spring animation
+                                        style={{ display: "inline-block" }} // Ensures it behaves like an inline block
+                                    >
+                                        <UiDesignIcon />
+                                    </motion.div>
+                                }
+
                             </motion.div>
                         </AnimatePresence>
                         {selectedTab === 2 ? (
@@ -198,7 +216,15 @@ const CustomWebDev = () => {
                                 exit={{ opacity: 0 }}
                                 transition={{ duration: 0.01 }}
                             >
-                                {selectedTab === 3 ? <EcommerceIconBig /> : <EcommerceIcon />}
+                                {selectedTab === 3 ? <EcommerceIconBig /> :
+                                    <motion.div
+                                        animate={{ rotate: hoverIndex === 3 ? 45 : 0 }} // Apply rotation only when hoverIndex is 2
+                                        transition={{ type: "spring", stiffness: 300, damping: 20 }} // Smooth spring animation
+                                        style={{ display: "inline-block" }} // Ensures it behaves like an inline block
+                                    >
+                                        <EcommerceIcon />
+                                    </motion.div>
+                                }
                             </motion.div>
                         </AnimatePresence>
                         {selectedTab === 3 ? (
@@ -256,7 +282,15 @@ const CustomWebDev = () => {
                                 exit={{ opacity: 0 }}
                                 transition={{ duration: 0.01 }}
                             >
-                                {selectedTab === 4 ? <MobileIconBig /> : <MobileIcon />}
+                                {selectedTab === 4 ? <MobileIconBig /> :
+                                    <motion.div
+                                        animate={{ rotate: hoverIndex === 4 ? 45 : 0 }} // Apply rotation only when hoverIndex is 2
+                                        transition={{ type: "spring", stiffness: 300, damping: 20 }} // Smooth spring animation
+                                        style={{ display: "inline-block" }} // Ensures it behaves like an inline block
+                                    >
+                                        <MobileIcon />
+                                    </motion.div>
+                                }
                             </motion.div>
                         </AnimatePresence>
                         {selectedTab === 4 ? (
@@ -314,7 +348,15 @@ const CustomWebDev = () => {
                                 exit={{ opacity: 0 }}
                                 transition={{ duration: 0.01 }}
                             >
-                                {selectedTab === 5 ? <APIIconBig /> : <ApiIcon />}
+                                {selectedTab === 5 ? <APIIconBig /> :
+                                    <motion.div
+                                        animate={{ rotate: hoverIndex === 5 ? 45 : 0 }} // Apply rotation only when hoverIndex is 2
+                                        transition={{ type: "spring", stiffness: 300, damping: 20 }} // Smooth spring animation
+                                        style={{ display: "inline-block" }} // Ensures it behaves like an inline block
+                                    >
+                                        <ApiIcon />
+                                    </motion.div>
+                                }
                             </motion.div>
                         </AnimatePresence>
                         {selectedTab === 5 ? (
@@ -372,7 +414,15 @@ const CustomWebDev = () => {
                                 exit={{ opacity: 0 }}
                                 transition={{ duration: 0.01 }}
                             >
-                                {selectedTab === 6 ? <MaintainanceIconBig /> : <MaintainanceIcon />}
+                                {selectedTab === 6 ? <MaintainanceIconBig /> :
+                                    <motion.div
+                                        animate={{ rotate: hoverIndex === 6 ? 45 : 0 }} // Apply rotation only when hoverIndex is 2
+                                        transition={{ type: "spring", stiffness: 300, damping: 20 }} // Smooth spring animation
+                                        style={{ display: "inline-block" }} // Ensures it behaves like an inline block
+                                    >
+                                        <MaintainanceIcon />
+                                    </motion.div>
+                                }
                             </motion.div>
                         </AnimatePresence>
                         {selectedTab === 6 ? (
