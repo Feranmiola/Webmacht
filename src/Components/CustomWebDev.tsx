@@ -10,6 +10,8 @@ import MobileIcon from './Icons/MobileIcon'
 import ApiIcon from './Icons/ApiIcont'
 import MaintainanceIcon from './Icons/MaintainanceIcon'
 import ForwardIcon from './Icons/ForwardIcon'
+import CustomDevIconSmall from './Icons/CustomDevIconSmall'
+import DesignIconBig from './Icons/DesignIconBig'
 
 const CustomWebDev = () => {
     const [hoverIndec, setHoverIndex] = useState(0)
@@ -32,30 +34,36 @@ const CustomWebDev = () => {
                 <div
                     onClick={() => setSelectedTab(1)}
                     className={`${selectedTab === 1 ? 'h-full w-[519px]' : 'w-[168px] h-[560px]'}`}>
-                    <div className={`w-full h-full flex flex-col py-10 border-l-[1.5px] border-l-[#1B1B1B] border-t-[1.5px] border-t-[#1B1B1B]  rounded-[24px] ${selectedTab === 1 ? 'bg-custom-gradient space-y-8 px-10 ' : 'gradient-container items-center'}`}>
-                        <CustomDevIcon />
+                    <div className={`w-full h-full flex flex-col py-10 border-l-[1.5px] border-l-[#1B1B1B] border-t-[1.5px] border-t-[#1B1B1B]  rounded-[24px] ${selectedTab === 1 ? 'bg-custom-gradient space-y-8 px-10 ' : 'gradient-container space-y-10 items-center'}`}>
+                        {selectedTab === 1 ? (
+                            <CustomDevIcon />
+                        ) : (
+                            <CustomDevIconSmall />
+                        )}
                         {selectedTab === 1 ? (
                             <>
                                 <div className='w-[443px] flex flex-col justify-between space-y-3'>
                                     <p className='text-white font-light leading-[4rem] text-[48px] w-full'>Custom Web Development</p>
                                     <p className='text-sm text-white w-full'>Tailor-made websites, custom web apps, and platforms that meet the specific needs of your business, whether you're a startup or a large enterprise.</p>
                                 </div>
-                                <BlueLine />
+                                <div className='flex flex-col space-y-10'>
+                                    <BlueLine />
 
-                                <div className='h-[130px] w-[443px] flex flex-col justify-between'>
-                                    <div className='flex flex-row space-x-2 items-center'>
-                                        <BlueDot />
-                                        <p className='text-white text-base'>Frontend Development</p>
-                                    </div>
+                                    <div className='h-[130px] w-[443px] flex flex-col justify-between'>
+                                        <div className='flex flex-row space-x-2 items-center'>
+                                            <BlueDot />
+                                            <p className='text-white text-base'>Frontend Development</p>
+                                        </div>
 
-                                    <div className='flex flex-row space-x-2 items-center'>
-                                        <BlueDot />
-                                        <p className='text-white text-base'>Backend Development</p>
-                                    </div>
+                                        <div className='flex flex-row space-x-2 items-center'>
+                                            <BlueDot />
+                                            <p className='text-white text-base'>Backend Development</p>
+                                        </div>
 
-                                    <div className='flex flex-row space-x-2 items-center'>
-                                        <BlueDot />
-                                        <p className='text-white text-base'>CMS Development</p>
+                                        <div className='flex flex-row space-x-2 items-center'>
+                                            <BlueDot />
+                                            <p className='text-white text-base'>CMS Development</p>
+                                        </div>
                                     </div>
                                 </div>
                             </>
@@ -68,128 +76,100 @@ const CustomWebDev = () => {
                 </div>
 
 
-                {/* <div
-                    onClick={() => setSelectedTab(1)}
-                    className={`${selectedTab === 1 ? 'h-full w-[519px]' : 'w-[168px] h-[560px]'}`}>
-                    {selectedTab === 1 ? (
-                        <div className='h-full w-[519px] rounded-[24px] bg-custom-gradient border-l-[1.5px] border-l-[#1B1B1B] border-t-[1.5px] border-t-[#1B1B1B]  flex flex-col justify-evenly px-10 items-center'>
-                            <div className='h-[275px] w-[443px] flex flex-col justify-between'>
-                                <CustomDevIcon />
-                                <p className='text-white font-light leading-[4rem] text-[48px] w-full'>Custom Web Development</p>
-                                <p className='text-sm text-white w-full'>Tailor-made websites, custom web apps, and platforms that meet the specific needs of your business, whether you're a startup or a large enterprise.</p>
-                            </div>
-                            <BlueLine />
-
-                            <div className='h-[130px] w-[443px] flex flex-col justify-between'>
-                                <div className='flex flex-row space-x-2 items-center'>
-                                    <BlueDot />
-                                    <p className='text-white text-base'>Frontend Development</p>
-                                </div>
-
-                                <div className='flex flex-row space-x-2 items-center'>
-                                    <BlueDot />
-                                    <p className='text-white text-base'>Backend Development</p>
-                                </div>
-
-                                <div className='flex flex-row space-x-2 items-center'>
-                                    <BlueDot />
-                                    <p className='text-white text-base'>CMS Development</p>
-                                </div>
-                            </div>
-                        </div>
-                    ) : (
-                        <div
-                            onMouseEnter={() => setHoverIndex(1)}
-                            onMouseLeave={() => setHoverIndex(0)}
-                            className='w-[168px] h-[560px]  gradient-container flex flex-col items-center pt-10 space-y-10 transition ease-in-out rounded-[24px] border-l-[1.5px] border-l-[#1B1B1B] border-t-[1.5px] border-t-[#1B1B1B] bg-[#080808]'>
-                            <CustomDevIcon />
-                            <p className='text-white text-[32px] opacity-70 whitespace-nowrap pl-20 rotate-90 w-full'>Custom Web Development</p>
-                        </div>
-                    )}
-
-                </div> */}
 
                 <div
                     onClick={() => setSelectedTab(2)}
                     className={`${selectedTab === 2 ? 'h-full w-[519px]' : 'w-[168px] h-[560px]'}`}>
-                    {selectedTab === 2 ? (
-                        <div className='h-full w-[519px] rounded-[24px] bg-custom-gradient border-l-[1.5px] border-l-[#1B1B1B] border-t-[1.5px] border-t-[#1B1B1B]  flex flex-col justify-evenly px-10 items-center'>
-                            <div className='h-[275px] w-[443px] flex flex-col justify-between'>
-                                <UiDesignIcon />
-                                <p className='text-white font-light leading-[4rem] text-[48px] w-full'>UI/UX Design</p>
-                                <p className='text-sm text-white w-full'>Tailor-made websites, custom web apps, and platforms that meet the specific needs of your business, whether you're a startup or a large enterprise.</p>
-                            </div>
-                            <BlueLine />
+                    <div className={`w-full h-full flex flex-col py-10 border-l-[1.5px] border-l-[#1B1B1B] border-t-[1.5px] border-t-[#1B1B1B]  rounded-[24px] ${selectedTab === 2 ? 'bg-custom-gradient justify-between px-10 ' : 'gradient-container space-y-10 items-center'}`}>
 
-                            <div className='h-[130px] w-[443px] flex flex-col justify-between'>
-                                <div className='flex flex-row space-x-2 items-center'>
-                                    <BlueDot />
-                                    <p className='text-white text-base'>Frontend Development</p>
-                                </div>
-
-                                <div className='flex flex-row space-x-2 items-center'>
-                                    <BlueDot />
-                                    <p className='text-white text-base'>Backend Development</p>
-                                </div>
-
-                                <div className='flex flex-row space-x-2 items-center'>
-                                    <BlueDot />
-                                    <p className='text-white text-base'>CMS Development</p>
-                                </div>
-                            </div>
-                        </div>
-                    ) : (
-                        <div
-                            onMouseEnter={() => setHoverIndex(2)}
-                            onMouseLeave={() => setHoverIndex(0)}
-                            className='w-[168px] h-[560px]  gradient-container flex flex-col items-center pt-10 space-y-10 transition ease-in-out rounded-[24px] border-l-[1.5px] border-l-[#1B1B1B] border-t-[1.5px] border-t-[#1B1B1B] bg-[#080808]'>
+                        {selectedTab === 2 ? (
+                            <DesignIconBig />
+                        ) : (
                             <UiDesignIcon />
-                            <p className='text-white text-[32px] opacity-70 whitespace-nowrap pl-20 rotate-90 w-full'>UI/UX Design</p>
-                        </div>
-                    )}
+                        )}
+                        {selectedTab === 2 ? (
+                            <>
+                                <div className='w-[443px] flex flex-col justify-between space-y-3'>
+                                    <p className='text-white font-light leading-[4rem] text-[48px] w-full'>UI/UX Design</p>
+                                    <p className='text-sm text-white w-full'>Tailor-made websites, custom web apps, and platforms that meet the specific needs of your business, whether you're a startup or a large enterprise.</p>
+                                </div>
+                                <div className='flex flex-col space-y-10'>
+                                    <BlueLine />
 
+                                    <div className='h-[130px] w-[443px] flex flex-col justify-between'>
+                                        <div className='flex flex-row space-x-2 items-center'>
+                                            <BlueDot />
+                                            <p className='text-white text-base'>Frontend Development</p>
+                                        </div>
+
+                                        <div className='flex flex-row space-x-2 items-center'>
+                                            <BlueDot />
+                                            <p className='text-white text-base'>Backend Development</p>
+                                        </div>
+
+                                        <div className='flex flex-row space-x-2 items-center'>
+                                            <BlueDot />
+                                            <p className='text-white text-base'>CMS Development</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </>
+                        ) : (
+                            <>
+                                <p className='text-white text-[32px] opacity-70 whitespace-nowrap pl-20 rotate-90 w-full'>UI/UX Design</p>
+                            </>
+                        )}
+                    </div>
                 </div>
+
+
+
 
                 <div
                     onClick={() => setSelectedTab(3)}
                     className={`${selectedTab === 3 ? 'h-full w-[519px]' : 'w-[168px] h-[560px]'}`}>
-                    {selectedTab === 3 ? (
-                        <div className='h-full w-[519px] rounded-[24px] bg-custom-gradient border-l-[1.5px] border-l-[#1B1B1B] border-t-[1.5px] border-t-[#1B1B1B]  flex flex-col justify-evenly px-10 items-center'>
-                            <div className='h-[275px] w-[443px] flex flex-col justify-between'>
-                                <EcommerceIcon />
-                                <p className='text-white font-light leading-[4rem] text-[48px] w-full'>E-Commerce Solutions</p>
-                                <p className='text-sm text-white w-full'>Tailor-made websites, custom web apps, and platforms that meet the specific needs of your business, whether you're a startup or a large enterprise.</p>
-                            </div>
-                            <BlueLine />
+                    <div className={`w-full h-full flex flex-col py-10 border-l-[1.5px] border-l-[#1B1B1B] border-t-[1.5px] border-t-[#1B1B1B]  rounded-[24px] ${selectedTab === 3 ? 'bg-custom-gradient justify-between px-10 ' : 'gradient-container space-y-10 items-center'}`}>
 
-                            <div className='h-[130px] w-[443px] flex flex-col justify-between'>
-                                <div className='flex flex-row space-x-2 items-center'>
-                                    <BlueDot />
-                                    <p className='text-white text-base'>Frontend Development</p>
-                                </div>
-
-                                <div className='flex flex-row space-x-2 items-center'>
-                                    <BlueDot />
-                                    <p className='text-white text-base'>Backend Development</p>
-                                </div>
-
-                                <div className='flex flex-row space-x-2 items-center'>
-                                    <BlueDot />
-                                    <p className='text-white text-base'>CMS Development</p>
-                                </div>
-                            </div>
-                        </div>
-                    ) : (
-                        <div
-                            onMouseEnter={() => setHoverIndex(3)}
-                            onMouseLeave={() => setHoverIndex(0)}
-                            className='w-[168px] h-[560px]  gradient-container flex flex-col items-center pt-10 space-y-10 transition ease-in-out rounded-[24px] border-l-[1.5px] border-l-[#1B1B1B] border-t-[1.5px] border-t-[#1B1B1B] bg-[#080808]'>
+                        {selectedTab === 3 ? (
+                            <DesignIconBig />
+                        ) : (
                             <EcommerceIcon />
-                            <p className='text-white text-[32px] opacity-70 whitespace-nowrap pl-20 rotate-90 w-full'>E-Commerce Solutions</p>
-                        </div>
-                    )}
+                        )}
+                        {selectedTab === 3 ? (
+                            <>
+                                <div className='w-[443px] flex flex-col justify-between space-y-3'>
+                                    <p className='text-white font-light leading-[4rem] text-[48px] w-full'>E-Commerce Solutions</p>
+                                    <p className='text-sm text-white w-full'>Tailor-made websites, custom web apps, and platforms that meet the specific needs of your business, whether you're a startup or a large enterprise.</p>
+                                </div>
+                                <div className='flex flex-col space-y-10'>
+                                    <BlueLine />
 
+                                    <div className='h-[130px] w-[443px] flex flex-col justify-between'>
+                                        <div className='flex flex-row space-x-2 items-center'>
+                                            <BlueDot />
+                                            <p className='text-white text-base'>Frontend Development</p>
+                                        </div>
+
+                                        <div className='flex flex-row space-x-2 items-center'>
+                                            <BlueDot />
+                                            <p className='text-white text-base'>Backend Development</p>
+                                        </div>
+
+                                        <div className='flex flex-row space-x-2 items-center'>
+                                            <BlueDot />
+                                            <p className='text-white text-base'>CMS Development</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </>
+                        ) : (
+                            <>
+                                <p className='text-white text-[32px] opacity-70 whitespace-nowrap pl-20 rotate-90 w-full'>E-Commerce Solutions</p>
+                            </>
+                        )}
+                    </div>
                 </div>
+
 
 
 
