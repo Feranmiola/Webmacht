@@ -37,7 +37,24 @@ export default function Impressum() {
                         </div>
 
                     </div>
-                    <div className="w-[540px] h-full flex flex-col">
+                    <div className="w-[540px] pl-5 h-full flex flex-col justify-evenly">
+
+                        <div className="flex flex-row items-center w-[450px] justify-between">
+                            <p className="text-datkGrey opacity-40 text-xl">Director:</p>
+                            <p className="text-datkGrey text-xl">Nelson Ernser</p>
+                        </div>
+                        <div className="flex flex-row items-center w-[423px] justify-between">
+                            <p className="text-datkGrey opacity-40 text-xl">District Court:</p>
+                            <p className="text-datkGrey text-xl">Port Yadira</p>
+                        </div>
+                        <div className="flex flex-row items-center w-[509px] justify-between">
+                            <p className="text-datkGrey opacity-40 text-xl">Registration Number:</p>
+                            <p className="text-datkGrey text-xl">716-596-7996 x799</p>
+                        </div>
+                        <div className="flex flex-row items-center w-[388px] justify-between">
+                            <p className="text-datkGrey opacity-40 text-xl">VAT ID:</p>
+                            <p className="text-datkGrey text-xl">40 672</p>
+                        </div>
 
                     </div>
                 </div>
