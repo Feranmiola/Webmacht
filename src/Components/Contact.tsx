@@ -178,7 +178,7 @@ const Contact = () => {
             <div className='w-[449px] h-[712px] rounded-[24px] bg-[#111111] flex flex-col justify-evenly px-10'>
                 <Quote />
                 <p className='text-white text-base opacity-70'>TESTIMONIAL</p>
-                <p className='text-[#EDEDEDB2] text-xl font-light w-[385px]'>Working with Webmacht has been an exceptional experience. They built our websites and applications with precision and delivered beyond our expectations. Their team's technical expertise and attention to detail are impressive, ensuring that everything performs at an optimal level. Thanks to Webmacht, our online presence is stronger than ever. I highly recommend them for any web development project.</p>
+                <p className='text-[#EDEDEDB2] text-xl font-light w-[385px]'>Working with Webmacht has been an exceptional experience. They built our websites and applications with precision and delivered beyond our expectations. Their team&apos;s technical expertise and attention to detail are impressive, ensuring that everything performs at an optimal level. Thanks to Webmacht, our online presence is stronger than ever. I highly recommend them for any web development project.</p>
                 <div className='h-[152px] flex flex-row space-x-5 items-center border-t-[1px] border-white border-opacity-30'>
                     <Avatar className='w-[80px] h-[80px]'>
                         <AvatarImage
