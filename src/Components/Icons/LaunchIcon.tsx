@@ -10,19 +10,17 @@ const LaunchIcon = () => {
             viewBox="0 0 56 57"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            initial={{ y: 0 }} // Initial position
-            animate={{ y: -20 }} // Move the rocket upwards to simulate launch
-            transition={{
-                repeat: Infinity, // Keeps repeating the animation
-                repeatType: 'reverse', // Reverse the animation to make it go back and forth
-                duration: 0.5, // Time for the upward movement
-                ease: 'easeInOut', // Smooth ease in and out
-            }}
-
             whileHover={{
+                y: -20, // Move upward on hover to simulate a launch
                 scale: 1.2,
                 opacity: 0.8,
-                transition: { type: 'spring', stiffness: 400, damping: 10 }
+                transition: {
+                    type: 'spring',
+                    stiffness: 400,
+                    damping: 10,
+                    duration: 0.5,
+                    ease: 'easeInOut',
+                },
             }}
         >
             <path
