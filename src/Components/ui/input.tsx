@@ -2,29 +2,26 @@
 
 import * as React from "react"
 import { cn } from "@/lib/utils"
-import { motion } from "framer-motion" // Import framer-motion
+import { motion } from "framer-motion"
 
 interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
-  icon?: React.ElementType // This allows passing any custom icon component
+  icon?: React.ElementType
+  isError?: boolean
 }
 
 const Input = React.forwardRef<HTMLInputElement, InputProps>(
-  ({ className, type = "text", icon: Icon, onFocus, onBlur, ...props }, ref) => {
-    // Manage focus and value states 
+  ({ className, type = "text", icon: Icon, isError = false, onFocus, onBlur, ...props }, ref) => {
     const [isFocused, setIsFocused] = React.useState(false)
     const [hasValue, setHasValue] = React.useState(false)
 
-    // Ref for the input element 
     const inputRef = React.useRef<HTMLInputElement>(null)
     React.useImperativeHandle(ref, () => inputRef.current!)
 
-    // Handle input changes to determine if the input has a value 
     const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
       setHasValue(e.target.value.length > 0)
       props.onChange?.(e)
     }
 
-    // Handle focus and blur states, ensuring custom and passed callbacks are both called
     const handleFocus = (e: React.FocusEvent<HTMLInputElement>) => {
       setIsFocused(true)
       onFocus?.(e)
@@ -35,28 +32,25 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
       onBlur?.(e)
     }
 
-    // Determine if the input should be active based on focus or value presence 
     const isActive = isFocused || hasValue
 
     return (
-      <div
+      <motion.div
         className={cn(
           "flex items-center border-b border-white transition-opacity duration-200",
           isActive ? "opacity-100" : "opacity-40",
           className
         )}
+        animate={isError ? { x: [-10, 10, -10, 10, 0] } : {}}
+        transition={{ duration: 0.5, times: [0, 0.25, 0.5, 0.75, 1] }}
       >
         {Icon && (
           <motion.div
-            initial={{ rotate: 0 }}
-            animate={{
-              rotate: isActive ? [0, -10, 10, -10, 10, 0] : 0, // Animate to rotate left and right
-            }}
-            transition={{
-              duration: 0.5,
-              times: [0, 0.25, 0.5, 0.75, 1], // Control the timing of each rotation phase
-              repeat: 0, // Only animate once when active
-            }}
+            animate={
+              isActive
+                ? { scale: [1, 1.2, 1], transition: { duration: 0.3 } }
+                : { scale: 1 }
+            }
             className="pr-2"
           >
             <Icon />
@@ -74,7 +68,7 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
           onChange={handleInputChange}
           {...props}
         />
-      </div>
+      </motion.div>
     )
   }
 )
