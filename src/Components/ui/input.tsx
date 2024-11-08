@@ -13,6 +13,7 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
   ({ className, type = "text", icon: Icon, isError = false, onFocus, onBlur, ...props }, ref) => {
     const [isFocused, setIsFocused] = React.useState(false)
     const [hasValue, setHasValue] = React.useState(false)
+    const [isHovered, setIsHovered] = React.useState(false)
 
     const inputRef = React.useRef<HTMLInputElement>(null)
     React.useImperativeHandle(ref, () => inputRef.current!)
@@ -43,13 +44,17 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
         )}
         animate={isError ? { x: [-10, 10, -10, 10, 0] } : {}}
         transition={{ duration: 0.5, times: [0, 0.25, 0.5, 0.75, 1] }}
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
       >
         {Icon && (
           <motion.div
             animate={
               isActive
                 ? { scale: [1, 1.2, 1], transition: { duration: 0.3 } }
-                : { scale: 1 }
+                : isHovered && !isActive
+                  ? { scale: 1.2 }
+                  : { scale: 1 }
             }
             className="pr-2"
           >
