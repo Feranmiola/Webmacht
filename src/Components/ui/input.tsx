@@ -37,8 +37,8 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
     return (
       <motion.div
         className={cn(
-          "flex items-center border-b border-white transition-opacity duration-200",
-          isActive ? "opacity-100" : "opacity-40",
+          "flex items-center cursor-pointer border-b border-white transition-opacity duration-200",
+          isActive ? "opacity-100" : "opacity-40 hover:opacity-70",
           className
         )}
         animate={isError ? { x: [-10, 10, -10, 10, 0] } : {}}
@@ -59,7 +59,7 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
         <input
           type={type}
           className={cn(
-            "flex h-[64px] w-full bg-transparent px-0 py-1 text-base text-white placeholder:text-white",
+            "flex h-[64px] w-full bg-transparent cursor-pointer focus:cursor-text px-0 py-1 text-base text-white placeholder:text-white",
             "focus-visible:outline-none disabled:cursor-not-allowed disabled:opacity-50 caret-white"
           )}
           ref={inputRef}
