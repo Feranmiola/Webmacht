@@ -1,11 +1,15 @@
+'use client'
 import React from 'react'
 import WebmachtIconFooter from './Icons/WebmachtIconFooter'
 import LocationIcon from './Icons/LocationIcon'
 import EmailIcon from './Icons/EmailIcon'
 import PhoneIcon from './Icons/PhoneIcon'
 import LinkIcon from './Icons/LinkIcon'
+import { useRouter } from 'next-nprogress-bar';
 
 const Footer = () => {
+
+    const router = useRouter()
     return (
         <div className='bg-datkGrey flex w-full h-[331px] flex-col space-y-3'>
             <div className='border-t-[1px] border-b-[1px] border-t-[#1B1B1B] flex items-center justify-center border-b-[#1B1B1B] w-full h-[294px]'>
@@ -40,7 +44,9 @@ const Footer = () => {
                         </div>
                         <div className='h-[226px] flex justify-center flex-col space-y-2 w-full pl-10'>
                             <div className='h-[153px] flex flex-col justify-between'>
-                                <div className='flex flex-row space-x-2 items-center'>
+                                <div
+                                    onClick={() => router.push('/impressum')}
+                                    className='flex cursor-pointer flex-row space-x-2 items-center'>
                                     <p className='text-base text-white opacity-70'>Impressum</p>
                                     <LinkIcon />
                                 </div>
