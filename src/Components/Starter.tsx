@@ -80,17 +80,7 @@ export default function Starter() {
                 animate="visible"
             >
                 <motion.div
-                    className="px-2 rounded-full border border-white overflow-hidden"
-                    animate={{
-                        height: [52, 62, 52],
-                    }}
-                    transition={{
-                        duration: 1.5,
-                        ease: "easeInOut",
-                        repeat: Infinity,
-                        repeatType: "reverse",
-                    }}
-                >
+                    className="p-2 rounded-full border h-[46px] border-white overflow-hidden">
                     <motion.div
                         animate={{
                             y: [0, 10, 0],
