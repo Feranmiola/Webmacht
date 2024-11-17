@@ -6,9 +6,9 @@ import PhoneBlue from "@/Components/Icons/PhoneBlue";
 
 export default function Impressum() {
     return (
-        <div className=" flex flex-col w-full">
+        <div className="flex flex-col w-full">
             <div className="w-full h-[844px] max-h-[100vh] flex flex-col items-center space-y-20 justify-center bg-white">
-                <div className=" space-x-20 flex flex-row justify-between items-end">
+                <div className="space-x-20 flex flex-row justify-between items-end">
                     <p className="text-datkGrey font-semibold text-[56px]">Impressum</p>
                     <ImpressumLines />
                 </div>
@@ -40,20 +40,20 @@ export default function Impressum() {
                     <div className="w-[540px] pl-5 h-full flex flex-col justify-evenly">
 
                         <div className="flex flex-row items-center w-[450px] justify-between">
-                            <p className="text-datkGrey opacity-40 text-xl">Director:</p>
+                            <p className="text-datkGrey opacity-40 text-xl">Geschäftsführer:</p>
                             <p className="text-datkGrey text-xl">Nelson Ernser</p>
                         </div>
                         <div className="flex flex-row items-center w-[423px] justify-between">
-                            <p className="text-datkGrey opacity-40 text-xl">District Court:</p>
+                            <p className="text-datkGrey opacity-40 text-xl">Amtsgericht:</p>
                             <p className="text-datkGrey text-xl">Port Yadira</p>
                         </div>
                         <div className="flex flex-row items-center w-[509px] justify-between">
-                            <p className="text-datkGrey opacity-40 text-xl">Registration Number:</p>
+                            <p className="text-datkGrey opacity-40 text-xl">Handelsregisternummer:</p>
                             <p className="text-datkGrey text-xl">716-596-7996 x799</p>
                         </div>
                         <div className="flex flex-row items-center w-[388px] justify-between">
-                            <p className="text-datkGrey opacity-40 text-xl">VAT ID:</p>
-                            <p className="text-datkGrey text-xl">40 672</p>
+                            <p className="text-datkGrey opacity-40 text-xl">USt-IdNr.:</p>
+                            <p className="text-datkGrey text-xl">40 672</p>
                         </div>
 
                     </div>

@@ -19,7 +19,7 @@ const Navbar = () => {
                 </div>
 
                 <div className='flex items-center justify-center px-2 py-1 cursor-pointer rounded-[4px] text-base font-medium text-white border-[1px] border-white hover:border-deep-purple hover:text-deep-purple transition ease-in-out'>
-                    Get In Touch
+                    Kontakt aufnehmen
                 </div>
             </div>
 
