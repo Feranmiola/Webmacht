@@ -17,6 +17,7 @@ import CountryIcon from './Icons/CountryIcon'
 import PhoneWhite from './Icons/PhoneWhite'
 import MessageIcon from './Icons/MessageIcon'
 
+
 const Contact = () => {
     const ContactForm = useForm<z.infer<typeof ContactFormSchema>>({
         resolver: zodResolver(ContactFormSchema),
@@ -40,8 +41,8 @@ const Contact = () => {
         <div className='h-[1142px] w-full bg-datkGrey flex flex-row items-center space-x-5 justify-center'>
             <div className='h-[750px] w-[801px] flex flex-col justify-evenly'>
                 <div className='w-full h-[202px] flex flex-col justify-between '>
-                    <p className='text-white text-[56px] font-semibold w-[634px] leading-[4rem]'>Let&apos;s Build Something Great Together</p>
-                    <p className='text-white w-[510px] text-base font-normal'>Have a question or want to discuss your project, we&apos;re here to help. Get in touch with us today!</p>
+                    <p className='text-white text-[56px] font-semibold w-[634px] leading-[4rem]'>Lassen Sie uns gemeinsam etwas Großartiges bauen</p>
+                    <p className='text-white w-[510px] text-base font-normal'>Haben Sie eine Frage oder möchten Sie Ihr Projekt besprechen? Wir sind hier, um zu helfen. Kontaktieren Sie uns noch heute!</p>
                 </div>
 
                 <div className='h-[452px] w-full'>
@@ -78,7 +79,7 @@ const Contact = () => {
                                                     type='text'
                                                     isError={!!errors.email}
                                                     className='w-full'
-                                                    placeholder='Email'
+                                                    placeholder='E-Mail'
                                                     {...field}
                                                 />
                                             </FormControl>
@@ -97,7 +98,7 @@ const Contact = () => {
                                                     type='text'
                                                     isError={!!errors.company}
                                                     className='w-full'
-                                                    placeholder='Company'
+                                                    placeholder='Firma'
                                                     {...field}
                                                 />
                                             </FormControl>
@@ -117,7 +118,7 @@ const Contact = () => {
                                                         type='text'
                                                         isError={!!errors.country}
                                                         className='w-[395.5px]'
-                                                        placeholder='Country'
+                                                        placeholder='Land'
                                                         {...field}
                                                     />
                                                 </FormControl>
@@ -136,7 +137,7 @@ const Contact = () => {
                                                         type='text'
                                                         isError={!!errors.phone}
                                                         className='w-[395.5px]'
-                                                        placeholder='Phone Number'
+                                                        placeholder='Telefonnummer'
                                                         {...field}
                                                     />
                                                 </FormControl>
@@ -156,7 +157,7 @@ const Contact = () => {
                                                     type='text'
                                                     isError={!!errors.message}
                                                     className='w-full'
-                                                    placeholder='Message/Project Details'
+                                                    placeholder='Nachricht/Projekt Details'
                                                     {...field}
                                                 />
                                             </FormControl>
@@ -168,7 +169,7 @@ const Contact = () => {
                                 type='submit'
                                 className='w-[187px] h-[48px] text-white text-opacity-50 hover:text-opacity-100 transition ease-in-out font-bold text-base rounded-none bg-[#181818]'
                             >
-                                Send Message
+                                Nachricht senden
                             </Button>
                         </form>
                     </Form>
@@ -177,8 +178,8 @@ const Contact = () => {
 
             <div className='w-[449px] h-[712px] rounded-[24px] bg-[#111111] flex flex-col justify-evenly px-10'>
                 <Quote />
-                <p className='text-white text-base opacity-70'>TESTIMONIAL</p>
-                <p className='text-[#EDEDEDB2] text-xl font-light w-[385px]'>Working with Webmacht has been an exceptional experience. They built our websites and applications with precision and delivered beyond our expectations. Their team&apos;s technical expertise and attention to detail are impressive, ensuring that everything performs at an optimal level. Thanks to Webmacht, our online presence is stronger than ever. I highly recommend them for any web development project.</p>
+                <p className='text-white text-base opacity-70'>REFERENZ</p>
+                <p className='text-[#EDEDEDB2] text-xl font-light w-[385px]'>Die Zusammenarbeit mit Webmacht war eine außergewöhnliche Erfahrung. Sie haben unsere Websites und Anwendungen mit Präzision entwickelt und unsere Erwartungen übertroffen. Das technische Fachwissen ihres Teams und die Liebe zum Detail sind beeindruckend, wodurch alles optimal funktioniert. Dank Webmacht ist unsere Online-Präsenz stärker als je zuvor. Ich kann sie für jedes Webentwicklungsprojekt nur wärmstens empfehlen.</p>
                 <div className='h-[152px] flex flex-row space-x-5 items-center border-t-[1px] border-white border-opacity-30'>
                     <Avatar className='w-[80px] h-[80px]'>
                         <AvatarImage
