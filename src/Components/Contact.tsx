@@ -41,7 +41,7 @@ const Contact = () => {
         <div className='h-[1142px] w-full bg-datkGrey flex flex-row items-center space-x-5 justify-center'>
             <div className='h-[750px] w-[801px] flex flex-col justify-evenly'>
                 <div className='w-full h-[202px] flex flex-col justify-between '>
-                    <p className='text-white text-[56px] font-semibold w-[634px] leading-[4rem]'>Lassen Sie uns gemeinsam etwas Großartiges bauen</p>
+                    <p className='text-white text-[56px] font-semibold  leading-[4rem]'>Lassen Sie uns gemeinsam etwas Großartiges bauen</p>
                     <p className='text-white w-[510px] text-base font-normal'>Haben Sie eine Frage oder möchten Sie Ihr Projekt besprechen? Wir sind hier, um zu helfen. Kontaktieren Sie uns noch heute!</p>
                 </div>
 
