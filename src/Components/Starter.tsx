@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 import ScrollArrow from './Icons/ScrollArrow'
 
 export default function Starter() {
-    const text = "Empowering Digital Transformation for Businesses"
+    const text = "Förderung der digitalen Transformation für Unternehmen"
 
     const sentenceVariants = {
         hidden: { opacity: 1 },
@@ -59,17 +59,19 @@ export default function Starter() {
                         initial="hidden"
                         animate="visible"
                     >
-                        Your trusted partner to deliver cutting-edge web development solutions tailored to your business needs.
-                        Crafting innovative digital experiences for businesses in Germany and across the globe.
+                        {/* Your trusted partner to deliver cutting-edge web development solutions tailored to your business needs.
+                        Crafting innovative digital experiences for businesses in Germany and across the globe. */}
+                        Ihr vertrauenswürdiger Partner für die Bereitstellung modernster Webentwicklungslösungen, maßgeschneidert auf die Bedürfnisse Ihres Unternehmens.
+                        Innovative digitale Erlebnisse für Unternehmen in Deutschland und weltweit gestalten.
                     </motion.p>
                     <motion.button
-                        className="bg-deep-purple text-white text-base font-bold border border-transparent rounded-[4px] h-[48px] w-[162px] hover:border-white hover:bg-transparent transition-colors duration-300 ease-in-out"
+                        className="bg-deep-purple text-white text-base font-bold border border-transparent rounded-[4px] h-[48px] px-4 w-max hover:border-white hover:bg-transparent transition-colors duration-300 ease-in-out"
                         aria-label="Get In Touch"
                         variants={fadeInVariants}
                         initial="hidden"
                         animate="visible"
                     >
-                        Get In Touch
+                        Kontakt aufnehmen
                     </motion.button>
                 </div>
             </div>
@@ -95,7 +97,7 @@ export default function Starter() {
                         <ScrollArrow />
                     </motion.div>
                 </motion.div>
-                <p className="text-xs text-white opacity-70">SCROLL</p>
+                <p className="text-xs text-white opacity-70">SCROLLEN</p>
             </motion.div>
         </div>
     )
