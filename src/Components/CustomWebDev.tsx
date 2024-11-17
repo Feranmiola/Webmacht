@@ -48,18 +48,18 @@ const CustomWebDev = () => {
     return (
         <div className='bg-black w-full h-[1006px] flex items-center flex-col space-y-20 justify-center'>
             <div className='flex flex-row w-[1290px] h-[134px] items-center justify-between'>
-                <p className='w-[654px] text-white text-[56px] font-semibold'>Comprehensive Web Development Solutions</p>
+                <p className='w-[654px] text-white text-[56px] font-semibold'>Umfassende Webentwicklungslösungen</p>
                 <div className='flex flex-col w-[530px] h-full justify-between'>
                     <motion.div
                         className='w-max h-max'
-                        onHoverStart={() => setRotation(rotation + 90)} // Increment rotation by 90 degrees on hover
-                        animate={{ rotate: rotation }} // Animate to the current rotation state
-                        transition={{ type: "spring", stiffness: 300, damping: 20 }} // Smooth spring animation
-                        style={{ display: "inline-block" }} // Ensures it behaves like an inline block
+                        onHoverStart={() => setRotation(rotation + 90)}
+                        animate={{ rotate: rotation }}
+                        transition={{ type: "spring", stiffness: 300, damping: 20 }}
+                        style={{ display: "inline-block" }}
                     >
                         <WebmachtLogoSquare />
                     </motion.div>
-                    <p className='text-white text-base w-full'>From custom website design to full-stack development, we help businesses thrive in the digital world.</p>
+                    <p className='text-white text-base w-full'>Von individuellem Website-Design bis hin zur Full-Stack-Entwicklung helfen wir Unternehmen, in der digitalen Welt erfolgreich zu sein.</p>
                 </div>
             </div>
 
@@ -85,9 +85,9 @@ const CustomWebDev = () => {
                                 {selectedTab === 1 ? <CustomDevIcon /> :
 
                                     <motion.div
-                                        animate={{ rotate: hoverIndex === 1 ? 45 : 0 }} // Apply rotation only when hoverIndex is 2
-                                        transition={{ type: "spring", stiffness: 300, damping: 20 }} // Smooth spring animation
-                                        style={{ display: "inline-block" }} // Ensures it behaves like an inline block
+                                        animate={{ rotate: hoverIndex === 1 ? 45 : 0 }}
+                                        transition={{ type: "spring", stiffness: 300, damping: 20 }}
+                                        style={{ display: "inline-block" }}
                                     >
                                         <CustomDevIconSmall />
                                     </motion.div>
@@ -104,30 +104,30 @@ const CustomWebDev = () => {
                                     className='flex flex-col space-y-8'
                                 >
                                     <div className='w-[443px] flex flex-col justify-between space-y-3'>
-                                        <p className='text-white font-light leading-[4rem] text-[48px] w-full'>Custom Web Development</p>
-                                        <p className='text-sm text-white w-full'>Tailor-made websites, custom web apps, and platforms that meet the specific needs of your business, whether you&apos;re a startup or a large enterprise.</p>
+                                        <p className='text-white font-light leading-[4rem] text-[48px] w-full'>Individuelle Webentwicklung</p>
+                                        <p className='text-sm text-white w-full'>Maßgeschneiderte Websites, individuelle Webanwendungen und Plattformen, die den spezifischen Anforderungen Ihres Unternehmens entsprechen, unabhängig davon, ob Sie ein Startup oder ein großes Unternehmen sind.</p>
                                     </div>
                                     <div className='flex flex-col space-y-10'>
                                         <BlueLine />
                                         <div className='h-[130px] w-[443px] flex flex-col justify-between'>
                                             <div className='flex flex-row space-x-2 items-center'>
                                                 <BlueDot />
-                                                <p className='text-white text-base'>Frontend Development</p>
+                                                <p className='text-white text-base'>Frontend-Entwicklung</p>
                                             </div>
                                             <div className='flex flex-row space-x-2 items-center'>
                                                 <BlueDot />
-                                                <p className='text-white text-base'>Backend Development</p>
+                                                <p className='text-white text-base'>Backend-Entwicklung</p>
                                             </div>
                                             <div className='flex flex-row space-x-2 items-center'>
                                                 <BlueDot />
-                                                <p className='text-white text-base'>CMS Development</p>
+                                                <p className='text-white text-base'>CMS-Entwicklung</p>
                                             </div>
                                         </div>
                                     </div>
                                 </motion.div>
                             </AnimatePresence>
                         ) : (
-                            <p className={`text-white text-[32px] opacity-70 whitespace-nowrap pl-20 rotate-90 w-full transition-all ease-in-out ${hoverIndex === 1 ? 'opacity-100 text-[34px]' : ''}`}>Custom Web Development</p>
+                            <p className={`text-white text-[32px] opacity-70 whitespace-nowrap pl-20 rotate-90 w-full transition-all ease-in-out ${hoverIndex === 1 ? 'opacity-100' : ''}`}>Individuelle Webentwicklung</p>
                         )}
                     </div>
                 </motion.div>
@@ -151,9 +151,9 @@ const CustomWebDev = () => {
                             >
                                 {selectedTab === 2 ? <DesignIconBig /> :
                                     <motion.div
-                                        animate={{ rotate: hoverIndex === 2 ? 45 : 0 }} // Apply rotation only when hoverIndex is 2
-                                        transition={{ type: "spring", stiffness: 300, damping: 20 }} // Smooth spring animation
-                                        style={{ display: "inline-block" }} // Ensures it behaves like an inline block
+                                        animate={{ rotate: hoverIndex === 2 ? 45 : 0 }}
+                                        transition={{ type: "spring", stiffness: 300, damping: 20 }}
+                                        style={{ display: "inline-block" }}
                                     >
                                         <UiDesignIcon />
                                     </motion.div>
@@ -172,29 +172,29 @@ const CustomWebDev = () => {
                                 >
                                     <div className='w-[443px] flex flex-col pt-10 justify-between space-y-3'>
                                         <p className='text-white font-light leading-[4rem] text-[48px] w-full'>UI/UX Design</p>
-                                        <p className='text-sm text-white w-full'>Our design-first approach ensures that your customers enjoy intuitive, engaging, and visually stunning digital experiences.</p>
+                                        <p className='text-sm text-white w-full'>Unser Design-First-Ansatz stellt sicher, dass Ihre Kunden intuitive, ansprechende und visuell beeindruckende digitale Erlebnisse genießen.</p>
                                     </div>
                                     <div className='flex flex-col space-y-10'>
                                         <GreenLine />
                                         <div className='h-[130px] w-[443px] flex flex-col justify-between'>
                                             <div className='flex flex-row space-x-2 items-center'>
                                                 <GreenDot />
-                                                <p className='text-white text-base'>UX Research & Wireframing</p>
+                                                <p className='text-white text-base'>UX-Forschung & Wireframing</p>
                                             </div>
                                             <div className='flex flex-row space-x-2 items-center'>
                                                 <GreenDot />
-                                                <p className='text-white text-base'>User Interface Design</p>
+                                                <p className='text-white text-base'>Benutzeroberflächen-Design</p>
                                             </div>
                                             <div className='flex flex-row space-x-2 items-center'>
                                                 <GreenDot />
-                                                <p className='text-white text-base'>Prototyping and Testing</p>
+                                                <p className='text-white text-base'>Prototyping und Testen</p>
                                             </div>
                                         </div>
                                     </div>
                                 </motion.div>
                             </AnimatePresence>
                         ) : (
-                            <p className={`text-white text-[32px] opacity-70 whitespace-nowrap pl-20 rotate-90 w-full transition-all ease-in-out ${hoverIndex === 2 ? 'opacity-100 text-[34px]' : ''}`}>UI/UX Design</p>
+                            <p className={`text-white text-[32px] opacity-70 whitespace-nowrap pl-20 rotate-90 w-full transition-all ease-in-out ${hoverIndex === 2 ? 'opacity-100' : ''}`}>UI/UX Design</p>
                         )}
                     </div>
                 </motion.div>
@@ -218,9 +218,9 @@ const CustomWebDev = () => {
                             >
                                 {selectedTab === 3 ? <EcommerceIconBig /> :
                                     <motion.div
-                                        animate={{ rotate: hoverIndex === 3 ? 45 : 0 }} // Apply rotation only when hoverIndex is 2
-                                        transition={{ type: "spring", stiffness: 300, damping: 20 }} // Smooth spring animation
-                                        style={{ display: "inline-block" }} // Ensures it behaves like an inline block
+                                        animate={{ rotate: hoverIndex === 3 ? 45 : 0 }}
+                                        transition={{ type: "spring", stiffness: 300, damping: 20 }}
+                                        style={{ display: "inline-block" }}
                                     >
                                         <EcommerceIcon />
                                     </motion.div>
@@ -237,8 +237,8 @@ const CustomWebDev = () => {
                                     className='flex flex-col space-y-8'
                                 >
                                     <div className='w-[443px] flex flex-col justify-between space-y-3'>
-                                        <p className='text-white font-light leading-[4rem] text-[48px] w-full'>E-Commerce Solutions</p>
-                                        <p className='text-sm text-white w-full'>Launch your online store with confidence. We create custom eCommerce platforms or enhance existing ones with powerful features to drive sales.</p>
+                                        <p className='text-white font-light leading-[4rem] text-[48px] w-full'>E-Commerce-Lösungen</p>
+                                        <p className='text-sm text-white w-full'>Starten Sie Ihren Online-Shop mit Zuversicht. Wir erstellen individuelle E-Commerce-Plattformen oder verbessern bestehende mit leistungsstarken Funktionen, um den Verkauf anzukurbeln.</p>
                                     </div>
                                     <div className='flex flex-col space-y-10'>
                                         <OrangeLine />
@@ -249,18 +249,18 @@ const CustomWebDev = () => {
                                             </div>
                                             <div className='flex flex-row space-x-2 items-center'>
                                                 <OrangeDot />
-                                                <p className='text-white text-base'>Payment Gateway Integration</p>
+                                                <p className='text-white text-base'>Zahlungsgateway-Integration</p>
                                             </div>
                                             <div className='flex flex-row space-x-2 items-center'>
                                                 <OrangeDot />
-                                                <p className='text-white text-base'>Custom Shopping Cart Solutions</p>
+                                                <p className='text-white text-base'>Individuelle Warenkorb-Lösungen</p>
                                             </div>
                                         </div>
                                     </div>
                                 </motion.div>
                             </AnimatePresence>
                         ) : (
-                            <p className={`text-white text-[32px] opacity-70 whitespace-nowrap pl-20 rotate-90 w-full transition-all ease-in-out ${hoverIndex === 3 ? 'opacity-100 text-[34px]' : ''}`}>E-Commerce Solutions</p>
+                            <p className={`text-white text-[32px] opacity-70 whitespace-nowrap pl-20 rotate-90 w-full transition-all ease-in-out ${hoverIndex === 3 ? 'opacity-100' : ''}`}>E-Commerce-Lösungen</p>
                         )}
                     </div>
                 </motion.div>
@@ -284,9 +284,9 @@ const CustomWebDev = () => {
                             >
                                 {selectedTab === 4 ? <MobileIconBig /> :
                                     <motion.div
-                                        animate={{ rotate: hoverIndex === 4 ? 45 : 0 }} // Apply rotation only when hoverIndex is 2
-                                        transition={{ type: "spring", stiffness: 300, damping: 20 }} // Smooth spring animation
-                                        style={{ display: "inline-block" }} // Ensures it behaves like an inline block
+                                        animate={{ rotate: hoverIndex === 4 ? 45 : 0 }}
+                                        transition={{ type: "spring", stiffness: 300, damping: 20 }}
+                                        style={{ display: "inline-block" }}
                                     >
                                         <MobileIcon />
                                     </motion.div>
@@ -303,30 +303,30 @@ const CustomWebDev = () => {
                                     className='flex flex-col space-y-8'
                                 >
                                     <div className='w-[443px] flex flex-col justify-between space-y-3'>
-                                        <p className='text-white font-light leading-[4rem] text-[48px] w-full'>Mobile App Development</p>
-                                        <p className='text-sm text-white w-full'>We build responsive, scalable mobile applications that seamlessly integrate with your business and engage users.</p>
+                                        <p className='text-white font-light leading-[4rem] text-[48px] w-full'>Mobile App-Entwicklung</p>
+                                        <p className='text-sm text-white w-full'>Wir entwickeln responsive, skalierbare mobile Anwendungen, die sich nahtlos in Ihr Unternehmen integrieren und Benutzer einbinden.</p>
                                     </div>
                                     <div className='flex flex-col space-y-10'>
                                         <RedLine />
                                         <div className='h-[130px] w-[443px] flex flex-col justify-between'>
                                             <div className='flex flex-row space-x-2 items-center'>
                                                 <RedDot />
-                                                <p className='text-white text-base'>iOS & Android App Development</p>
+                                                <p className='text-white text-base'>iOS & Android App-Entwicklung</p>
                                             </div>
                                             <div className='flex flex-row space-x-2 items-center'>
                                                 <RedDot />
-                                                <p className='text-white text-base'>Cross-platform Development</p>
+                                                <p className='text-white text-base'>Plattformübergreifende Entwicklung</p>
                                             </div>
                                             <div className='flex flex-row space-x-2 items-center'>
                                                 <RedDot />
-                                                <p className='text-white text-base'>App Maintenance & Optimization</p>
+                                                <p className='text-white text-base'>App-Wartung & Optimierung</p>
                                             </div>
                                         </div>
                                     </div>
                                 </motion.div>
                             </AnimatePresence>
                         ) : (
-                            <p className={`text-white text-[32px] opacity-70 whitespace-nowrap pl-20 rotate-90 w-full transition-all ease-in-out ${hoverIndex === 4 ? 'opacity-100 text-[34px]' : ''}`}>Mobile App Development</p>
+                            <p className={`text-white text-[32px] opacity-70 whitespace-nowrap pl-20 rotate-90 w-full transition-all ease-in-out ${hoverIndex === 4 ? 'opacity-100' : ''}`}>Mobile App-Entwicklung</p>
                         )}
                     </div>
                 </motion.div>
@@ -350,9 +350,9 @@ const CustomWebDev = () => {
                             >
                                 {selectedTab === 5 ? <APIIconBig /> :
                                     <motion.div
-                                        animate={{ rotate: hoverIndex === 5 ? 45 : 0 }} // Apply rotation only when hoverIndex is 2
-                                        transition={{ type: "spring", stiffness: 300, damping: 20 }} // Smooth spring animation
-                                        style={{ display: "inline-block" }} // Ensures it behaves like an inline block
+                                        animate={{ rotate: hoverIndex === 5 ? 45 : 0 }}
+                                        transition={{ type: "spring", stiffness: 300, damping: 20 }}
+                                        style={{ display: "inline-block" }}
                                     >
                                         <ApiIcon />
                                     </motion.div>
@@ -369,30 +369,30 @@ const CustomWebDev = () => {
                                     className='flex flex-col flex-1 justify-between'
                                 >
                                     <div className='w-[443px] flex flex-col justify-between space-y-3 pt-10'>
-                                        <p className='text-white font-light leading-[4rem] text-[48px] w-full'>API Integrations</p>
-                                        <p className='text-sm text-white w-full'>We enable seamless connections between different systems and apps through powerful API integrations.</p>
+                                        <p className='text-white font-light leading-[4rem] text-[48px] w-full'>API-Integrationen</p>
+                                        <p className='text-sm text-white w-full'>Wir ermöglichen nahtlose Verbindungen zwischen verschiedenen Systemen und Apps durch leistungsstarke API-Integrationen.</p>
                                     </div>
                                     <div className='flex flex-col space-y-10'>
                                         <PinkLine />
                                         <div className='h-[130px] w-[443px] flex flex-col justify-between'>
                                             <div className='flex flex-row space-x-2 items-center'>
                                                 <PinkDot />
-                                                <p className='text-white text-base'>Third-party API integrations</p>
+                                                <p className='text-white text-base'>Drittanbieter-API-Integrationen</p>
                                             </div>
                                             <div className='flex flex-row space-x-2 items-center'>
                                                 <PinkDot />
-                                                <p className='text-white text-base'>Custom API development</p>
+                                                <p className='text-white text-base'>Individuelle API-Entwicklung</p>
                                             </div>
                                             <div className='flex flex-row space-x-2 items-center opacity-0 cursor-default'>
                                                 <PinkDot />
-                                                <p className='text-white text-base'>CMS Development</p>
+                                                <p className='text-white text-base'>CMS-Entwicklung</p>
                                             </div>
                                         </div>
                                     </div>
                                 </motion.div>
                             </AnimatePresence>
                         ) : (
-                            <p className={`text-white text-[32px] opacity-70 whitespace-nowrap pl-20 rotate-90 w-full transition-all ease-in-out ${hoverIndex === 5 ? 'opacity-100 text-[34px]' : ''}`}>API Integrations</p>
+                            <p className={`text-white text-[32px] opacity-70 whitespace-nowrap pl-20 rotate-90 w-full transition-all ease-in-out ${hoverIndex === 5 ? 'opacity-100' : ''}`}>API-Integrationen</p>
                         )}
                     </div>
                 </motion.div>
@@ -416,9 +416,9 @@ const CustomWebDev = () => {
                             >
                                 {selectedTab === 6 ? <MaintainanceIconBig /> :
                                     <motion.div
-                                        animate={{ rotate: hoverIndex === 6 ? 45 : 0 }} // Apply rotation only when hoverIndex is 2
-                                        transition={{ type: "spring", stiffness: 300, damping: 20 }} // Smooth spring animation
-                                        style={{ display: "inline-block" }} // Ensures it behaves like an inline block
+                                        animate={{ rotate: hoverIndex === 6 ? 45 : 0 }}
+                                        transition={{ type: "spring", stiffness: 300, damping: 20 }}
+                                        style={{ display: "inline-block" }}
                                     >
                                         <MaintainanceIcon />
                                     </motion.div>
@@ -435,30 +435,30 @@ const CustomWebDev = () => {
                                     className='flex flex-col space-y-8'
                                 >
                                     <div className='w-[443px] flex flex-col justify-between space-y-3'>
-                                        <p className='text-white font-light leading-[4rem] text-[48px] w-full'>Maintenance & Support</p>
-                                        <p className='text-sm text-white w-full'>We provide ongoing maintenance and support to ensure your platform operates flawlessly.</p>
+                                        <p className='text-white font-light leading-[4rem] text-[48px] w-full'>Wartung & Support</p>
+                                        <p className='text-sm text-white w-full'>Wir bieten laufende Wartung und Support, um sicherzustellen, dass Ihre Plattform einwandfrei funktioniert.</p>
                                     </div>
                                     <div className='flex flex-col space-y-10'>
                                         <PurlpleLine />
                                         <div className='h-[130px] w-[443px] flex flex-col justify-between'>
                                             <div className='flex flex-row space-x-2 items-center'>
                                                 <PurpleDot />
-                                                <p className='text-white text-base'>Website Security Updates</p>
+                                                <p className='text-white text-base'>Website-Sicherheitsupdates</p>
                                             </div>
                                             <div className='flex flex-row space-x-2 items-center'>
                                                 <PurpleDot />
-                                                <p className='text-white text-base'>Regular Backups and Monitoring</p>
+                                                <p className='text-white text-base'>Regelmäßige Backups und Überwachung</p>
                                             </div>
                                             <div className='flex flex-row space-x-2 items-center'>
                                                 <PurpleDot />
-                                                <p className='text-white text-base'>Troubleshooting and Bug Fixes</p>
+                                                <p className='text-white text-base'>Fehlerbehebung und Bugfixes</p>
                                             </div>
                                         </div>
                                     </div>
                                 </motion.div>
                             </AnimatePresence>
                         ) : (
-                            <p className={`text-white text-[32px] opacity-70 whitespace-nowrap pl-20 rotate-90 w-full transition-all ease-in-out ${hoverIndex === 6 ? 'opacity-100 text-[34px]' : ''}`}>Maintenance & Support</p>
+                            <p className={`text-white text-[32px] opacity-70 whitespace-nowrap pl-20 rotate-90 w-full transition-all ease-in-out ${hoverIndex === 6 ? 'opacity-100' : ''}`}>Wartung & Support</p>
                         )}
                     </div>
                 </motion.div>
