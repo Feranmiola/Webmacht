@@ -127,7 +127,7 @@ const CustomWebDev = () => {
                                 </motion.div>
                             </AnimatePresence>
                         ) : (
-                            <p className={`text-white text-[32px] opacity-70 whitespace-nowrap pl-20 rotate-90 w-full transition-all ease-in-out ${hoverIndex === 1 ? 'opacity-100' : ''}`}>Individuelle Webentwicklung</p>
+                            <p className={`text-white text-[32px] opacity-70 whitespace-nowrap pl-[3rem] rotate-90 w-full transition-all ease-in-out ${hoverIndex === 1 ? 'opacity-100' : ''}`}>Individuelle Webentwicklung</p>
                         )}
                     </div>
                 </motion.div>
@@ -194,7 +194,7 @@ const CustomWebDev = () => {
                                 </motion.div>
                             </AnimatePresence>
                         ) : (
-                            <p className={`text-white text-[32px] opacity-70 whitespace-nowrap pl-20 rotate-90 w-full transition-all ease-in-out ${hoverIndex === 2 ? 'opacity-100' : ''}`}>UI/UX Design</p>
+                            <p className={`text-white text-[32px] opacity-70 whitespace-nowrap pl-[3rem] rotate-90 w-full transition-all ease-in-out ${hoverIndex === 2 ? 'opacity-100' : ''}`}>UI/UX Design</p>
                         )}
                     </div>
                 </motion.div>
@@ -260,7 +260,7 @@ const CustomWebDev = () => {
                                 </motion.div>
                             </AnimatePresence>
                         ) : (
-                            <p className={`text-white text-[32px] opacity-70 whitespace-nowrap pl-20 rotate-90 w-full transition-all ease-in-out ${hoverIndex === 3 ? 'opacity-100' : ''}`}>E-Commerce-Lösungen</p>
+                            <p className={`text-white text-[32px] opacity-70 whitespace-nowrap pl-[3rem] rotate-90 w-full transition-all ease-in-out ${hoverIndex === 3 ? 'opacity-100' : ''}`}>E-Commerce-Lösungen</p>
                         )}
                     </div>
                 </motion.div>
@@ -326,7 +326,7 @@ const CustomWebDev = () => {
                                 </motion.div>
                             </AnimatePresence>
                         ) : (
-                            <p className={`text-white text-[32px] opacity-70 whitespace-nowrap pl-20 rotate-90 w-full transition-all ease-in-out ${hoverIndex === 4 ? 'opacity-100' : ''}`}>Mobile App-Entwicklung</p>
+                            <p className={`text-white text-[32px] opacity-70 whitespace-nowrap pl-[3rem] rotate-90 w-full transition-all ease-in-out ${hoverIndex === 4 ? 'opacity-100' : ''}`}>Mobile App-Entwicklung</p>
                         )}
                     </div>
                 </motion.div>
@@ -392,7 +392,7 @@ const CustomWebDev = () => {
                                 </motion.div>
                             </AnimatePresence>
                         ) : (
-                            <p className={`text-white text-[32px] opacity-70 whitespace-nowrap pl-20 rotate-90 w-full transition-all ease-in-out ${hoverIndex === 5 ? 'opacity-100' : ''}`}>API-Integrationen</p>
+                            <p className={`text-white text-[32px] opacity-70 whitespace-nowrap pl-[3rem] rotate-90 w-full transition-all ease-in-out ${hoverIndex === 5 ? 'opacity-100' : ''}`}>API-Integrationen</p>
                         )}
                     </div>
                 </motion.div>
@@ -432,9 +432,9 @@ const CustomWebDev = () => {
                                     animate={{ opacity: 1 }}
                                     exit={{ opacity: 0 }}
                                     transition={{ delay: 0.3 }}
-                                    className='flex flex-col space-y-8'
+                                    className='flex flex-col flex-1 justify-between'
                                 >
-                                    <div className='w-[443px] flex flex-col justify-between space-y-3'>
+                                    <div className='w-[443px] flex flex-col justify-between space-y-3 pt-10'>
                                         <p className='text-white font-light leading-[4rem] text-[48px] w-full'>Wartung & Support</p>
                                         <p className='text-sm text-white w-full'>Wir bieten laufende Wartung und Support, um sicherzustellen, dass Ihre Plattform einwandfrei funktioniert.</p>
                                     </div>
@@ -458,7 +458,7 @@ const CustomWebDev = () => {
                                 </motion.div>
                             </AnimatePresence>
                         ) : (
-                            <p className={`text-white text-[32px] opacity-70 whitespace-nowrap pl-20 rotate-90 w-full transition-all ease-in-out ${hoverIndex === 6 ? 'opacity-100' : ''}`}>Wartung & Support</p>
+                            <p className={`text-white text-[32px] opacity-70 whitespace-nowrap pl-[3rem] rotate-90 w-full transition-all ease-in-out ${hoverIndex === 6 ? 'opacity-100' : ''}`}>Wartung & Support</p>
                         )}
                     </div>
                 </motion.div>
