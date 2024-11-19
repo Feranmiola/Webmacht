@@ -3,10 +3,10 @@ import React, { useState } from 'react'
 import { motion } from 'framer-motion'
 import WebmachtIconFooter from './Icons/WebmachtIconFooter'
 import LocationIcon from './Icons/LocationIcon'
-import EmailIcon from './Icons/EmailIcon'
-import PhoneIcon from './Icons/PhoneIcon'
 import LinkIcon from './Icons/LinkIcon'
 import { useRouter } from 'next-nprogress-bar'
+import PhoneWhite from './Icons/PhoneWhite'
+import MailIcon from './Icons/MailIcon'
 
 const Footer = () => {
     const router = useRouter()
@@ -65,7 +65,7 @@ const Footer = () => {
                                     animate={isEmailHovered ? { rotate: 360 } : { rotate: 0 }}
                                     transition={{ duration: 1 }}
                                 >
-                                    <EmailIcon />
+                                    <MailIcon />
                                 </motion.div>
                                 <p className='text-base text-white '>info@webmacht.de</p>
                             </div>
@@ -80,7 +80,7 @@ const Footer = () => {
                                     animate={isPhoneHovered ? { x: [0, -2, 2, -2, 0] } : { x: 0 }}
                                     transition={{ duration: 0.5 }}
                                 >
-                                    <PhoneIcon />
+                                    <PhoneWhite />
                                 </motion.div>
                                 <p className='text-base text-white '>+49 0 0900 090</p>
                             </div>
