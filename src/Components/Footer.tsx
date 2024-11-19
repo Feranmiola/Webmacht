@@ -40,7 +40,7 @@ const Footer = () => {
 
                         {/* Standort-Symbol mit Skalierungs- und Hebungseffekt */}
                         <div
-                            className='w-full flex flex-row items-center justify-center space-x-2 border-b-[1px] border-b-[#1B1B1B] h-[147px]'
+                            className='w-full flex flex-row items-center justify-center opacity-70 hover:opacity-100 cursor-pointer transition ease-in-out space-x-2 border-b-[1px] border-b-[#1B1B1B] h-[147px]'
                             onMouseEnter={() => setLocationHovered(true)}
                             onMouseLeave={() => setLocationHovered(false)}
                         >
@@ -50,14 +50,14 @@ const Footer = () => {
                             >
                                 <LocationIcon />
                             </motion.div>
-                            <p className='text-base text-white opacity-70'>Zimmerstraße 78, 10117 Berlin, Deutschland</p>
+                            <p className='text-base text-white'>Zimmerstraße 78, 10117 Berlin, Deutschland</p>
                         </div>
 
                         <div className='flex flex-row items-center w-full h-[147px]'>
 
                             {/* E-Mail-Symbol mit 360-Grad-Rotationseffekt */}
                             <div
-                                className='flex items-center justify-center h-full space-x-2 w-[217px] border-r-[1px] border-r-[#1B1B1B]'
+                                className='flex items-center justify-center h-full opacity-70 hover:opacity-100 cursor-pointer transition ease-in-out space-x-2 w-[217px] border-r-[1px] border-r-[#1B1B1B]'
                                 onMouseEnter={() => setEmailHovered(true)}
                                 onMouseLeave={() => setEmailHovered(false)}
                             >
@@ -67,12 +67,12 @@ const Footer = () => {
                                 >
                                     <EmailIcon />
                                 </motion.div>
-                                <p className='text-base text-white opacity-70'>info@webmacht.de</p>
+                                <p className='text-base text-white '>info@webmacht.de</p>
                             </div>
 
                             {/* Telefon-Symbol mit Schütteleffekt */}
                             <div
-                                className='flex items-center justify-center h-full w-[217px]'
+                                className='flex items-center justify-center opacity-70 hover:opacity-100 cursor-pointer transition ease-in-out h-full w-[217px]'
                                 onMouseEnter={() => setPhoneHovered(true)}
                                 onMouseLeave={() => setPhoneHovered(false)}
                             >
@@ -82,7 +82,7 @@ const Footer = () => {
                                 >
                                     <PhoneIcon />
                                 </motion.div>
-                                <p className='text-base text-white opacity-70'>+49 0 0900 090</p>
+                                <p className='text-base text-white '>+49 0 0900 090</p>
                             </div>
                         </div>
                     </div>
@@ -95,17 +95,17 @@ const Footer = () => {
                             <div className='h-[153px] flex flex-col justify-between'>
                                 <div
                                     onClick={() => router.push('/impressum')}
-                                    className='flex cursor-pointer flex-row space-x-2 items-center'
+                                    className='flex flex-row opacity-70 hover:opacity-100 cursor-pointer transition ease-in-out space-x-2 items-center'
                                 >
-                                    <p className='text-base text-white opacity-70'>Impressum</p>
+                                    <p className='text-base text-white '>Impressum</p>
                                     <LinkIcon />
                                 </div>
-                                <div className='flex flex-row space-x-2 items-center'>
-                                    <p className='text-base text-white opacity-70'>Datenschutzerklärung</p>
+                                <div className='flex flex-row space-x-2 opacity-70 hover:opacity-100 cursor-pointer transition ease-in-out items-center'>
+                                    <p className='text-base text-white '>Datenschutzerklärung</p>
                                     <LinkIcon />
                                 </div>
-                                <div className='flex flex-row space-x-2 items-center'>
-                                    <p className='text-base text-white opacity-70'>Allgemeine Geschäftsbedingungen</p>
+                                <div className='flex flex-row space-x-2 opacity-70 hover:opacity-100 cursor-pointer transition ease-in-out items-center'>
+                                    <p className='text-base text-white '>Allgemeine Geschäftsbedingungen</p>
                                     <LinkIcon />
                                 </div>
                             </div>
