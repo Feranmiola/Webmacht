@@ -127,7 +127,7 @@ const CustomWebDev = () => {
                                 </motion.div>
                             </AnimatePresence>
                         ) : (
-                            <p className={`text-white text-[32px] whitespace-nowrap pl-[3rem] rotate-90 w-full transition-all ease-in-out ${hoverIndex === 1 ? 'opacity-100 text-[14px]' : 'opacity-70'}`}>Individuelle Webentwicklung</p>
+                            <p className={`text-white text-[32px] whitespace-nowrap pl-[3rem] rotate-90 w-full transition-all ease-in-out ${hoverIndex === 1 ? 'opacity-100' : 'opacity-70'}`}>Individuelle Webentwicklung</p>
                         )}
                     </div>
                 </motion.div>
@@ -194,7 +194,7 @@ const CustomWebDev = () => {
                                 </motion.div>
                             </AnimatePresence>
                         ) : (
-                            <p className={`text-white text-[32px] whitespace-nowrap pl-[3rem] rotate-90 w-full transition-all ease-in-out ${hoverIndex === 2 ? 'opacity-100 text-[14px]' : 'opacity-70'}`}>UI/UX Design</p>
+                            <p className={`text-white text-[32px] whitespace-nowrap pl-[3rem] rotate-90 w-full transition-all ease-in-out ${hoverIndex === 2 ? 'opacity-100' : 'opacity-70'}`}>UI/UX Design</p>
                         )}
                     </div>
                 </motion.div>
@@ -260,7 +260,7 @@ const CustomWebDev = () => {
                                 </motion.div>
                             </AnimatePresence>
                         ) : (
-                            <p className={`text-white text-[32px] whitespace-nowrap pl-[3rem] rotate-90 w-full transition-all ease-in-out ${hoverIndex === 3 ? 'opacity-100 text-[14px]' : 'opacity-70'}`}>E-Commerce-Lösungen</p>
+                            <p className={`text-white text-[32px] whitespace-nowrap pl-[3rem] rotate-90 w-full transition-all ease-in-out ${hoverIndex === 3 ? 'opacity-100' : 'opacity-70'}`}>E-Commerce-Lösungen</p>
                         )}
                     </div>
                 </motion.div>
@@ -326,7 +326,7 @@ const CustomWebDev = () => {
                                 </motion.div>
                             </AnimatePresence>
                         ) : (
-                            <p className={`text-white text-[32px] whitespace-nowrap pl-[3rem] rotate-90 w-full transition-all ease-in-out ${hoverIndex === 4 ? 'opacity-100 text-[14px]' : 'opacity-70'}`}>Mobile App-Entwicklung</p>
+                            <p className={`text-white text-[32px] whitespace-nowrap pl-[3rem] rotate-90 w-full transition-all ease-in-out ${hoverIndex === 4 ? 'opacity-100' : 'opacity-70'}`}>Mobile App-Entwicklung</p>
                         )}
                     </div>
                 </motion.div>
@@ -392,7 +392,7 @@ const CustomWebDev = () => {
                                 </motion.div>
                             </AnimatePresence>
                         ) : (
-                            <p className={`text-white text-[32px] whitespace-nowrap pl-[3rem] rotate-90 w-full transition-all ease-in-out ${hoverIndex === 5 ? 'opacity-100 text-[14px]' : 'opacity-70'}`}>API-Integrationen</p>
+                            <p className={`text-white text-[32px] whitespace-nowrap pl-[3rem] rotate-90 w-full transition-all ease-in-out ${hoverIndex === 5 ? 'opacity-100' : 'opacity-70'}`}>API-Integrationen</p>
                         )}
                     </div>
                 </motion.div>
@@ -458,7 +458,7 @@ const CustomWebDev = () => {
                                 </motion.div>
                             </AnimatePresence>
                         ) : (
-                            <p className={`text-white text-[32px] whitespace-nowrap pl-[3rem] rotate-90 w-full transition-all ease-in-out ${hoverIndex === 6 ? 'opacity-100 text-[14px]' : 'opacity-70'}`}>Wartung & Support</p>
+                            <p className={`text-white text-[32px] whitespace-nowrap pl-[3rem] rotate-90 w-full transition-all ease-in-out ${hoverIndex === 6 ? 'opacity-100' : 'opacity-70'}`}>Wartung & Support</p>
                         )}
                     </div>
                 </motion.div>
