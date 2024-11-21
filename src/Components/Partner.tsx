@@ -2,8 +2,8 @@ import React from 'react'
 
 const Partner = () => {
     return (
-        <div className='w-full h-[777px] bg-black flex items-center justify-center flex-col space-y-16 max-md:px-10 '>
-            <p className='text-white text-[56px] font-semibold w-[783px] max-md:text-[24px] max-md:text-left max-md:w-full text-center'>Ihr Partner für innovative Weblösungen</p>
+        <div className='w-full md:h-[777px] max-md:h-[920px]  bg-black flex items-center justify-center flex-col space-y-16 max-md:px-10 '>
+            <p className='text-white text-[56px] font-semibold w-[783px] max-md:text-[24px] max-md:text-left max-md:w-full max-md:pt-10 text-center'>Ihr Partner für innovative Weblösungen</p>
 
             <div className='w-full flex max-md:flex-col items-center justify-center space-x-2'>
                 <div className='border-l-[1px] w-[302px] h-[181px] pt-3 flex flex-col space-y-3 border-l-[#1B1B1B] px-5'>

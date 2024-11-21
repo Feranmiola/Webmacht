@@ -6,8 +6,57 @@ import LaunchIcon from './Icons/LaunchIcon';
 const Approach = () => {
     return (
         <div className="relative bg-black pb-20">
+            <div className='flex flex-col space-y-10 md:hidden w-full p-10'>
+                <p className="text-white font-light z-[9999] text-[24px]">Unser Ansatz</p>
+
+                <div className='flex flex-col h-[463.99px] items-center justify-between'>
+                    <img
+                        src="https://res.cloudinary.com/debiu7z1b/image/upload/v1730806886/Frame_44_fvvdqm.webp"
+                        alt="Beratung & Entdeckung"
+                        className="h-[265px] w-[358px]"
+                    />
+                    <div className="flex flex-col space-y-2">
+                        <ConsultationIcon />
+                        <div className="flex flex-col">
+                            <p className="text-white font-bold text-2xl">Beratung & Entdeckung</p>
+                            <p className="text-white text-base">Verständnis Ihrer Geschäftsziele und Vision.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div className='flex flex-col h-[463.99px] items-center justify-between'>
+                    <img
+                        src="https://res.cloudinary.com/debiu7z1b/image/upload/v1730806886/Frame_45_cysssl.webp"
+                        alt="Design & Entwicklung"
+                        className="h-[265px] w-[358px]"
+                    />
+                    <div className="flex flex-col space-y-2">
+                        <DesignIcon />
+                        <div className="flex flex-col">
+                            <p className="text-white font-bold text-2xl">Design & Entwicklung</p>
+                            <p className="text-white text-base">Erstellung benutzerfreundlicher, maßgeschneiderter digitaler Lösungen.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div className='flex flex-col h-[463.99px] items-center justify-between'>
+                    <img
+                        src="https://res.cloudinary.com/debiu7z1b/image/upload/v1730806887/Frame_46_llwwl9.webp"
+                        alt="Start & Optimierung"
+                        className="h-[265px] w-[358px]"
+                    />
+                    <div className="flex flex-col space-y-2">
+                        <LaunchIcon />
+                        <div className="flex flex-col">
+                            <p className="text-white font-bold text-2xl">Start & Optimierung</p>
+                            <p className="text-white text-base">Reibungslose Umsetzung mit fortlaufender Unterstützung und Optimierung..</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
             {/* Container für Sticky-Bereiche */}
-            <div className="h-[2631px] w-full py-10">
+            <div className="h-[2631px] max-md:hidden w-full py-10">
                 {/* Seite 1 */}
                 <div className='sticky top-[110px] h-screen bg-black '>
                     <div id="page1" className="w-[1272px] h-[792px]  bg-[#090909] z-10 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
@@ -34,7 +83,7 @@ const Approach = () => {
                 </div>
 
                 {/* Seite 2 */}
-                <div className='sticky top-[110px] h-screen bg-black '>
+                <div className='sticky top-[110px] max-md:hidden h-screen bg-black '>
                     <div id="page2" className="w-[1272px] h-[792px]  bg-[#090909] z-20 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
                         <div className='flex items-center w-full h-full '>
                             <div className='flex-row flex items-center space-x-[6rem]'>
@@ -56,7 +105,7 @@ const Approach = () => {
                 </div>
 
                 {/* Seite 3 */}
-                <div className='sticky top-[110px] h-screen bg-black '>
+                <div className='sticky top-[110px] max-md:hidden h-screen bg-black '>
                     <div id="page3" className="w-[1272px] h-[792px]  bg-[#090909] z-30 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
                         <div className='flex items-center w-full h-full '>
                             <div className='flex-row flex items-center space-x-[6rem]'>
