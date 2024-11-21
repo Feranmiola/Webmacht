@@ -47,7 +47,7 @@ const CustomWebDev = () => {
 
     return (
         <div className='bg-black w-full h-[1006px] flex items-center flex-col space-y-20 justify-center'>
-            <div className='flex flex-row w-[1290px] h-[134px] items-center justify-between'>
+            <div className='flex flex-row max-md:hidden w-[1290px] h-[134px] items-center justify-between'>
                 <p className='w-[654px] text-white text-[56px] font-semibold'>Umfassende Webentwicklungslösungen</p>
                 <div className='flex flex-col w-[530px] h-full justify-between'>
                     <motion.div
@@ -63,8 +63,24 @@ const CustomWebDev = () => {
                 </div>
             </div>
 
+            <div className='flex flex-col md:hidden w-[90%] items-center space-y-5'>
+                <div className='flex flex-row w-full justify-between'>
+                    <p className='w-[654px] text-white  text-2xl font-semibold'>Umfassende Webentwicklungslösungen</p>
+                    <motion.div
+                        className='w-max h-max'
+                        onHoverStart={() => setRotation(rotation + 90)}
+                        animate={{ rotate: rotation }}
+                        transition={{ type: "spring", stiffness: 300, damping: 20 }}
+                        style={{ display: "inline-block" }}
+                    >
+                        <WebmachtLogoSquare />
+                    </motion.div>
+                </div>
+                <p className='text-white text-base w-full'>Von individuellem Website-Design bis hin zur Full-Stack-Entwicklung helfen wir Unternehmen, in der digitalen Welt erfolgreich zu sein.</p>
+            </div>
+
             <div id='tabs'
-                className='w-[1289px] h-[560px] flex relative items-center justify-center'>
+                className='w-[1289px] h-[560px] flex relative items-center justify-center max-md:hidden'>
                 <motion.div
                     onMouseEnter={() => setHoverIndex(1)}
                     onMouseLeave={() => setHoverIndex(0)}
