@@ -20,7 +20,7 @@ const Footer = () => {
 
     return (
         <div className='bg-datkGrey flex w-full md:h-[331px] max-md:py-10 flex-col space-y-3'>
-            <div className='h-[480px] w-full flex flex-col items-center justify-center border-t-[1px] border-b-[1px] border-t-[#1B1B1B] border-b-[#1B1B1B]'>
+            <div className='h-[480px] w-full md:hidden flex flex-col items-center justify-center border-t-[1px] border-b-[1px] border-t-[#1B1B1B] border-b-[#1B1B1B]'>
                 <div className='w-[367px] h-[262px] flex flex-col space-y-5 px-5 justify-center border-l-[1px] border-r-[1px] border-l-[#1B1B1B] border-r-[#1B1B1B]'>
                     <Webmacht />
                     <div
