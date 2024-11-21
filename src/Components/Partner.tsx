@@ -2,10 +2,10 @@ import React from 'react'
 
 const Partner = () => {
     return (
-        <div className='w-full h-[777px] bg-black flex items-center justify-center flex-col space-y-16 '>
-            <p className='text-white text-[56px] font-semibold w-[783px] text-center'>Ihr Partner für innovative Weblösungen</p>
+        <div className='w-full h-[777px] bg-black flex items-center justify-center flex-col space-y-16 max-md:px-10 '>
+            <p className='text-white text-[56px] font-semibold w-[783px] max-md:text-[24px] max-md:text-left max-md:w-full text-center'>Ihr Partner für innovative Weblösungen</p>
 
-            <div className='w-full flex items-center justify-center space-x-2'>
+            <div className='w-full flex max-md:flex-col items-center justify-center space-x-2'>
                 <div className='border-l-[1px] w-[302px] h-[181px] pt-3 flex flex-col space-y-3 border-l-[#1B1B1B] px-5'>
                     <p className='text-white opacity-70 text-[28px] font-thin'>01</p>
                     <p className='text-white tex-base font-bold'>Exzellenz</p>
