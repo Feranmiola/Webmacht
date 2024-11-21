@@ -28,6 +28,7 @@ import PinkLine from './Icons/PinkLine'
 import PinkDot from './Icons/PinkDot'
 import PurlpleLine from './Icons/PurlpleLine'
 import PurpleDot from './Icons/PurpleDot'
+import MobileCustomWebDev from './MobileCustomWebDev'
 
 const CustomWebDev = () => {
     const [selectedTab, setSelectedTab] = useState(1)
@@ -79,6 +80,9 @@ const CustomWebDev = () => {
                 <p className='text-white text-base w-full'>Von individuellem Website-Design bis hin zur Full-Stack-Entwicklung helfen wir Unternehmen, in der digitalen Welt erfolgreich zu sein.</p>
             </div>
 
+            <div className='md:hidden'>
+                <MobileCustomWebDev />
+            </div>
             <div id='tabs'
                 className='w-[1289px] h-[560px] flex relative items-center justify-center max-md:hidden'>
                 <motion.div
