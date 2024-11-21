@@ -26,19 +26,17 @@ const Footer = () => {
                     <div
                         className='flex flex-row opacity-70 items-center space-x-2'>
                         <LocationIcon />
-                        <p className='text-base text-white'>Zimmerstraße 78, 10117 Berlin, Deutschland</p>
+                        <p className='text-base text-white'>Struthstr. 1, 63607 Wächtersbach, Deutschland</p>
                     </div>
 
-                    <div
-                        className='flex flex-row opacity-70 items-center space-x-2'>
+                    <a href="mailto:info@webmacht.de" className='flex flex-row opacity-70 items-center space-x-2 hover:opacity-100 transition-opacity'>
                         <MailIcon />
                         <p className='text-base text-white '>info@webmacht.de</p>
-                    </div>
-                    <div
-                        className='flex flex-row opacity-70 items-center space-x-2'>
+                    </a>
+                    <a href="tel:+491756404044" className='flex flex-row opacity-70 items-center space-x-2 hover:opacity-100 transition-opacity'>
                         <PhoneWhite />
-                        <p className='text-base text-white '>+49 0 0900 090</p>
-                    </div>
+                        <p className='text-base text-white '>+49 175 640 4044</p>
+                    </a>
                 </div>
 
                 <div className='w-full flex-1  flex items-center justify-center border-t-[1px] border-b-[1px] border-t-[#1B1B1B] border-b-[#1B1B1B]'>
@@ -98,13 +96,14 @@ const Footer = () => {
                             >
                                 <LocationIcon />
                             </motion.div>
-                            <p className='text-base text-white'>Zimmerstraße 78, 10117 Berlin, Deutschland</p>
+                            <p className='text-base text-white'>Struthstr. 1, 63607 Wächtersbach, Deutschland</p>
                         </div>
 
                         <div className='flex flex-row items-center w-full h-[147px]'>
 
                             {/* E-Mail-Symbol mit 360-Grad-Rotationseffekt */}
-                            <div
+                            <a
+                                href="mailto:info@webmacht.de"
                                 className='flex items-center justify-center h-full opacity-70 hover:opacity-100 cursor-pointer transition ease-in-out space-x-2 w-[217px] border-r-[1px] border-r-[#1B1B1B]'
                                 onMouseEnter={() => setEmailHovered(true)}
                                 onMouseLeave={() => setEmailHovered(false)}
@@ -116,10 +115,11 @@ const Footer = () => {
                                     <MailIcon />
                                 </motion.div>
                                 <p className='text-base text-white '>info@webmacht.de</p>
-                            </div>
+                            </a>
 
                             {/* Telefon-Symbol mit Schütteleffekt */}
-                            <div
+                            <a
+                                href="tel:+491756404044"
                                 className='flex items-center justify-center opacity-70 hover:opacity-100 cursor-pointer transition ease-in-out h-full w-[217px]'
                                 onMouseEnter={() => setPhoneHovered(true)}
                                 onMouseLeave={() => setPhoneHovered(false)}
@@ -130,8 +130,8 @@ const Footer = () => {
                                 >
                                     <PhoneWhite />
                                 </motion.div>
-                                <p className='text-base text-white '>+49 0 0900 090</p>
-                            </div>
+                                <p className='text-base text-white '>+49 175 640 4044</p>
+                            </a>
                         </div>
                     </div>
 
@@ -167,3 +167,4 @@ const Footer = () => {
 }
 
 export default Footer
+
