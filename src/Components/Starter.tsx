@@ -39,10 +39,10 @@ export default function Starter() {
 
     return (
         <div className="homeBackground relative h-[911px] max-h-[100vh] w-full">
-            <div className="flex flex-col h-full justify-end pl-20 pb-[7rem]">
+            <div className="flex flex-col h-full justify-end pl-20 max-md:px-5 pb-[7rem]">
                 <div className="flex flex-col space-y-8">
                     <motion.p
-                        className="text-white text-[72px] font-semibold leading-[5rem] w-[772px]"
+                        className="text-white text-[72px] max-md:text-[32px] font-semibold max-md:w-[352px] leading-[5rem] max-md:leading-[2.5rem] w-[772px]"
                         variants={sentenceVariants}
                         initial="hidden"
                         animate="visible"
@@ -54,13 +54,11 @@ export default function Starter() {
                         ))}
                     </motion.p>
                     <motion.p
-                        className="text-white w-[752px] text-base font-light"
+                        className="text-white w-[752px] max-md:w-[352px]  text-base font-light"
                         variants={fadeInVariants}
                         initial="hidden"
                         animate="visible"
                     >
-                        {/* Your trusted partner to deliver cutting-edge web development solutions tailored to your business needs.
-                        Crafting innovative digital experiences for businesses in Germany and across the globe. */}
                         Ihr vertrauenswürdiger Partner für die Bereitstellung modernster Webentwicklungslösungen, maßgeschneidert auf die Bedürfnisse Ihres Unternehmens.
                         Innovative digitale Erlebnisse für Unternehmen in Deutschland und weltweit gestalten.
                     </motion.p>
@@ -76,7 +74,7 @@ export default function Starter() {
                 </div>
             </div>
             <motion.div
-                className="absolute right-10 bottom-10 h-[82px] w-[52px] flex items-center justify-between flex-col"
+                className="absolute max-md:hidden right-10 bottom-10 h-[82px] w-[52px] flex items-center justify-between flex-col"
                 variants={fadeInVariants}
                 initial="hidden"
                 animate="visible"
