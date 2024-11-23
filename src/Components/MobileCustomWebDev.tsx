@@ -38,7 +38,7 @@ const MobileCustomWebDev = () => {
     }
 
     return (
-        <div id='tabs' className='w-[100%] max-w-[356px] pb-20 h-[758.68px] flex flex-col -space-y-1 relative items-center justify-center md:hidden mx-auto'>
+        <div id='tabs' className='w-[100%] max-w-[356px] pb-20 h-[758.68px] flex flex-col -space-y-1 relative items-center justify-center lg:hidden mx-auto'>
             {tabData.map((tab) => (
                 <motion.div
                     key={tab.id}

@@ -31,7 +31,7 @@ export default function Starter() {
             opacity: 1,
             y: 0,
             transition: {
-                delay: 0.5, // Adjust this delay based on the length of your main text
+                delay: 0.5,
                 duration: 0.8
             }
         }
@@ -39,10 +39,10 @@ export default function Starter() {
 
     return (
         <div className="homeBackground relative h-[911px] max-h-[100vh] w-full">
-            <div className="flex flex-col h-full justify-end pl-20 max-md:px-5 pb-[7rem]">
-                <div className="flex flex-col space-y-8">
+            <div className="flex flex-col h-full justify-end px-5 md:pl-10 lg:pl-20 pb-[3rem] md:pb-[5rem] lg:pb-[7rem]">
+                <div className="flex flex-col space-y-4 md:space-y-6 lg:space-y-8">
                     <motion.p
-                        className="text-white text-[72px] max-md:text-[32px] font-semibold max-md:w-[352px] leading-[5rem] max-md:leading-[2.5rem] w-[772px]"
+                        className="text-white text-[32px] md:text-[48px] lg:text-[60px] xl:text-[72px] font-semibold leading-[2.5rem] md:leading-[3.5rem] lg:leading-[4.5rem] xl:leading-[5rem] w-full md:w-[600px] lg:w-[700px] xl:w-[772px]"
                         variants={sentenceVariants}
                         initial="hidden"
                         animate="visible"
@@ -54,7 +54,7 @@ export default function Starter() {
                         ))}
                     </motion.p>
                     <motion.p
-                        className="text-white w-[752px] max-md:w-[352px]  text-base font-light"
+                        className="text-white w-full md:w-[500px] lg:w-[650px] xl:w-[752px] text-sm md:text-base font-light"
                         variants={fadeInVariants}
                         initial="hidden"
                         animate="visible"
@@ -63,7 +63,7 @@ export default function Starter() {
                         Innovative digitale Erlebnisse für Unternehmen in Deutschland und weltweit gestalten.
                     </motion.p>
                     <motion.button
-                        className="bg-deep-purple text-white text-base font-bold border border-transparent rounded-[4px] h-[48px] px-4 w-max hover:border-white hover:bg-transparent transition-colors duration-300 ease-in-out"
+                        className="bg-deep-purple text-white text-sm md:text-base font-bold border border-transparent rounded-[4px] h-[40px] md:h-[48px] px-3 md:px-4 w-max hover:border-white hover:bg-transparent transition-colors duration-300 ease-in-out"
                         aria-label="Get In Touch"
                         variants={fadeInVariants}
                         initial="hidden"
@@ -74,7 +74,7 @@ export default function Starter() {
                 </div>
             </div>
             <motion.div
-                className="absolute max-md:hidden right-10 bottom-10 h-[82px] w-[52px] flex items-center justify-between flex-col"
+                className="absolute hidden md:flex right-5 lg:right-10 bottom-5 lg:bottom-10 h-[82px] w-[52px] items-center justify-between flex-col"
                 variants={fadeInVariants}
                 initial="hidden"
                 animate="visible"
@@ -100,3 +100,4 @@ export default function Starter() {
         </div>
     )
 }
+
