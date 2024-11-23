@@ -11,6 +11,7 @@ import Technologies from "@/Components/Technologies";
 import StartBuilding from "@/Components/StartBuilding";
 import Contact from "@/Components/Contact";
 import CustomWebDev from "@/Components/CustomWebDev";
+import SEO from "@/Components/SEO";
 
 export default function Home() {
 
@@ -53,6 +54,14 @@ export default function Home() {
 
   return (
     <div className={`w-full h-full flex flex-col ${GeistSans.className}`}>
+      <SEO
+        title="Webmacht"
+        description="Ihr vertrauenswürdiger Partner für die Bereitstellung modernster Webentwicklungslösungen, maßgeschneidert auf die Bedürfnisse Ihres Unternehmens. Innovative digitale Erlebnisse für Unternehmen in Deutschland und weltweit gestalten."
+        canonical="https://www.webmacht.de/"
+        ogImage="https://res.cloudinary.com/debiu7z1b/image/upload/v1732368719/Frame_2609884_h58z9k.png"
+        ogType="website"
+        twitterHandle=""
+      />
       <Starter />
       <Partner />
       <Approach />

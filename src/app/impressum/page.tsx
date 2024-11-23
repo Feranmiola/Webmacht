@@ -48,14 +48,6 @@ export default function Impressum() {
                             <p className="text-datkGrey text-base">Eyup Gözütok</p>
                         </div>
                         <div className="flex flex-row items-center space-x-2">
-                            <p className="text-datkGrey opacity-40 text-base">Amtsgericht:</p>
-                            <p className="text-datkGrey text-base">Port Yadira</p>
-                        </div>
-                        <div className="flex flex-row items-center space-x-2">
-                            <p className="text-datkGrey opacity-40 text-base">Handelsregisternummer:</p>
-                            <p className="text-datkGrey text-base">716-596-7996 x799</p>
-                        </div>
-                        <div className="flex flex-row items-center space-x-2">
                             <p className="text-datkGrey opacity-40 text-base">USt-IdNr.:</p>
                             <p className="text-datkGrey text-base">DE353989642</p>
                         </div>
@@ -88,19 +80,11 @@ export default function Impressum() {
                         </div>
 
                     </div>
-                    <div className="w-[540px] pl-5 h-full flex flex-col justify-evenly">
+                    <div className="w-[540px] p-5 space-y-2 flex flex-col">
 
                         <div className="flex flex-row items-center w-[450px] justify-between">
                             <p className="text-datkGrey opacity-40 text-xl">Geschäftsführer:</p>
                             <p className="text-datkGrey text-xl">Eyup Gözütok</p>
-                        </div>
-                        <div className="flex flex-row items-center w-[423px] justify-between">
-                            <p className="text-datkGrey opacity-40 text-xl">Amtsgericht:</p>
-                            <p className="text-datkGrey text-xl">Port Yadira</p>
-                        </div>
-                        <div className="flex flex-row items-center w-[509px] justify-between">
-                            <p className="text-datkGrey opacity-40 text-xl">Handelsregisternummer:</p>
-                            <p className="text-datkGrey text-xl">716-596-7996 x799</p>
                         </div>
                         <div className="flex flex-row items-center w-[459px] justify-between">
                             <p className="text-datkGrey opacity-40 text-xl">USt-IdNr.:</p>
