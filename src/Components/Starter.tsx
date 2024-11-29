@@ -38,7 +38,7 @@ export default function Starter() {
     }
 
     return (
-        <div className="homeBackground relative h-[911px] max-h-[100vh] w-full">
+        <div className="homeBackground relative h-[911px] min-h-[100vh] w-full">
             <div className="flex flex-col h-full justify-end px-5 md:pl-10 lg:pl-20 pb-[3rem] md:pb-[5rem] lg:pb-[7rem]">
                 <div className="flex flex-col space-y-4 md:space-y-6 lg:space-y-8">
                     <motion.p

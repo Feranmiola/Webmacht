@@ -47,7 +47,7 @@ const CustomWebDev = () => {
     }
 
     return (
-        <div className='bg-black w-full h-[1006px] flex items-center flex-col space-y-20 justify-center'>
+        <div className='bg-black w-full min-h-[1006px] flex items-center flex-col xl:pt-[20rem] xl:pb-[10rem] space-y-20 justify-center'>
             <div className='flex flex-row max-lg:hidden w-[1290px] h-[134px] items-center justify-between'>
                 <p className='w-[654px] text-white text-[56px] font-semibold'>Umfassende Webentwicklungslösungen</p>
                 <div className='flex flex-col w-[530px] h-full justify-between'>

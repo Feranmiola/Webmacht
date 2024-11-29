@@ -2,19 +2,22 @@ import React from 'react';
 import ConsultationIcon from './Icons/ConsultationIcon';
 import DesignIcon from './Icons/DesignIcon';
 import LaunchIcon from './Icons/LaunchIcon';
+import Image from 'next/image';
 
 const Approach = () => {
     return (
-        <div className="relative bg-black pb-20">
+        <div className="relative bg-black pb-20 xl:pb-[20rem]">
             {/* Mobile version */}
             <div className='flex flex-col space-y-10 md:hidden w-full p-10'>
                 <p className="text-white font-light z-[9999] text-[24px]">Unser Ansatz</p>
 
                 <div className='flex flex-col h-[463.99px] items-center justify-between'>
-                    <img
+                    <Image
                         src="https://res.cloudinary.com/debiu7z1b/image/upload/v1730806886/Frame_44_fvvdqm.webp"
                         alt="Beratung & Entdeckung"
                         className="h-[265px] w-[358px]"
+                        width={358}
+                        height={265}
                     />
                     <div className="flex flex-col space-y-2">
                         <ConsultationIcon />
@@ -26,10 +29,12 @@ const Approach = () => {
                 </div>
 
                 <div className='flex flex-col h-[463.99px] items-center justify-between'>
-                    <img
+                    <Image
                         src="https://res.cloudinary.com/debiu7z1b/image/upload/v1730806886/Frame_45_cysssl.webp"
                         alt="Design & Entwicklung"
                         className="h-[265px] w-[358px]"
+                        width={358}
+                        height={265}
                     />
                     <div className="flex flex-col space-y-2">
                         <DesignIcon />
@@ -41,10 +46,12 @@ const Approach = () => {
                 </div>
 
                 <div className='flex flex-col h-[463.99px] items-center justify-between'>
-                    <img
+                    <Image
                         src="https://res.cloudinary.com/debiu7z1b/image/upload/v1730806887/Frame_46_llwwl9.webp"
                         alt="Start & Optimierung"
                         className="h-[265px] w-[358px]"
+                        width={358}
+                        height={265}
                     />
                     <div className="flex flex-col space-y-2">
                         <LaunchIcon />
@@ -57,15 +64,17 @@ const Approach = () => {
             </div>
 
             {/* Medium screen version (non-sticky) */}
-            <div className="hidden md:block lg:hidden w-full py-10 px-6">
+            <div className="hidden md:block lg:hidden h-screen w-full py-10 px-6">
                 <p className="text-white font-light text-3xl mb-10">Unser Ansatz</p>
 
                 <div className="space-y-20">
                     <div className="flex flex-row items-center space-x-8">
-                        <img
+                        <Image
                             src="https://res.cloudinary.com/debiu7z1b/image/upload/v1730806886/Frame_44_fvvdqm.webp"
                             alt="Beratung & Entdeckung"
                             className="h-[400px] w-[326px]"
+                            width={326}
+                        height={400}
                         />
                         <div className="flex flex-col space-y-4">
                             <ConsultationIcon />
@@ -77,10 +86,12 @@ const Approach = () => {
                     </div>
 
                     <div className="flex flex-row items-center space-x-8">
-                        <img
+                        <Image
                             src="https://res.cloudinary.com/debiu7z1b/image/upload/v1730806886/Frame_45_cysssl.webp"
                             alt="Design & Entwicklung"
                             className="h-[400px] w-[326px]"
+                            width={326}
+                            height={400}
                         />
                         <div className="flex flex-col space-y-4">
                             <DesignIcon />
@@ -92,10 +103,12 @@ const Approach = () => {
                     </div>
 
                     <div className="flex flex-row items-center space-x-8">
-                        <img
+                        <Image
                             src="https://res.cloudinary.com/debiu7z1b/image/upload/v1730806887/Frame_46_llwwl9.webp"
                             alt="Start & Optimierung"
                             className="h-[400px] w-[326px]"
+                            width={326}
+                            height={400}
                         />
                         <div className="flex flex-col space-y-4">
                             <LaunchIcon />
@@ -109,16 +122,18 @@ const Approach = () => {
             </div>
 
             {/* Large screen version (sticky) */}
-            <div className="h-[2631px] hidden lg:block w-full py-10">
+            <div className="h-[2631px] min-h-screen hidden lg:block w-full py-10">
                 {/* Seite 1 */}
                 <div className='sticky top-[110px] h-screen bg-black'>
                     <div id="page1" className="w-full max-w-[1272px] h-[792px] bg-[#090909] z-10 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
                         <div className='flex items-center w-full h-full'>
                             <div className='flex-row flex space-x-24 px-0'>
-                                <img
+                                <Image
                                     src="https://res.cloudinary.com/debiu7z1b/image/upload/v1730806886/Frame_44_fvvdqm.webp"
                                     alt="Beratung & Entdeckung"
                                     className="h-[600px] w-[489px]"
+                                    width={489}
+                                    height={600}
                                 />
                                 <div className="flex flex-col h-[408.5px] justify-between">
                                     <p className="text-white font-light z-[9999] text-5xl xl:text-[56px]">Unser Ansatz</p>
@@ -140,10 +155,12 @@ const Approach = () => {
                     <div id="page2" className="w-full max-w-[1272px] h-[792px] bg-[#090909] z-20 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
                         <div className='flex items-center w-full h-full'>
                             <div className='flex-row flex items-center space-x-24 px-0'>
-                                <img
+                                <Image
                                     src="https://res.cloudinary.com/debiu7z1b/image/upload/v1730806886/Frame_45_cysssl.webp"
                                     alt="Design & Entwicklung"
                                     className="h-[600px] w-[489px]"
+                                    width={489}
+                                    height={600}
                                 />
                                 <div className="flex flex-col space-y-2">
                                     <DesignIcon />
@@ -162,10 +179,12 @@ const Approach = () => {
                     <div id="page3" className="w-full max-w-[1272px] h-[792px] bg-[#090909] z-30 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
                         <div className='flex items-center w-full h-full'>
                             <div className='flex-row flex items-center space-x-24 px-0'>
-                                <img
+                                <Image
                                     src="https://res.cloudinary.com/debiu7z1b/image/upload/v1730806887/Frame_46_llwwl9.webp"
                                     alt="Start & Optimierung"
                                     className="h-[600px] w-[489px]"
+                                    width={489}
+                                    height={600}
                                 />
                                 <div className="flex h-full flex-col space-y-2">
                                     <LaunchIcon />
