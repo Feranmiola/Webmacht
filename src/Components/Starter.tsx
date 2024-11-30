@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion'
 import ScrollArrow from './Icons/ScrollArrow'
+import { smoothScrollTo } from './SmoothScrollTO'
 
 export default function Starter() {
     const text = "Förderung der digitalen Transformation für Unternehmen"
@@ -37,6 +38,10 @@ export default function Starter() {
         }
     }
 
+        const handleClick = () => {
+          smoothScrollTo('Contact');
+        }
+
     return (
         <div className="homeBackground relative h-[911px] min-h-[100vh] w-full">
             <div className="flex flex-col h-full justify-end px-5 md:pl-10 lg:pl-20 pb-[3rem] md:pb-[5rem] lg:pb-[7rem]">
@@ -68,7 +73,8 @@ export default function Starter() {
                         variants={fadeInVariants}
                         initial="hidden"
                         animate="visible"
-                    >
+                        onClick={handleClick}
+                        >
                         Kontakt aufnehmen
                     </motion.button>
                 </div>

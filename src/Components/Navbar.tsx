@@ -2,7 +2,14 @@
 import React from 'react'
 import Webmacht from './Icons/Webmacht'
 import { useRouter } from 'next-nprogress-bar';
+import { smoothScrollTo } from './SmoothScrollTO';
 const Navbar = () => {
+
+    const handleClick = () => {
+        smoothScrollTo('Contact');
+      }
+
+
     const router = useRouter()
     return (
         <div className="navbar w-full h-[110px] bg-black flex">
@@ -13,7 +20,7 @@ const Navbar = () => {
                     </div>
                 </div>
 
-                <div className='flex max-md:hidden items-center justify-center px-2 py-1 cursor-pointer rounded-[4px] text-base font-medium text-white border-[1px] border-white hover:border-deep-purple hover:text-deep-purple transition ease-in-out'>
+                <div onClick={handleClick} className='flex max-md:hidden items-center justify-center px-2 py-1 cursor-pointer rounded-[4px] text-base font-medium text-white border-[1px] border-white hover:border-deep-purple hover:text-deep-purple transition ease-in-out'>
                     Kontakt aufnehmen
                 </div>
             </div>

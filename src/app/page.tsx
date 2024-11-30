@@ -69,7 +69,9 @@ export default function Home() {
       <Solutions />
       <Technologies />
       <StartBuilding />
-      <Contact />
+      <div id="Contact">
+        <Contact />
+      </div>
     </div>
   );
 }
