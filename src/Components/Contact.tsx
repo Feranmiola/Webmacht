@@ -9,7 +9,7 @@ import { Form, FormControl, FormField, FormItem } from '@/Components/ui/form'
 import { ContactFormSchema } from '@/Schema/ContactFormSchema'
 import { Button } from './ui/button'
 import Quote from './Icons/Quote'
-import { Avatar, AvatarImage } from './ui/avatar'
+// import { Avatar, AvatarImage } from './ui/avatar'
 import AvatarIcon from './Icons/AvatarIcon'
 import MailIcon from './Icons/MailIcon'
 import CompanyIcon from './Icons/CompanyIcon'
@@ -220,12 +220,12 @@ const Contact = () => {
                     <p className='text-white text-base opacity-70 mt-8'>REFERENZ</p>
                     <p className='text-[#EDEDEDB2] text-[15.77px] md:text-base lg:text-xl font-light mt-4'>Die Zusammenarbeit mit Webmacht war eine außergewöhnliche Erfahrung. Sie haben unsere Websites und Anwendungen mit Präzision entwickelt und unsere Erwartungen übertroffen. Das technische Fachwissen ihres Teams und die Liebe zum Detail sind beeindruckend, wodurch alles optimal funktioniert. Dank Webmacht ist unsere Online-Präsenz stärker als je zuvor. Ich kann sie für jedes Webentwicklungsprojekt nur wärmstens empfehlen.</p>
                     <div className='flex flex-row space-x-5 items-center border-t-[1px] border-white border-opacity-30 mt-8 pt-8'>
-                        <Avatar className='w-[80px] h-[80px]'>
+                        {/* <Avatar className='w-[80px] h-[80px]'>
                             <AvatarImage
                                 src='https://res.cloudinary.com/debiu7z1b/image/upload/v1730836488/image_904_kgolpl.webp'
                                 className='w-[80px] h-[80px]'
                             />
-                        </Avatar>
+                        </Avatar> */}
                         <div className='flex flex-col justify-between'>
                             <p className='text-white font-bold text-xl'>Ufuk Asikoglu</p>
                             <p className='text-white text-base opacity-70'>CEO, Nefesol Inc.</p>
