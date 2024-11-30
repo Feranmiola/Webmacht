@@ -28,7 +28,7 @@ export default function SEO({
             <link rel="canonical" href={canonical} />
             <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-            <meta name="google-site-verification" content="jQI5rBsxEbRlNq7I8R-PDEaaGiKv0nOIub1-8PKxOCM" />
+            {/* <meta name="google-site-verification" content="jQI5rBsxEbRlNq7I8R-PDEaaGiKv0nOIub1-8PKxOCM" /> */}
 
             {/* Open Graph tags */}
             <meta property="og:title" content={fullTitle} />
