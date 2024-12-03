@@ -140,6 +140,7 @@ const Footer = () => {
                                     <LinkIcon />
                                 </div>
                                 <div
+                                onClick={() => router.push('/data-protection')}
                                     className='flex flex-row opacity-70 hover:opacity-100 cursor-pointer transition ease-in-out space-x-2 items-center md:justify-center lg:justify-start w-full'
                                 >
                                     <p className='text-base text-white text-center md:text-center lg:text-left'>Datenschutzerklärung</p>
