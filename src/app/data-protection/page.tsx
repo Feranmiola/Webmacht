@@ -73,9 +73,9 @@ export default function PrivacyPolicy() {
     <>
       <SEO
         title="Webmacht | Privacy Policy"
-        description="Learn how StepVerse protects your data and privacy. Our comprehensive policy outlines data collection, usage, and your rights as a user of our fitness gaming platform."
-        canonical="https://step-verse.vercel.app/"
-        ogImage="https://res.cloudinary.com/debiu7z1b/image/upload/v1733222710/Frame_657_emx4vk.jpg"
+        description="Ihr vertrauenswürdiger Partner für die Bereitstellung modernster Webentwicklungslösungen, maßgeschneidert auf die Bedürfnisse Ihres Unternehmens. Innovative digitale Erlebnisse für Unternehmen in Deutschland und weltweit gestalten."
+        canonical="https://www.webmacht.de/"
+        ogImage="https://res.cloudinary.com/debiu7z1b/image/upload/v1732368719/Frame_2609884_h58z9k.png"
         ogType="website"
         twitterHandle=""
       />
