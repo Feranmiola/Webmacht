@@ -77,9 +77,9 @@ const Contact = () => {
             <div className='w-full bg-datkGrey flex flex-col items-center lg:flex-row lg:items-start max-md:space-y-5 md:space-y-10 lg:space-y-0 lg:space-x-5 justify-center py-10 md:py-16 lg:py-20'>
                 <div className='w-[90%] md:w-[90%] lg:w-[801px] flex flex-col justify-evenly'>
                     <div className='w-full flex flex-col justify-between md:space-y-6 lg:space-y-8 mb-10'>
-                        <p className='text-white text-[56px] max-md:text-2xl lg:h-[100px] lg:hidden lg:w-full md:text-4xl lg:text-[56px] font-semibold text-center md:text-left'>Lassen Sie uns gemeinsam etwas Großartiges bauen</p>
+                        <p className='text-white text-[56px] max-md:text-2xl lg:h-[100px] lg:hidden lg:w-full md:text-4xl lg:text-[56px] font-semiboldtext-left'>Lassen Sie uns gemeinsam etwas Großartiges bauen</p>
                         <p className='text-white text-[56px] font-semibold leading-tight max-lg:hidden'>Lassen Sie uns gemeinsam etwas Großartiges bauen</p>
-                        <p className='text-white w-full lg:w-[510px] text-base font-normal text-center md:text-left'>Haben Sie eine Frage oder möchten Sie Ihr Projekt besprechen? Wir sind hier, um zu helfen. Kontaktieren Sie uns noch heute!</p>
+                        <p className='text-white w-full lg:w-[510px] text-base font-normal  text-left'>Haben Sie eine Frage oder möchten Sie Ihr Projekt besprechen? Wir sind hier, um zu helfen. Kontaktieren Sie uns noch heute!</p>
                     </div>
 
                     <div className='w-full'>
