@@ -52,11 +52,15 @@ const Footer = () => {
                         <p className='text-base text-white '>Impressum</p>
                         <LinkIcon />
                     </div>
-                    <div className='flex flex-row space-x-2 opacity-70 hover:opacity-100 cursor-pointer transition ease-in-out items-center'>
+                    <div 
+                        onClick={() => router.push('/data-protection')}
+                        className='flex flex-row space-x-2 opacity-70 hover:opacity-100 cursor-pointer transition ease-in-out items-center'>
                         <p className='text-base text-white '>Datenschutzerklärung</p>
                         <LinkIcon />
                     </div>
-                    <div className='flex flex-row space-x-2 opacity-70 hover:opacity-100 cursor-pointer transition ease-in-out items-center'>
+                    <div 
+                        onClick={() => router.push('/allgemeine')}
+                        className='flex flex-row space-x-2 opacity-70 hover:opacity-100 cursor-pointer transition ease-in-out items-center'>
                         <p className='text-base text-white '>Allgemeine Geschäftsbedingungen</p>
                         <LinkIcon />
                     </div>
@@ -140,13 +144,14 @@ const Footer = () => {
                                     <LinkIcon />
                                 </div>
                                 <div
-                                onClick={() => router.push('/data-protection')}
+                                    onClick={() => router.push('/data-protection')}
                                     className='flex flex-row opacity-70 hover:opacity-100 cursor-pointer transition ease-in-out space-x-2 items-center md:justify-center lg:justify-start w-full'
                                 >
                                     <p className='text-base text-white text-center md:text-center lg:text-left'>Datenschutzerklärung</p>
                                     <LinkIcon />
                                 </div>
                                 <div
+                                    onClick={() => router.push('/allgemeine')}
                                     className='flex flex-row opacity-70 hover:opacity-100 cursor-pointer transition ease-in-out space-x-2 items-center md:justify-center lg:justify-start w-full'
                                 >
                                     <p className='text-base text-white text-center md:text-center lg:text-left'>Allgemeine Geschäftsbedingungen</p>
