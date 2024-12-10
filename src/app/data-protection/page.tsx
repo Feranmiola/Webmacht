@@ -72,7 +72,7 @@ export default function PrivacyPolicy() {
   return (
     <>
       <SEO
-        title="Webmacht | Privacy Policy"
+        title="Webmacht | Datenschutzerklärung"
         description="Ihr vertrauenswürdiger Partner für die Bereitstellung modernster Webentwicklungslösungen, maßgeschneidert auf die Bedürfnisse Ihres Unternehmens. Innovative digitale Erlebnisse für Unternehmen in Deutschland und weltweit gestalten."
         canonical="https://www.webmacht.de/"
         ogImage="https://res.cloudinary.com/debiu7z1b/image/upload/v1732368719/Frame_2609884_h58z9k.png"
