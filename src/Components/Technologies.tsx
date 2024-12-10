@@ -13,7 +13,7 @@ const Technologies = () => {
     return (
         <div className='md:h-[911px] lg:h-[911px] max-md:py-10 w-full bg-[#F6FBFE] flex flex-col space-y-5 max-md:space-y-10 md:space-y-8 lg:space-y-5 items-center justify-center'>
             <div className='h-[137px] md:h-auto lg:h-[137px] flex flex-col items-center max-md:items-start px-5 justify-between md:space-y-4 lg:space-y-0'>
-                <p className='text-datkGrey text-[56px] max-md:text-2xl md:text-4xl lg:text-[56px] font-semibold text-center md:max-w-[90%] lg:max-w-none'>Technologien, die wir verwenden</p>
+                <p className='text-datkGrey text-[56px] max-md:text-2xl md:text-4xl lg:text-[56px] font-semibold md:text-center md:max-w-[90%] lg:max-w-none'>Technologien, die wir verwenden</p>
                 <p className='text-datkGrey text-base text-center max-md:text-start md:w-[90%] lg:w-[530px] max-sm:w-[90%]'>Von maßgeschneidertem Webdesign bis hin zu Full-Stack-Entwicklung helfen wir Unternehmen, in der digitalen Welt zu wachsen.</p>
             </div>
 
