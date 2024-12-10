@@ -12,7 +12,7 @@ const Navbar = () => {
 
     const router = useRouter()
     return (
-        <div className="navbar w-full h-[110px] bg-black flex">
+        <div className="navbar w-full h-[110px] max-md:h-[75px] bg-black flex">
             <div className="px-10 flex flex-row w-full h-full items-center justify-between">
                 <div className="flex flex-row space-x-[5rem] items-center">
                     <div className=' cursor-pointer' onClick={() => router.push('/')}>
