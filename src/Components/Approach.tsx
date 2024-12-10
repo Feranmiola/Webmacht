@@ -6,7 +6,7 @@ import LaunchIcon from './Icons/LaunchIcon';
 
 const Approach = () => {
     return (
-        <div className="relative bg-black pb-20 xl:pb-[20rem]">
+        <div className="relative bg-black pb-20 xl:pb-[10rem] outline-none border-none">
             {/* Mobile version */}
             <div className='flex flex-col space-y-10 md:hidden w-full p-10'>
                 <p className="text-white font-light z-[9999] text-[24px]">Unser Ansatz</p>
@@ -122,7 +122,7 @@ const Approach = () => {
             </div>
 
             {/* Large screen version (sticky) */}
-            <div className="h-[2631px] min-h-screen hidden lg:block xl:hidden w-full py-10">
+            <div className="min-h-screen hidden lg:block xl:hidden w-full py-10">
                 {/* Seite 1 */}
                 <div className='sticky top-[110px] h-screen bg-black'>
                     <div id="page1" className="w-full max-w-[1272px] h-[792px] bg-[#090909] z-10 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
@@ -200,7 +200,7 @@ const Approach = () => {
             </div>
 
             {/* XL screen version (sticky) */}
-            <div className="h-[3000px] min-h-screen hidden xl:block w-full py-10">
+            <div className=" min-h-screen hidden xl:block w-full py-10">
                 {/* Seite 1 */}
                 <div className='sticky top-[110px] h-screen bg-black'>
                     <div id="page1" className="w-full max-w-[1536px] h-[900px] bg-[#090909] z-10 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
