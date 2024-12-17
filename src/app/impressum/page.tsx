@@ -39,7 +39,7 @@ export default function Impressum() {
                         <div>
                             <MailBlue />
                         </div>
-                        <a href="mailto:info@webmacht.de" className="text-xl text-datkGrey">info@webmacht.de</a>
+                        <a href="mailto:hallo@webmacht.de" className="text-xl text-datkGrey">hallo@webmacht.de</a>
                     </div>
 
                     <div className="flex flex-col space-y-3 pt-4">
@@ -74,7 +74,7 @@ export default function Impressum() {
                             <div>
                                 <MailBlue />
                             </div>
-                            <a href="mailto:info@webmacht.de" className="md:text-lg lg:text-xl xl:text-2xl text-datkGrey">info@webmacht.de</a>
+                            <a href="mailto:hallo@webmacht.de" className="md:text-lg lg:text-xl xl:text-2xl text-datkGrey">hallo@webmacht.de</a>
                         </div>
                     </div>
                     <div className="md:w-[50%] lg:w-[40%] xl:w-[540px] p-5 space-y-2 flex flex-col">

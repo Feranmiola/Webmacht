@@ -28,9 +28,9 @@ const Footer = () => {
                         <p className='text-base text-white'>Struthstr. 1, 63607 Wächtersbach, Deutschland</p>
                     </div>
 
-                    <a href="mailto:info@webmacht.de" className='flex flex-row opacity-70 items-center space-x-2 hover:opacity-100 transition-opacity'>
+                    <a href="mailto:hallo@webmacht.de" className='flex flex-row opacity-70 items-center space-x-2 hover:opacity-100 transition-opacity'>
                         <MailIcon />
-                        <p className='text-base text-white '>info@webmacht.de</p>
+                        <p className='text-base text-white '>hallo@webmacht.de</p>
                     </a>
                     <a href="tel:+491756404044" className='flex flex-row opacity-70 items-center space-x-2 hover:opacity-100 transition-opacity'>
                         <PhoneWhite />
@@ -99,7 +99,7 @@ const Footer = () => {
 
                         <div className='flex flex-col lg:flex-row items-center w-full lg:h-[147px]'>
                             <a
-                                href="mailto:info@webmacht.de"
+                                href="mailto:hallo@webmacht.de"
                                 className='flex items-center justify-center py-8 lg:py-0 lg:h-full opacity-70 hover:opacity-100 cursor-pointer transition ease-in-out space-x-2 w-full lg:w-[217px] border-b-[1px] lg:border-b-0 lg:border-r-[1px] border-[#1B1B1B]'
                                 onMouseEnter={() => setEmailHovered(true)}
                                 onMouseLeave={() => setEmailHovered(false)}
@@ -110,7 +110,7 @@ const Footer = () => {
                                 >
                                     <MailIcon />
                                 </motion.div>
-                                <p className='text-base text-white '>info@webmacht.de</p>
+                                <p className='text-base text-white '>hallo@webmacht.de</p>
                             </a>
 
                             <a
